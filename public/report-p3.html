@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>3주 추적 이력</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --primary: #2383e2; --text: #191919; --sub: #787774;
+        --bg: #ffffff; --surface: #f7f6f3; --border: #e9e9e7;
+        --font: 'Inter', -apple-system, 'Malgun Gothic', sans-serif;
+      }
+      * { box-sizing: border-box; }
+      html, body { margin: 0; padding: 0; width: 100%; height: 100%; }
+      body { font-family: var(--font); background: var(--surface); color: var(--text); -webkit-font-smoothing: antialiased; }
+      .page { width: 100vw; height: 100vh; display: flex; align-items: center; justify-content: center; padding: 20px; }
+      .sheet { width: 100%; max-width: 100%; background: var(--bg); border: 1px solid var(--border); border-radius: 16px; padding: 56px 48px; }
+      .eyebrow { font-size: 13px; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; color: var(--sub); margin: 0 0 8px; }
+      h1 { font-size: 27px; font-weight: 800; letter-spacing: -0.01em; margin: 0 0 4px; }
+      .subtitle { font-size: 15px; color: var(--sub); margin: 0 0 24px; padding-bottom: 20px; border-bottom: 1px solid var(--border); }
+      table { width: 100%; border-collapse: collapse; font-size: 15px; }
+      th, td { text-align: left; padding: 14px 10px; border-bottom: 1px solid var(--border); }
+      th { color: var(--sub); font-weight: 700; font-size: 11px; text-transform: uppercase; letter-spacing: 0.03em; }
+      td:first-child { font-weight: 600; }
+      .up { color: #2ba86f; font-weight: 700; }
+      .down { color: #9b9b97; font-weight: 700; }
+      .note { margin-top: 20px; font-size: 13px; color: var(--sub); line-height: 1.6; }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <div class="sheet">
+        <p class="eyebrow">3장 · 본문 발췌 (실데이터)</p>
+        <h1>3주 추적 이력</h1>
+        <p class="subtitle">TEO 트렌드 스카우팅 리포트</p>
+        <table>
+          <tr><th>갭</th><th>1주차</th><th>2주차</th><th>3주차</th><th>판정</th></tr>
+          <tr><td>Haaland 밈챌린지</td><td>60.9만</td><td>71.3만</td><td>70.4만</td><td class="up">신뢰도↑</td></tr>
+          <tr><td>Animal Hospital</td><td>52.7만</td><td>40.5만</td><td>40.0만</td><td class="down">관찰 필요</td></tr>
+          <tr><td>Be Kind 힐링숏폼</td><td>67.2만</td><td>27.1만</td><td>27.1만</td><td class="down">우선순위↓</td></tr>
+        </table>
+        <p class="note">단위: 최고 시간당 조회수(VPH). 몇 주 이상 추적해야 "지금 반짝하는 것"과 "자리잡는 것"을 구분할 수 있습니다.</p>
+      </div>
+    </div>
+  </body>
+</html>

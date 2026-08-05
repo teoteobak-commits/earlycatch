@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>이번 주 갭 요약</title>
+    <style>
+      :root {
+        --navy: #16293f;
+        --blue: #2eaae4;
+        --text: #191919;
+        --sub: #787774;
+        --surface: #f7f6f3;
+        --border: #e9e9e7;
+      }
+      * { box-sizing: border-box; margin: 0; padding: 0; }
+      html, body { width: 100%; height: 100%; }
+      body {
+        font-family: 'Malgun Gothic', -apple-system, sans-serif;
+        background: #ffffff;
+        -webkit-font-smoothing: antialiased;
+      }
+      .frame {
+        width: 100vw; height: 100vh;
+        padding: 50px 58px 44px;
+        display: flex; flex-direction: column;
+      }
+      h2 {
+        font-size: 36px; font-weight: 800; color: var(--navy);
+        letter-spacing: -0.02em; margin-bottom: 6px;
+      }
+      .sub { font-size: 19px; color: var(--sub); margin-bottom: 26px; }
+      .list { display: flex; flex-direction: column; gap: 16px; flex: 1; }
+      .row {
+        display: flex; align-items: center; gap: 22px;
+        border: 1px solid var(--border); border-radius: 14px;
+        padding: 20px 26px; background: #fff;
+      }
+      .row.dim { background: var(--surface); }
+      .rank {
+        flex-shrink: 0; width: 46px; height: 46px; border-radius: 12px;
+        background: var(--navy); color: #fff;
+        display: flex; align-items: center; justify-content: center;
+        font-size: 22px; font-weight: 800;
+      }
+      .row.dim .rank { background: #b8b8b5; }
+      .info { flex: 1; min-width: 0; }
+      .name { font-size: 25px; font-weight: 800; color: var(--navy); margin-bottom: 5px; letter-spacing: -0.01em; }
+      .desc { font-size: 18px; color: var(--sub); line-height: 1.45; }
+      .vph { flex-shrink: 0; text-align: right; min-width: 150px; }
+      .vph-num { font-size: 32px; font-weight: 800; color: var(--blue); line-height: 1.1; }
+      .row.dim .vph-num { color: #a5a5a2; }
+      .vph-unit { font-size: 15px; color: var(--sub); font-weight: 600; }
+      .badge {
+        flex-shrink: 0; font-size: 16px; font-weight: 700;
+        padding: 7px 16px; border-radius: 999px; min-width: 106px; text-align: center;
+      }
+      .b-mid { color: #1c7fb0; background: #e3f3fb; }
+      .b-low { color: #8d8d8a; background: #efefed; }
+      .note {
+        margin-top: 22px; font-size: 17px; color: var(--sub); line-height: 1.6;
+        border-top: 1px solid var(--border); padding-top: 18px;
+      }
+      .note b { color: var(--navy); }
+    </style>
+  </head>
+  <body>
+    <div class="frame">
+      <h2>이번 주에 걸린 것들 — 국내 89건 중 0건</h2>
+      <p class="sub">여러 채널에서 반복되는지, 조회 속도가 버티는지를 보고 판단</p>
+
+      <div class="list">
+        <div class="row">
+          <div class="rank">1</div>
+          <div class="info">
+            <div class="name">Haaland 밈챌린지</div>
+            <div class="desc">선수 이름에 반복 사운드. 상관없는 채널 4곳에서 3주 연속 나옴</div>
+          </div>
+          <div class="vph"><div class="vph-num">70만</div><div class="vph-unit">시간당 조회수</div></div>
+          <div class="badge b-mid">제일 확실</div>
+        </div>
+
+        <div class="row">
+          <div class="rank">2</div>
+          <div class="info">
+            <div class="name">Roblox Animal Hospital</div>
+            <div class="desc">진입장벽은 낮은데, 새로 뛰어드는 채널이 4곳→3곳→1곳으로 줄어드는 중</div>
+          </div>
+          <div class="vph"><div class="vph-num">40만</div><div class="vph-unit">시간당 조회수</div></div>
+          <div class="badge b-mid">좀 애매</div>
+        </div>
+
+        <div class="row dim">
+          <div class="rank">3</div>
+          <div class="info">
+            <div class="name">게임 캐릭터 패밀리 시트콤</div>
+            <div class="desc">마리오·루이지·피치를 가족처럼. 홍콩·미국에서 따로 튀어나옴</div>
+          </div>
+          <div class="vph"><div class="vph-num">30만</div><div class="vph-unit">시간당 조회수</div></div>
+          <div class="badge b-low">아직 모름</div>
+        </div>
+
+        <div class="row dim">
+          <div class="rank">4</div>
+          <div class="info">
+            <div class="name">Be Kind 힐링 숏폼</div>
+            <div class="desc">한때 67만까지 갔는데 지금은 그냥 식음. 비교용으로만 남겨둠</div>
+          </div>
+          <div class="vph"><div class="vph-num">27만</div><div class="vph-unit">시간당 조회수</div></div>
+          <div class="badge b-low">식었음</div>
+        </div>
+      </div>
+
+      <p class="note">
+        <b>성공 공식 아닙니다.</b> 그냥 가설이에요. 그리고 해외 영상 받아서 그대로 올리는 건
+        저작권 침해입니다 — 포맷만 참고해서 직접 찍으세요.
+      </p>
+    </div>
+  </body>
+</html>

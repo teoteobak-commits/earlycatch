@@ -1,0 +1,115 @@
+/* ===== 디자인 시스템: 노션 · 모노톤 + 라운드 버튼 + Inter ===== */
+:root {
+  /* 색 조합 */
+  --primary: #2383e2;
+  --text: #191919;
+  --sub: #787774;
+  --bg: #ffffff;
+  --surface: #f7f6f3;
+  --border: #e9e9e7;
+
+  /* 상태 색 (증가율 등 표시용, 모노톤 베이스에 최소한만 추가) */
+  --up: #2383e2;
+  --down: #9b9b97;
+
+  /* 라운드 버튼 */
+  --radius: 10px;
+
+  /* 폰트 */
+  --font: 'Inter', -apple-system, 'Malgun Gothic', sans-serif;
+}
+
+/* 다크모드: 시스템 설정을 기본으로 따르고, data-theme 속성으로 수동 전환 */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) {
+    --text: #e9e9e7;
+    --sub: #9b9b97;
+    --bg: #191919;
+    --surface: #202020;
+    --border: #2f2f2f;
+  }
+}
+
+:root[data-theme='dark'] {
+  --text: #e9e9e7;
+  --sub: #9b9b97;
+  --bg: #191919;
+  --surface: #202020;
+  --border: #2f2f2f;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font);
+  background-color: var(--bg);
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 700;
+  margin: 0;
+}
+
+p,
+span,
+button,
+input {
+  font-family: var(--font);
+}
+
+button {
+  font-family: var(--font);
+}
+
+/* 라운드 버튼 (베이스 기본) */
+.btn {
+  border-radius: var(--radius);
+  padding: 12px 20px;
+  font-weight: 700;
+  background: var(--primary);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: 0.15s;
+  font-size: 14px;
+}
+.btn:hover {
+  filter: brightness(0.95);
+}
+
+.btn-ghost {
+  border-radius: var(--radius);
+  padding: 10px 16px;
+  font-weight: 500;
+  background: var(--surface);
+  color: var(--text);
+  border: 1px solid var(--border);
+  cursor: pointer;
+  transition: 0.15s;
+  font-size: 14px;
+}
+.btn-ghost:hover {
+  background: var(--border);
+}
+
+/* 스크롤바 (선택적 톤 맞춤) */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 8px;
+}

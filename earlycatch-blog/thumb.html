@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>썸네일(정사각)</title>
+    <!--
+      정사각 목록 썸네일용. 크기에 무관하게 맞도록 vh 단위를 쓴다.
+      렌더:  msedge --headless --screenshot=... --window-size=800,800 thumb.html
+      매주 바꿀 것: .week / .big 두 숫자 / .label
+    -->
+    <style>
+      :root { --navy:#16293f; --blue:#2eaae4; --red:#e0563f; --sub:#8b8b88; --border:#e9e9e7; }
+      * { box-sizing:border-box; margin:0; padding:0; }
+      html, body { width:100%; height:100%; }
+      body { font-family:'Malgun Gothic', sans-serif; background:#fff; -webkit-font-smoothing:antialiased; }
+      .frame {
+        width:100vw; height:100vh; padding:8vh 7vh 6vh;
+        display:flex; flex-direction:column; justify-content:center;
+        position:relative;
+      }
+      .bar { position:absolute; left:0; top:0; width:100%; height:1.8vh;
+             background:linear-gradient(90deg, var(--navy), var(--blue)); }
+      .week { font-size:3.8vh; font-weight:700; color:var(--sub); letter-spacing:0.04em; margin-bottom:3.5vh; }
+      .label { font-size:3.8vh; font-weight:700; color:var(--sub); margin-bottom:0.3vh; }
+      .big { font-size:15vh; font-weight:800; letter-spacing:-0.04em; line-height:1.02; }
+      .blue { color:var(--blue); }
+      .red { color:var(--red); }
+      .rule { height:0.25vh; background:var(--border); margin:3.2vh 0; }
+      .mark { margin-top:4vh; font-size:3.6vh; font-weight:800; color:var(--navy); }
+      .mark span { color:var(--blue); }
+    </style>
+  </head>
+  <body>
+    <div class="frame">
+      <div class="bar"></div>
+      <div class="week">8월 1주차</div>
+      <div>
+        <div class="label">해외에서</div>
+        <div class="big blue">70만</div>
+      </div>
+      <div class="rule"></div>
+      <div>
+        <div class="label">국내엔</div>
+        <div class="big red">0건</div>
+      </div>
+      <div class="mark">Early<span>Catch</span></div>
+    </div>
+  </body>
+</html>

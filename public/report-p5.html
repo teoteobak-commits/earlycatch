@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>이 갭을 어떻게 쓰나</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --primary: #2383e2; --text: #191919; --sub: #787774;
+        --bg: #ffffff; --surface: #f7f6f3; --border: #e9e9e7;
+        --font: 'Inter', -apple-system, 'Malgun Gothic', sans-serif;
+      }
+      * { box-sizing: border-box; }
+      html, body { margin: 0; padding: 0; width: 100%; height: 100%; }
+      body { font-family: var(--font); background: var(--surface); color: var(--text); -webkit-font-smoothing: antialiased; }
+      .page { width: 100vw; height: 100vh; display: flex; align-items: center; justify-content: center; padding: 20px; }
+      .sheet { width: 100%; max-width: 100%; background: var(--bg); border: 1px solid var(--border); border-radius: 16px; padding: 56px 48px; }
+      .eyebrow { font-size: 13px; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; color: var(--sub); margin: 0 0 8px; }
+      h1 { font-size: 27px; font-weight: 800; letter-spacing: -0.01em; margin: 0 0 4px; }
+      .subtitle { font-size: 15px; color: var(--sub); margin: 0 0 24px; padding-bottom: 20px; border-bottom: 1px solid var(--border); }
+      .item { display: flex; gap: 16px; margin-bottom: 22px; }
+      .item:last-child { margin-bottom: 0; }
+      .num { flex-shrink: 0; width: 44px; height: 44px; border-radius: 10px; background: var(--surface); border: 1px solid var(--border); display: flex; align-items: center; justify-content: center; font-size: 16px; font-weight: 800; color: var(--primary); }
+      .item h2 { font-size: 18px; font-weight: 700; margin: 4px 0 6px; }
+      .item p { font-size: 15px; color: var(--sub); line-height: 1.6; margin: 0; }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <div class="sheet">
+        <p class="eyebrow">5장 · 본문 발췌</p>
+        <h1>이 갭을 어떻게 쓰나</h1>
+        <p class="subtitle">TEO 트렌드 스카우팅 리포트</p>
+
+        <div class="item">
+          <div class="num">1</div>
+          <div>
+            <h2>콘텐츠로 직접 만든다</h2>
+            <p>신뢰도 "높음"인 갭부터 한국 정서에 맞게 변형해서 업로드합니다.</p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="num">2</div>
+          <div>
+            <h2>사업 아이템 힌트로 쓴다</h2>
+            <p>이 포맷을 다루는 크리에이터를 위한 도구·가이드·대행 서비스로 확장합니다.</p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="num">3</div>
+          <div>
+            <h2>먼저 안다는 것 자체가 자산이다</h2>
+            <p>몇 주 뒤 실제로 한국에 들어오는지 지켜보면, 이 방법론의 신뢰도가 쌓입니다.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

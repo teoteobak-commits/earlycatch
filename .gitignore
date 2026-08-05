@@ -1,0 +1,36 @@
+# 비밀 정보 — 절대 커밋 금지
+.secrets/
+*.token
+*.env
+.env*
+
+# 의존성
+node_modules/
+package-lock.json
+
+# 빌드 산출물
+dist/
+.vite/
+
+# OS
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# 작업 중 임시 파일
+report.txt
+*.tmp
+
+# Vercel 빌드 산출물
+public-assets/
+.vercel/
+
+# 크몽 판매 상품 원고 — 유료 콘텐츠라 공개 저장소에 올리지 않는다
+product-satisfying-guide/
+product-scouting-report/
+
+# 발행 전 초안 — 승인 전에는 공개하지 않는다
+earlycatch-blog/drafts/
+
+# 로컬 전용 설정
+.claude/settings.local.json

@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>왜 지금 이 포맷인가</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --primary: #2383e2; --text: #191919; --sub: #787774;
+        --bg: #ffffff; --surface: #f7f6f3; --border: #e9e9e7;
+        --font: 'Inter', -apple-system, 'Malgun Gothic', sans-serif;
+      }
+      * { box-sizing: border-box; }
+      html, body { margin: 0; padding: 0; width: 100%; height: 100%; }
+      body { font-family: var(--font); background: var(--surface); color: var(--text); -webkit-font-smoothing: antialiased; }
+      .page { width: 100vw; height: 100vh; display: flex; align-items: center; justify-content: center; padding: 20px; }
+      .sheet { width: 100%; max-width: 100%; background: var(--bg); border: 1px solid var(--border); border-radius: 16px; padding: 56px 48px; }
+      .eyebrow { font-size: 13px; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; color: var(--sub); margin: 0 0 8px; }
+      h1 { font-size: 27px; font-weight: 800; letter-spacing: -0.01em; margin: 0 0 4px; }
+      .subtitle { font-size: 15px; color: var(--sub); margin: 0 0 24px; padding-bottom: 20px; border-bottom: 1px solid var(--border); }
+      p.body { font-size: 16px; line-height: 1.8; margin: 0 0 20px; }
+      .stat-row { display: flex; gap: 12px; margin-bottom: 20px; }
+      .stat { flex: 1; background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 16px; text-align: center; }
+      .stat .num { font-size: 24px; font-weight: 800; color: var(--primary); }
+      .stat .label { font-size: 11px; color: var(--sub); margin-top: 4px; }
+      .quote { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 16px 18px; font-size: 13px; color: var(--sub); line-height: 1.6; }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <div class="sheet">
+        <p class="eyebrow">1장 · 본문 발췌</p>
+        <h1>왜 지금 이 포맷인가</h1>
+        <p class="subtitle">새티스파잉(Satisfying) 숏폼 제작 가이드</p>
+        <p class="body">
+          숏폼 트렌드 리서치(vidiq 데이터 기반 주간 분석)로 최근 몇 주간 한국 숏폼 트렌딩을 반복
+          조사한 결과, 조회수 300만~1,000만 구간에서 일관되게 발견된 패턴이 있습니다. 자극적인
+          편집도, 유명인도, 대사 한마디도 없이 시공·공예·농산물 등 현장 작업을 담은
+          새티스파잉(satisfying) 영상이 꾸준히 상위권에 올랐다는 것입니다.
+        </p>
+        <div class="stat-row">
+          <div class="stat"><div class="num">300만~1,000만</div><div class="label">조회수 구간</div></div>
+          <div class="stat"><div class="num">3가지</div><div class="label">촬영 난이도·편집·경쟁</div></div>
+        </div>
+        <div class="quote">
+          표본과 방법론은 가이드 서두에 그대로 공개돼 있습니다. 특정 조회수나 수익을 보장하는
+          콘텐츠는 아닙니다 — 무엇을, 어떻게 찍을지에 대한 실전 안내서입니다.
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

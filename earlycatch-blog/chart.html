@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>3주 추적 차트</title>
+    <style>
+      :root {
+        --navy: #16293f;
+        --blue: #2eaae4;
+        --text: #191919;
+        --sub: #787774;
+        --border: #e9e9e7;
+        --red: #e0563f;
+        --gray: #a5a5a2;
+      }
+      * { box-sizing: border-box; margin: 0; padding: 0; }
+      html, body { width: 100%; height: 100%; }
+      body {
+        font-family: 'Malgun Gothic', -apple-system, sans-serif;
+        background: #ffffff;
+        -webkit-font-smoothing: antialiased;
+      }
+      .frame {
+        width: 100vw; height: 100vh;
+        padding: 54px 60px 44px;
+        display: flex; flex-direction: column;
+      }
+      h2 {
+        font-size: 36px; font-weight: 800; color: var(--navy);
+        letter-spacing: -0.02em; margin-bottom: 8px;
+      }
+      .sub { font-size: 19px; color: var(--sub); margin-bottom: 8px; }
+      .legend { display: flex; gap: 34px; margin: 18px 0 4px; }
+      .legend-item { display: flex; align-items: center; gap: 10px; font-size: 19px; font-weight: 600; color: var(--text); }
+      .dot { width: 15px; height: 15px; border-radius: 50%; }
+      .note {
+        margin-top: auto; font-size: 17px; color: var(--sub); line-height: 1.6;
+        border-top: 1px solid var(--border); padding-top: 18px;
+      }
+      svg { width: 100%; flex: 1; }
+      .grid-line { stroke: var(--border); stroke-width: 1.5; }
+      .axis-label { font-size: 17px; fill: var(--sub); font-family: 'Malgun Gothic', sans-serif; }
+      .x-label { font-size: 20px; fill: var(--text); font-weight: 700; font-family: 'Malgun Gothic', sans-serif; }
+      .val-label { font-size: 18px; font-weight: 700; font-family: 'Malgun Gothic', sans-serif; }
+    </style>
+  </head>
+  <body>
+    <div class="frame">
+      <h2>3주 따라가 보면 갈립니다</h2>
+      <p class="sub">해외 최고 시간당 조회수, 단위는 만</p>
+
+      <div class="legend">
+        <div class="legend-item"><span class="dot" style="background:#2eaae4"></span>Haaland 밈챌린지</div>
+        <div class="legend-item"><span class="dot" style="background:#16293f"></span>Animal Hospital</div>
+        <div class="legend-item"><span class="dot" style="background:#a5a5a2"></span>Be Kind 힐링숏폼</div>
+      </div>
+
+      <svg viewBox="0 0 1200 560" preserveAspectRatio="xMidYMid meet">
+        <!-- grid -->
+        <line class="grid-line" x1="130" y1="480" x2="1160" y2="480" />
+        <line class="grid-line" x1="130" y1="380" x2="1160" y2="380" stroke-dasharray="5,6" />
+        <line class="grid-line" x1="130" y1="280" x2="1160" y2="280" stroke-dasharray="5,6" />
+        <line class="grid-line" x1="130" y1="180" x2="1160" y2="180" stroke-dasharray="5,6" />
+        <line class="grid-line" x1="130" y1="80" x2="1160" y2="80" stroke-dasharray="5,6" />
+
+        <text class="axis-label" x="112" y="486" text-anchor="end">0</text>
+        <text class="axis-label" x="112" y="386" text-anchor="end">20만</text>
+        <text class="axis-label" x="112" y="286" text-anchor="end">40만</text>
+        <text class="axis-label" x="112" y="186" text-anchor="end">60만</text>
+        <text class="axis-label" x="112" y="86" text-anchor="end">80만</text>
+
+        <!-- Be Kind : 67.2 -> 27.1 -> 27.1 -->
+        <polyline points="290,144 645,344 1000,344" fill="none" stroke="#a5a5a2" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+        <circle cx="290" cy="144" r="8" fill="#a5a5a2" />
+        <circle cx="645" cy="344" r="8" fill="#a5a5a2" />
+        <circle cx="1000" cy="344" r="8" fill="#a5a5a2" />
+        <text class="val-label" fill="#8d8d8a" x="290" y="126" text-anchor="middle">67.2</text>
+        <text class="val-label" fill="#8d8d8a" x="1000" y="374" text-anchor="middle">27.1</text>
+
+        <!-- Animal Hospital : 52.7 -> 40.5 -> 40.0 -->
+        <polyline points="290,217 645,278 1000,280" fill="none" stroke="#16293f" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+        <circle cx="290" cy="217" r="8" fill="#16293f" />
+        <circle cx="645" cy="278" r="8" fill="#16293f" />
+        <circle cx="1000" cy="280" r="8" fill="#16293f" />
+        <text class="val-label" fill="#16293f" x="290" y="249" text-anchor="middle">52.7</text>
+        <text class="val-label" fill="#16293f" x="1000" y="310" text-anchor="middle">40.0</text>
+
+        <!-- Haaland : 60.9 -> 71.3 -> 70.4 -->
+        <polyline points="290,176 645,124 1000,128" fill="none" stroke="#2eaae4" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+        <circle cx="290" cy="176" r="9" fill="#2eaae4" />
+        <circle cx="645" cy="124" r="9" fill="#2eaae4" />
+        <circle cx="1000" cy="128" r="11" fill="#2eaae4" stroke="#ffffff" stroke-width="3" />
+        <text class="val-label" fill="#1c8fc4" x="290" y="207" text-anchor="middle">60.9</text>
+        <text class="val-label" fill="#1c8fc4" x="645" y="106" text-anchor="middle">71.3</text>
+        <text class="val-label" fill="#1c8fc4" x="1000" y="110" text-anchor="middle">70.4</text>
+
+        <text class="x-label" x="290" y="522" text-anchor="middle">1주차</text>
+        <text class="x-label" x="645" y="522" text-anchor="middle">2주차</text>
+        <text class="x-label" x="1000" y="522" text-anchor="middle">3주차 (이번 주)</text>
+      </svg>
+
+      <p class="note">
+        1주차만 봤으면 Be Kind를 1등으로 골랐을 겁니다. 그때는 제일 높았으니까요.
+        근데 다음 주에 반토막 났고, 그 아래 있던 Haaland가 3주 내내 버텼습니다.
+      </p>
+    </div>
+  </body>
+</html>
