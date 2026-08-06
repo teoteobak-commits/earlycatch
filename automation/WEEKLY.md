@@ -284,6 +284,31 @@ curl -s -X POST "https://api.telegram.org/bot$TELEGRAM_BOT_TOKEN/sendDocument" \
 
 응답에서 `result.document.file_id` 를 기록한다. **이게 핵심이다** — 초안을 공개 저장소에 안 올리는 대신 텔레그램에 보관하고, 발행 신호가 오면 그 file_id 로 다시 받아간다.
 
+### 8-3. 초안을 본문 메시지로도 보낸다 (필수)
+
+**문서만 보내면 안 된다.** 텔레그램 모바일 앱의 `.md` 미리보기는 UTF-8 을 인식하지 못해 한글이 전부 깨져 보인다(2026-08-06 확인). 파일 자체는 멀쩡하지만 사용자가 폰에서 읽을 수가 없다. 일반 메시지는 한글이 정상이므로 본문으로도 보낸다.
+
+3500자씩 잘라서 보낸다. 문단 중간에서 자르지 말고 줄 단위로 끊는다.
+
+```python
+import os, urllib.request, urllib.parse
+t = open(f'/tmp/draft-{TODAY}.md', encoding='utf-8').read()
+tok, cid = os.environ['TELEGRAM_BOT_TOKEN'], os.environ['TELEGRAM_CHAT_ID']
+parts, cur = [], ""
+for line in t.splitlines(True):
+    if len(cur) + len(line) > 3500:
+        parts.append(cur); cur = line
+    else:
+        cur += line
+if cur: parts.append(cur)
+for i, p in enumerate(parts, 1):
+    head = f"[TEO] 초안 본문 {i}/{len(parts)}\n\n"
+    data = urllib.parse.urlencode({'chat_id': cid, 'text': head + p}).encode()
+    urllib.request.urlopen(f"https://api.telegram.org/bot{tok}/sendMessage", data)
+```
+
+문서(8-2)는 그대로 유지한다. 승인 루틴이 `file_id` 로 원본을 되받아야 하기 때문이다. **문서는 기계용, 본문은 사람용이다.**
+
 ---
 
 ## 9. 상태 파일 커밋
