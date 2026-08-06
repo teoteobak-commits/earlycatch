@@ -13,6 +13,7 @@
     radar/data/YYYY-MM-DD.json     원자료
     radar/digest/YYYY-MM-DD.md     읽을 것
 """
+import html
 import io
 import json
 import re
@@ -77,6 +78,75 @@ def from_atom(url, source, kind, limit=15):
             "url": link.get("href") if link is not None else "",
             "when": (e.findtext("a:published", "", ATOM) or "")[:10],
         })
+        if len(out) >= limit:
+            break
+    return out
+
+
+# 4chan 상설 스레드(제너럴) 패턴 — 매일 같은 제목으로 다시 선다
+GENERAL = re.compile(r"^/\w+/", re.I)   # 4chan 관례상 /xxx/ 로 시작하면 상설 스레드다
+
+
+def from_4chan(board, limit=12):
+    """4chan 은 공식 읽기 전용 JSON API 가 있다. 답글 많은 순으로 본다.
+
+    /pol/ 은 넣지 않는다. 극단 정치판이라 화제 신호 대비 잡음이 너무 크다.
+    """
+    d = json.loads(fetch(f"https://a.4cdn.org/{board}/catalog.json"))
+    th = [x for page in d for x in page.get("threads", [])]
+    th.sort(key=lambda x: -(x.get("replies") or 0))
+    out = []
+    for x in th:
+        if len(out) >= limit:
+            break
+        raw = x.get("sub") or x.get("com") or ""
+        # /smg/ - Stock Market General 처럼 매일 반복되는 상설 스레드는 그날의 화제가 아니다
+        if GENERAL.match(re.sub(r"<[^>]+>", " ", raw).strip()):
+            continue
+        title = html.unescape(re.sub(r"<[^>]+>", " ", raw))
+        title = re.sub(r"\s+", " ", title).strip()
+        if len(title) < 5:
+            continue
+        out.append({
+            "source": f"4chan /{board}/", "kind": "커뮤니티", "title": title[:120],
+            "url": f"https://boards.4chan.org/{board}/thread/{x.get('no')}",
+            "when": "", "score": x.get("replies"),
+        })
+    return out
+
+
+def from_lemmy(community, limit=10):
+    """레딧 대체재. 커뮤니티를 지정하지 않으면 밈만 올라와서 신호가 안 된다."""
+    url = ("https://lemmy.world/api/v3/post/list?sort=TopDay&limit=%d&community_name=%s"
+           % (limit, community))
+    d = json.loads(fetch(url))
+    return [{
+        "source": f"Lemmy {community}", "kind": "커뮤니티",
+        "title": p["post"]["name"], "url": p["post"].get("url") or "",
+        "when": (p["post"].get("published") or "")[:10],
+        "score": p["counts"]["score"],
+    } for p in d.get("posts", [])[:limit]]
+
+
+# 공지·안내 글은 화제가 아니다
+NOTICE = re.compile(r"이용\s*안내|공지|이벤트 안내|운영원칙|자료안내|패치 자동설치")
+
+
+def from_html_titles(url, pattern, source, encoding="utf-8", limit=15):
+    """API 가 없는 커뮤니티는 목록 페이지에서 제목만 긁는다.
+
+    본문을 가져오지 않고 제목만 본다. 재배포가 아니라 무엇이 화제인지 세는 용도다.
+    """
+    h = fetch(url).decode(encoding, "replace")
+    out = []
+    for m in re.findall(pattern, h, re.S):
+        title = html.unescape(re.sub(r"<[^>]+>", " ", m))
+        title = re.sub(r"\[\d+\]\s*$", "", title).strip()   # 꼬리 댓글수
+        title = re.sub(r"\s+", " ", title)
+        if not (4 < len(title) < 80) or NOTICE.search(title):
+            continue
+        out.append({"source": source, "kind": "커뮤니티", "title": title,
+                    "url": "", "when": ""})
         if len(out) >= limit:
             break
     return out
@@ -177,6 +247,17 @@ SOURCES = [
         "https://www.techmeme.com/feed.xml", "Techmeme", "기술")),
     ("ProductHunt", lambda: from_atom(
         "https://www.producthunt.com/feed", "ProductHunt", "신제품")),
+
+    # 익명·투표 기반 커뮤니티 — 화제가 제일 먼저 뜨는 곳
+    ("4chan /g/", lambda: from_4chan("g")),
+    ("4chan /biz/", lambda: from_4chan("biz")),
+    ("4chan /v/", lambda: from_4chan("v")),
+    ("Lemmy 기술", lambda: from_lemmy("technology")),
+    ("디시 실베", lambda: from_html_titles(
+        "https://gall.dcinside.com/board/lists/?id=dcbest",
+        r'class="gall_tit[^"]*"[^>]*>\s*<a[^>]*>(.*?)</a>', "디시 실베")),
+    ("에펨코리아", lambda: from_html_titles(
+        "https://www.fmkorea.com/best", r"<h3[^>]*>(.*?)</h3>", "에펨코리아")),
 ]
 
 REDDIT_FEEDS = [
@@ -197,7 +278,11 @@ FAMILY = {
     "구글트렌드 영국": "검색", "구글트렌드 일본": "검색",
     "위키백과 조회수": "관심",
     "ProductHunt": "신제품",
-    "레딧 전체": "커뮤니티", "레딧 무슨일이야": "커뮤니티", "레딧 세계뉴스": "커뮤니티",
+    "레딧 전체": "커뮤니티(서구)", "레딧 무슨일이야": "커뮤니티(서구)",
+    "레딧 세계뉴스": "커뮤니티(서구)",
+    "4chan /g/": "커뮤니티(서구)", "4chan /biz/": "커뮤니티(서구)",
+    "4chan /v/": "커뮤니티(서구)", "Lemmy technology": "커뮤니티(서구)",
+    "디시 실베": "커뮤니티(한국)", "에펨코리아": "커뮤니티(한국)",
 }
 
 # 매체 이름은 제목 꼬리표로 붙을 뿐이라 화제가 아니다
