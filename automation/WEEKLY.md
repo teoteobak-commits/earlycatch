@@ -52,8 +52,16 @@ keywords.json 의 각 키워드에 `trackQuery` 가 있다. **매주 이 질의�
 
 | 플랫폼 | 도구 | 이번 주 값으로 쓸 것 |
 | --- | --- | --- |
-| youtube | `vidiq_youtube_search` 에 trackQuery | 상위 결과의 시간당 조회수 |
+| youtube | `vidiq_trending_videos { videoFormat:'short', videoTitleLanguage:'en', sortBy:'vph', limit:25 }` 결과에서 trackQuery 에 해당하는 포맷을 **눈으로 찾는다** | 그 영상의 시간당 조회수 |
 | instagram / tiktok | `vidiq_instagram_tiktok_outlier_search` 의 query 에 trackQuery, `datePostedAfter` 는 최근 14일 | 상위 결과의 평소 대비 배율 |
+
+> **계측기를 바꾸지 마라. 이게 이 루틴에서 제일 자주 나는 사고다.**
+>
+> 2026-08-06 실행에서 유튜브 추적에 `vidiq_youtube_search` 를 썼다가 데이터가 망가졌다. 검색은 관련도순이라 오래된 평시 영상이 섞여 vph 가 수십~수백 배 낮게 잡힌다. 같은 밈이 **검색 18,651 / 트렌딩 피드 728,184** 로 나왔다. 이걸 같은 계열에 넣으면 40만에서 1,539로 폭락한 것처럼 보이는데, 실제로는 자를 바꿔 잰 것뿐이다.
+>
+> 1-B 의 탐색 패스 (a) 가 어차피 같은 호출이니 **그 결과를 재활용하면 크레딧도 안 든다.** 추적을 먼저 하더라도 (a) 를 먼저 부르고 그 응답을 추적과 탐색에 같이 쓰면 된다.
+>
+> **트렌딩 피드에서 못 찾으면 `null` 이다.** 검색으로 대신 재서 채우지 마라. 빈칸이 틀린 숫자보다 낫다.
 
 규칙 네 가지.
 

@@ -19,7 +19,7 @@
   "notes": {
     "excluded": "남의 영상을 모아 재편집하는 '클립 컴필레이션' 계열은 조회수가 높아도 저작권 침해 소지가 있어 목록에서 제외합니다.",
     "community": "Reddit은 인증 없는 접근이 차단되어(403) 이번 회차에도 반영하지 못했습니다.",
-    "tracking": "history 는 매주 한 칸씩 늘어납니다. 그 주에 재측정을 못 하면 숫자를 지어내지 않고 null 을 넣습니다. null 이 2주 연속이면 추적을 중단합니다. [8월 2주차 발견] youtube 트래킹에 vidiq_youtube_search 를 trackQuery 그대로 쓰면 관련도순 정렬이라 오래된 평시 영상이 섞여 vph 가 실제보다 크게 낮게 잡힐 수 있음(예: haaland-meme 이번 주 첫 측정 18,651 vs 같은 시각 vidiq_trending_videos 일반 피드에서 발견한 동일 밈 영상 728,184). haaland-meme 은 후자 값으로 대체했으나 animal-hospital, mario-family-shorts 는 예산 소진으로 교차검증하지 못해 트래킹값이 저평가됐을 가능성이 있음 — 다음 주 vidiq_trending_videos + titleQuery 로 교차검증 권장. instagram/tiktok 트래킹(vidiq_instagram_tiktok_outlier_search)은 매주 동일 도구라 비교적 일관됨."
+    "tracking": "history 는 매주 한 칸씩 늘어난다. 재측정을 못 하면 숫자를 지어내지 않고 null 을 넣는다.\n계측기가 다르면 그것도 '측정 못 함'이다. 유튜브 vph 는 vidiq_trending_videos 상위 피드에서 잰 값과 vidiq_youtube_search 결과에서 잰 값이 수십~수백 배 차이 난다(2026-08-06 확인: 동일 밈이 검색 18,651 vs 피드 728,184). 서로 다른 자로 잰 숫자를 같은 계열에 넣으면 하락처럼 보인다. 반드시 같은 도구로 재고, 못 재면 null.\ninstagram/tiktok 은 매주 vidiq_instagram_tiktok_outlier_search 로 동일해서 이 문제가 없다."
   },
   "keywords": [
     {
@@ -83,15 +83,16 @@
       "hype": {
         "level": "좀 애매",
         "metric": "시간당 조회수",
-        "value": 1539,
+        "value": 400167,
         "weeksTracked": 4,
         "history": [
           527000,
           405000,
           400167,
-          1539
+          null
         ],
-        "trend": "측정치 급락 — 방법론 재검증 필요(notes.tracking 참조), 등급은 유지"
+        "trend": "이번 주 측정 불가(계측기 불일치) — 등급 유지",
+        "lastValidWeek": 3
       },
       "korea": {
         "status": "없음",
@@ -129,13 +130,14 @@
       "hype": {
         "level": "아직 모름",
         "metric": "시간당 조회수",
-        "value": 10336,
+        "value": 300028,
         "weeksTracked": 2,
         "history": [
           300028,
-          10336
+          null
         ],
-        "trend": "측정치 하락 — 방법론 재검증 필요(notes.tracking 참조)"
+        "trend": "이번 주 측정 불가(계측기 불일치) — 등급 유지",
+        "lastValidWeek": 1
       },
       "korea": {
         "status": "없음",
