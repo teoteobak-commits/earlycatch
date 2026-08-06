@@ -1,5 +1,5 @@
 {
- "collectedAt": "2026-08-06T08:17:50.358878+00:00",
+ "collectedAt": "2026-08-06T08:19:33.344474+00:00",
  "items": [
   {
    "source": "위키백과 조회수",
@@ -599,7 +599,7 @@
    "title": "6976",
    "url": "",
    "when": "",
-   "traffic": "200+"
+   "traffic": "500+"
   },
   {
    "source": "구글뉴스 세계",
@@ -709,23 +709,16 @@
   {
    "source": "구글뉴스 한국",
    "kind": "뉴스",
-   "title": "서울시 부동산 토론회서 “전월세 매물 말라…공급 규제 완화해야” - KBS 뉴스",
-   "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5kNjhjZl90T0hhMjNoZUowaVlSbkxuUk16VldWREVCbXJjVzQyRXBldU5kZFVqbHMwRHZhNXBMc3NVSmRWWGtDaVBSNV9GX2ZuU2lKb21ud0IxUVE?oc=5",
+   "title": "10채 중 2채 사라져…실거주 중심 세제개편, 저무는 전세시장 - 매일경제",
+   "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBTLWo2MmtNMUlQTnNiWEFYMXFUWFBnZHZzUHpwNi1OTG9hd2ZWLS1sSENrRXR6Z3NoaXluM3VIQkVEcVhWbkN4WnpXUlJRUGd5SllLX2M0aGU?oc=5",
    "when": "Thu, 06 Aug 2026"
   },
   {
    "source": "구글뉴스 한국",
    "kind": "뉴스",
-   "title": "김민석 “명청대전 없으면 총리 왜 그만두고 나왔겠나” - 한겨레",
-   "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBESEIxX1E0dTVHRkhmRkJMT1pqeHdPc01sWkN0dU5aQXh0SmFfMHhSX2xxalV3NEw4OTlzMGt6aklOQmdTVVhjdlZ2dmIyenB1YW9ZVHFqYkhRLXcwN2dkdmhHQW1XWG42Y1RoeWxzWmszbGNt?oc=5",
+   "title": "이 대통령 “국가적 기후재난 상황…폭염 재난 대응 총력 집중” - KBS 뉴스",
+   "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5xd01KWW41VHVvZXlZNG5vaEFaQ3VMeVZnbndRNFJIS0szRDJkbzBPdXlFblh4QUZhMEZwbGprTUFmLUNfRXR2bk03Ml82bnNBVTZuci1IYWdPaG8?oc=5",
    "when": "Thu, 06 Aug 2026"
-  },
-  {
-   "source": "구글뉴스 한국",
-   "kind": "뉴스",
-   "title": "동북아 기록적 폭염…한국 \"국가 재난\" 규정, 일본도 열사병 속출 - voakorea.com",
-   "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOWV9Relp2RExQTkQ1bXJHTjNYclVydlVNRkd4eGVoSlROVDRER2lsLXc0VUZfdXNnY0MwV000VEttM29vRHYyNXkxemtmM2pSTHdpVGFNN3RLTHVDM2FGWDB6bkphaHp3QnlRSW5lSTRmZXdXaDE0VjB2QTFrVHZYRXNqTHpGQTFoMXh0STdCQkJlWXlV0gGXAUFVX3lxTE05dWh0dFo3REpvUzZNYTZCcEJpU3Jpcjh0S1NEU29iMzVObk1DLVhpbWZhVGgxNUh6NUxoQm41endjTG5EM2lDUVBxaXpudkc0YTFOeHBoQkFzZ2hMc2pLLXBlQXQyYXM2NTFIYmVINDFlX294bkROUzRwRjE4Zlo1UEd2cFZQUEdNcklPV180czE3d0FpM1E?oc=5",
-   "when": "Wed, 05 Aug 2026"
   },
   {
    "source": "구글뉴스 한국",
@@ -751,8 +744,22 @@
   {
    "source": "구글뉴스 한국",
    "kind": "뉴스",
+   "title": "태풍도 못 뚫는 한반도 폭염, 3개 다 비켜간다…오늘도 39도 - 한겨레",
+   "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBKOFFlakxrZ1VBY1FzNmtLZDNBZkhlYVU5cmpjLTNlX201MkVnR1Z2T05EazBKWnQ4SHdoSW5nNFlVdURRbXJIRUp3aVpFaEJRa2V4cGs5dFZITExCSjRYMTNYbHdEeWFBTGYzTQ?oc=5",
+   "when": "Thu, 06 Aug 2026"
+  },
+  {
+   "source": "구글뉴스 한국",
+   "kind": "뉴스",
    "title": "이 대통령 “쿠데타 3번 육사, 책임 안 져…또 할 수도” 통합사관학교 속도전 - 한겨레",
    "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE4zckZRN0tMQUUzalowRTE0MGp0U2hYeVN5RXo2S0NFWG9oYjhNZ01tWnRhM05ZeWxGaExINy05UUIxV0k1bzFGcW91RGdiSmNMSTdMYjdoOFlxME9ad0lZRlVuVnZTMFJkb1ZF?oc=5",
+   "when": "Thu, 06 Aug 2026"
+  },
+  {
+   "source": "구글뉴스 한국",
+   "kind": "뉴스",
+   "title": "김민석 “정청래 되면 당 흔들”, 정청래 “나쁜 사람 뽑지 말자”…민주당 전당대회 공방 격화 - 경향신문",
+   "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE41SU41NVY5anI5Qmx0TG9hcFhoYjdNTEJDMkVFWWZRMlhNZzhDY0kydGI5WHotUmMzS05yWThWNEdWRHRtSTRFd3ZWODA0Z2dnT291cEJkOHNyd9IBX0FVX3lxTE8zUmEzTER0UVhOOTFCd3NvRzZvREIxaHBIa19teEYxckRjM3pmMlNESDRMYkpuWEpjOTVWUURoSkRwTXQ0Z2Z4NzRIT2RzX0x6SEZKUjRhSmdhczFzMW53?oc=5",
    "when": "Thu, 06 Aug 2026"
   },
   {
@@ -765,13 +772,6 @@
   {
    "source": "구글뉴스 한국",
    "kind": "뉴스",
-   "title": "극한 폭염 7일 금요일이 '절정'…주말엔 조금 나아진다 - 한국경제",
-   "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1nSlVhNnlqLXJaZ1NxOHh3NXJqcjFKRDN4OTlUSWYtS1pqdWhKQ3hVcDFWZ3RTbXQzRm5qc2R2UXlRX3lJSkpHMHVaOW5CZXlSeTVla2Jmc2lfQQ?oc=5",
-   "when": "Thu, 06 Aug 2026"
-  },
-  {
-   "source": "구글뉴스 한국",
-   "kind": "뉴스",
    "title": "국힘 지도부, ’돌려차기 실언’ 서범수에 “윤리위 엄중조치“ - 연합뉴스TV",
    "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1aU3BOUXlrYmtKVmFQUjZHWXBYY2dnb2VjaTVjNm9laVAwMkFtbWs3R1I2OWdvUlVMMGFwTDlIc3NpRzAySXNPLXBDckZWUVp3WWEtUzJ5WmNGOXphRnBTOFhPTFhGVjg?oc=5",
    "when": "Thu, 06 Aug 2026"
@@ -779,30 +779,30 @@
   {
    "source": "구글뉴스 한국",
    "kind": "뉴스",
-   "title": "유럽 폭염·가뭄에 전력 제한…냉각수 부족에 원전도 차질 - KBS 뉴스",
-   "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE12S1dkZjRLLVh5QmJObW5XTVplMngwbUxIODRSanlCbDR1dGZ5SkVTVmRpUnFSTlB3THNVVno5UXZqVl9zUzNJcUo2OE52b0xSN00yQXZoZzU1U1E?oc=5",
+   "title": "日, 사상 첫 소비세 인하…식료품 8%서 1%로 - 네이트",
+   "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9PLTViSEJJVU1fekg4QlQ3NDgtYXVTaGtJUTJJVVJjc2F4NENxR3FJY05WV1VsM0FySTRMaVRfRkI4V3BxVTZidHpPdHVfelZrOEdMeDJxc2M0b0Y4ZTNQRQ?oc=5",
    "when": "Thu, 06 Aug 2026"
   },
   {
    "source": "구글뉴스 한국",
    "kind": "뉴스",
-   "title": "이란, 걸프국 인질 삼아 '불바다' 경고…트럼프 공습 보류 - 연합뉴스",
-   "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE8wbGpjZmpTVHhlSFVYV2hmRHc4QkJ5dXpleGN0MlZvdHpBNVlFM0hrTjBmUWZZT2NpSEN3MGNDaW1YM3JGRXRMa0pMUm1qVHZ1RkZVeDFZRWhRZzDSAWBBVV95cUxOZE90MXRjYUFHalVudWtNZXlZLVJ4eDRzVktRVjRCeVdPVHZVQWM5cWVoUXNQZWhNU2E0ZndHcUZTNmk0M09iMEMzZlNOZjdjTjB6RVRBeFExNHpzOW40akI?oc=5",
+   "title": "이란 \"오만과 협정 최종 확정단계\"…호르무즈 통제 '눈앞' [이상은의 워싱턴나우] - 한국경제",
+   "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBPakgwNTFSYzhwOGpLV1pmT3MwWllmemtONFcxRkFfVW1fWjQwWk5jVHJ0N3R6VUNvWTlrNjdGWHRDRnhUOW5DZVlRUGlCUm5qLXdqd3QxQUNfQQ?oc=5",
+   "when": "Wed, 05 Aug 2026"
+  },
+  {
+   "source": "구글뉴스 한국",
+   "kind": "뉴스",
+   "title": "\"우크라 화물기 근처에 폭발물 장착 드론\"…獨공항 '화들짝'(종합) - 연합뉴스",
+   "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5wUlBoOFdwNjExWHVUVmRhZ1RtNHRybHAzMjFwUExOdmlZZ2RKMWozZDdjN3JEcG10V1RmSUxGTGlyMzFnT01SY0FVT0JzcGpaSjk3VlNsZ0ZUQVHSAWBBVV95cUxOZF8xaS0yRm9YTFY2M3VkdEE3Y2xmSGFaZ0NyVjE4QllseUEzOVE4OV9DTEJJMTFmMHl6a0tDY3VMbHU0aWdXSTV2dXBqVnVwYlhESVhVRFlzZEJNYS1XVXg?oc=5",
+   "when": "Wed, 05 Aug 2026"
+  },
+  {
+   "source": "구글뉴스 한국",
+   "kind": "뉴스",
+   "title": "폭염·가뭄 덮친 유럽…원전 출력 제한에 수력발전도 감소 - 신아일보",
+   "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1SeDVJQ052M2t5cGJtREhxdFFvck1vbjkwWUR3VXM5NFZTWUppRXdvLU1kSjNEYjdRVWFaS3VTakgtYV9qRHBwS0N3bDd4SXd6VURubHhTWDdHMjRLcXV6SWpMam91N0xLUC1XWFdQU1Q?oc=5",
    "when": "Thu, 06 Aug 2026"
-  },
-  {
-   "source": "구글뉴스 한국",
-   "kind": "뉴스",
-   "title": "폭발물 싣고 독일 공항 날아든 드론···경찰 “기폭 장치 제거” - 경향신문",
-   "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1WS0FOM3RRX2JDNEZWTXpCc2lMMDFCaVJ1NmlVOFQ0NXBSZ1M2Q3B1TVlPYy1SMUxPMC0wTThVX01rd2dnQlA5N2o5TTlyNlY1bFF2OEoyTE13UdIBX0FVX3lxTE12bng0UngtcWxZNTRDLWlMWGlVRzFhblk5cDNtcnVzUGg5QmdCNGgxYzFHRm05V0RCRmcxV3JtbDE5bmRBOHN1elp1TEtJRkdvaUxaMF81aHZZYnBTbXJ3?oc=5",
-   "when": "Wed, 05 Aug 2026"
-  },
-  {
-   "source": "구글뉴스 한국",
-   "kind": "뉴스",
-   "title": "“재정 따위 알 게 뭐야” 日 소비세 인하론 뒤엔 ‘지원 사각지대’의 분노 - 국민일보",
-   "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5vbkw5cE1SUUY1Tk5Uc3NQb0pJQk1WYlNHMmFBdFJXQmZaY29xWld6Rmw1S0E3MUpTdGVtV3Q1cVNxdWNnZzJkbGU3YVM1NmlVSXllRTVIX0lNYXBkb3pvcWRGclYtbmvSAWxBVV95cUxNYmp3VXg0ekJaamxYOW5iWV9JUTNNX053clU5X0cwNGp3XzNEal8tblVOV2dkc0ZaZnlQTjBjNW9sbFdDRU5qMnk4NExmc2pSSUs2TTZGbGI2Sm81a25TM09SVC1TTzBTZnNZSFE?oc=5",
-   "when": "Wed, 05 Aug 2026"
   },
   {
    "source": "구글뉴스 한국",
@@ -1024,37 +1024,9 @@
   {
    "source": "ProductHunt",
    "kind": "신제품",
-   "title": "Brandfetch MCP",
-   "url": "https://www.producthunt.com/products/brandfetch",
-   "when": "2026-08-05"
-  },
-  {
-   "source": "ProductHunt",
-   "kind": "신제품",
-   "title": "UCP Radar",
-   "url": "https://www.producthunt.com/products/ucp-radar",
-   "when": "2026-08-05"
-  },
-  {
-   "source": "ProductHunt",
-   "kind": "신제품",
-   "title": "Cloudflare OS",
-   "url": "https://www.producthunt.com/products/cloudflare",
-   "when": "2026-08-05"
-  },
-  {
-   "source": "ProductHunt",
-   "kind": "신제품",
    "title": "Glyphi: Speed Reader",
    "url": "https://www.producthunt.com/products/glyphi-speed-reader",
    "when": "2026-08-05"
-  },
-  {
-   "source": "ProductHunt",
-   "kind": "신제품",
-   "title": "Website to Markdown API",
-   "url": "https://www.producthunt.com/products/website-to-markdown-api",
-   "when": "2026-07-31"
   },
   {
    "source": "ProductHunt",
@@ -1066,15 +1038,8 @@
   {
    "source": "ProductHunt",
    "kind": "신제품",
-   "title": "AI Spend Console by Rippling",
-   "url": "https://www.producthunt.com/products/rippling",
-   "when": "2026-07-14"
-  },
-  {
-   "source": "ProductHunt",
-   "kind": "신제품",
-   "title": "Muse Code",
-   "url": "https://www.producthunt.com/products/meta",
+   "title": "UCP Radar",
+   "url": "https://www.producthunt.com/products/ucp-radar",
    "when": "2026-08-05"
   },
   {
@@ -1087,23 +1052,16 @@
   {
    "source": "ProductHunt",
    "kind": "신제품",
-   "title": "Ticketdesk AI",
-   "url": "https://www.producthunt.com/products/ticketdesk-ai",
-   "when": "2026-07-30"
-  },
-  {
-   "source": "ProductHunt",
-   "kind": "신제품",
-   "title": "Ododok",
-   "url": "https://www.producthunt.com/products/ododok",
-   "when": "2026-08-04"
-  },
-  {
-   "source": "ProductHunt",
-   "kind": "신제품",
-   "title": "Shieldstral",
-   "url": "https://www.producthunt.com/products/mistral-7b",
+   "title": "Annotate",
+   "url": "https://www.producthunt.com/products/annotate-8",
    "when": "2026-08-05"
+  },
+  {
+   "source": "ProductHunt",
+   "kind": "신제품",
+   "title": "AI Spend Console by Rippling",
+   "url": "https://www.producthunt.com/products/rippling",
+   "when": "2026-07-14"
   },
   {
    "source": "ProductHunt",
@@ -1115,15 +1073,57 @@
   {
    "source": "ProductHunt",
    "kind": "신제품",
-   "title": "Chute",
-   "url": "https://www.producthunt.com/products/chute-better-airdrop",
+   "title": "Shieldstral",
+   "url": "https://www.producthunt.com/products/mistral-7b",
    "when": "2026-08-05"
   },
   {
    "source": "ProductHunt",
    "kind": "신제품",
-   "title": "Annotate",
-   "url": "https://www.producthunt.com/products/annotate-8",
+   "title": "Brandfetch MCP",
+   "url": "https://www.producthunt.com/products/brandfetch",
+   "when": "2026-08-05"
+  },
+  {
+   "source": "ProductHunt",
+   "kind": "신제품",
+   "title": "Cloudflare OS",
+   "url": "https://www.producthunt.com/products/cloudflare",
+   "when": "2026-08-05"
+  },
+  {
+   "source": "ProductHunt",
+   "kind": "신제품",
+   "title": "Ticketdesk AI",
+   "url": "https://www.producthunt.com/products/ticketdesk-ai",
+   "when": "2026-07-30"
+  },
+  {
+   "source": "ProductHunt",
+   "kind": "신제품",
+   "title": "Website to Markdown API",
+   "url": "https://www.producthunt.com/products/website-to-markdown-api",
+   "when": "2026-07-31"
+  },
+  {
+   "source": "ProductHunt",
+   "kind": "신제품",
+   "title": "Muse Code",
+   "url": "https://www.producthunt.com/products/meta",
+   "when": "2026-08-05"
+  },
+  {
+   "source": "ProductHunt",
+   "kind": "신제품",
+   "title": "Ododok",
+   "url": "https://www.producthunt.com/products/ododok",
+   "when": "2026-08-04"
+  },
+  {
+   "source": "ProductHunt",
+   "kind": "신제품",
+   "title": "Chute",
+   "url": "https://www.producthunt.com/products/chute-better-airdrop",
    "when": "2026-08-05"
   },
   {
@@ -1148,7 +1148,7 @@
    "title": "Watches",
    "url": "https://boards.4chan.org/g/thread/109445001",
    "when": "",
-   "score": 261
+   "score": 262
   },
   {
    "source": "4chan /g/",
@@ -1321,14 +1321,6 @@
   {
    "source": "4chan /v/",
    "kind": "커뮤니티",
-   "title": "I have no hidden motives. Post Vidya shortstacks. Any game",
-   "url": "https://boards.4chan.org/v/thread/744726409",
-   "when": "",
-   "score": 612
-  },
-  {
-   "source": "4chan /v/",
-   "kind": "커뮤니티",
    "title": "fighting games",
    "url": "https://boards.4chan.org/v/thread/744727254",
    "when": "",
@@ -1340,7 +1332,15 @@
    "title": "Marvel Tokon",
    "url": "https://boards.4chan.org/v/thread/744725386",
    "when": "",
-   "score": 494
+   "score": 496
+  },
+  {
+   "source": "4chan /v/",
+   "kind": "커뮤니티",
+   "title": "Motherboard price increase by 50%",
+   "url": "https://boards.4chan.org/v/thread/744756134",
+   "when": "",
+   "score": 489
   },
   {
    "source": "4chan /v/",
@@ -1349,14 +1349,6 @@
    "url": "https://boards.4chan.org/v/thread/744610865",
    "when": "",
    "score": 488
-  },
-  {
-   "source": "4chan /v/",
-   "kind": "커뮤니티",
-   "title": "Motherboard price increase by 50%",
-   "url": "https://boards.4chan.org/v/thread/744756134",
-   "when": "",
-   "score": 487
   },
   {
    "source": "4chan /v/",
@@ -1404,7 +1396,7 @@
    "title": "Palworld",
    "url": "https://boards.4chan.org/v/thread/744770061",
    "when": "",
-   "score": 423
+   "score": 426
   },
   {
    "source": "4chan /v/",
@@ -1413,6 +1405,14 @@
    "url": "https://boards.4chan.org/v/thread/744739407",
    "when": "",
    "score": 409
+  },
+  {
+   "source": "4chan /v/",
+   "kind": "커뮤니티",
+   "title": "Grim Dawn - Fangs of Asterkarn",
+   "url": "https://boards.4chan.org/v/thread/744731112",
+   "when": "",
+   "score": 393
   },
   {
    "source": "Lemmy technology",
@@ -1452,7 +1452,7 @@
    "title": "Flock Employee Quits In Disgust, Saying the Company Is Silencing Protestors",
    "url": "https://futurism.com/future-society/flock-silence-protestors",
    "when": "2026-08-06",
-   "score": 215
+   "score": 216
   },
   {
    "source": "Lemmy technology",
@@ -1598,112 +1598,9 @@
    "title": "[더갤] 돈키호테 본사 \"대구 입점 계획 없어\"",
    "url": "",
    "when": ""
-  },
-  {
-   "source": "에펨코리아",
-   "kind": "커뮤니티",
-   "title": "요새 건설현장 근황",
-   "url": "",
-   "when": ""
-  },
-  {
-   "source": "에펨코리아",
-   "kind": "커뮤니티",
-   "title": "부산돌려차기 피해자 의견까지 정정해버림 ㄷㄷㄷ",
-   "url": "",
-   "when": ""
-  },
-  {
-   "source": "에펨코리아",
-   "kind": "커뮤니티",
-   "title": "청계천 근황",
-   "url": "",
-   "when": ""
-  },
-  {
-   "source": "에펨코리아",
-   "kind": "커뮤니티",
-   "title": "[SSG] 미쓰비시 유니 쿠루토가 KURUTOGA DIVE 다이브 수능 샤프 M5-5000 (76,900원) (무료)",
-   "url": "",
-   "when": ""
-  },
-  {
-   "source": "에펨코리아",
-   "kind": "커뮤니티",
-   "title": "축구협회장 선거 개정만 중요한 게 아니다, ‘진짜 혁신’은 ‘빌런 천국’ 심판 영역에 필요하다[SS포커스]",
-   "url": "",
-   "when": ""
-  },
-  {
-   "source": "에펨코리아",
-   "kind": "커뮤니티",
-   "title": "폴드8로 독서중인데 좋네요",
-   "url": "",
-   "when": ""
-  },
-  {
-   "source": "에펨코리아",
-   "kind": "커뮤니티",
-   "title": "ㅎㅂ?) 폴드8 사전구매 ai구독 혜택 (모아진 매거진 1년구독쿠폰)",
-   "url": "",
-   "when": ""
-  },
-  {
-   "source": "에펨코리아",
-   "kind": "커뮤니티",
-   "title": "[SSG] 미쓰비시 유니 쿠루토가 KURUTOGA DIVE 다이브 수능 샤프 M5-5000 (76,900원) (무료)",
-   "url": "",
-   "when": ""
-  },
-  {
-   "source": "에펨코리아",
-   "kind": "커뮤니티",
-   "title": "산업부장관 “성과급, 주총 승인 거치도록 상법 개정”",
-   "url": "",
-   "when": ""
-  },
-  {
-   "source": "에펨코리아",
-   "kind": "커뮤니티",
-   "title": "하루만에 20 정도 벌고 기분 째진 택시기사 아저씨",
-   "url": "",
-   "when": ""
-  },
-  {
-   "source": "에펨코리아",
-   "kind": "커뮤니티",
-   "title": "오래된 게임 소스코드 못 건드리는 이유.mp4",
-   "url": "",
-   "when": ""
-  },
-  {
-   "source": "에펨코리아",
-   "kind": "커뮤니티",
-   "title": "돌려차기 피해자 mbc 댓글 근황",
-   "url": "",
-   "when": ""
-  },
-  {
-   "source": "에펨코리아",
-   "kind": "커뮤니티",
-   "title": "ㅇㅎ) 그냥 차에서 내리는 전소미...gif",
-   "url": "",
-   "when": ""
-  },
-  {
-   "source": "에펨코리아",
-   "kind": "커뮤니티",
-   "title": "[속보] 중부내륙고속도로 양평방향 미상의 폭발물 발견",
-   "url": "",
-   "when": ""
-  },
-  {
-   "source": "에펨코리아",
-   "kind": "커뮤니티",
-   "title": "한국 양궁 최신 근황",
-   "url": "",
-   "when": ""
   }
  ],
- "failed": []
+ "failed": [
+  "에펨코리아: HTTPError HTTP Error 430: Unknown"
+ ]
 }

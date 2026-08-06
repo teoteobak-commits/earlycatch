@@ -313,6 +313,23 @@ def key_terms(title):
     return terms
 
 
+def history_streak(term, days=7):
+    """이 낱말이 최근 며칠 동안 며칠이나 걸렸는지 센다.
+
+    하루 반짝인지 계속 오르는지는 이걸로만 갈린다. 하루치 목록은
+    "오늘 뭐가 시끄럽나"까지고, 그 이상은 누적이 있어야 나온다.
+    """
+    hit = []
+    for f in sorted((ROOT / "data").glob("*.json"), reverse=True)[:days]:
+        try:
+            d = json.loads(f.read_text(encoding="utf-8"))
+        except Exception:
+            continue
+        if any(term in it.get("title", "") for it in d.get("items", [])):
+            hit.append(f.stem)
+    return sorted(hit)
+
+
 def cross_signals(items, min_families=2):
     """서로 다른 *계열* 몇 곳에 같은 낱말이 걸렸는지 센다."""
     hits = defaultdict(lambda: {"fams": set(), "srcs": set(), "titles": []})
@@ -374,13 +391,30 @@ def write_digest(items, failed, today):
     L.append("")
     if rows:
         for term, v in rows[:20]:
-            L.append(f"**{term}** — {len(v['fams'])}계열 "
+            days = history_streak(term)
+            if len(days) <= 1:
+                mark = "새로 등장"
+            elif len(days) >= 3:
+                mark = f"**{len(days)}일 연속**"
+            else:
+                mark = f"{len(days)}일째"
+            L.append(f"**{term}** — {mark} · {len(v['fams'])}계열 "
                      f"({' / '.join(sorted(v['fams']))}) · {len(v['srcs'])}개 소스")
             for t in v["titles"][:3]:
                 L.append(f"  - {t}")
             L.append("")
     else:
         L += ["교차로 걸린 낱말이 없다. 오늘은 소스마다 딴 얘기를 하고 있다는 뜻이다.", ""]
+
+    fresh = [(term, v) for term, v in rows if len(history_streak(term)) <= 1]
+    lasting = [(term, v) for term, v in rows if len(history_streak(term)) >= 3]
+    if fresh or lasting:
+        L += ["---", "", "## 한눈에", ""]
+        if fresh:
+            L.append("**오늘 새로 뜬 것**: " + ", ".join(t for t, _ in fresh[:10]))
+        if lasting:
+            L.append("**사흘 넘게 버티는 것**: " + ", ".join(t for t, _ in lasting[:10]))
+        L.append("")
 
     L += ["---", "", "## 소스별", ""]
     for src in sorted(by_src):
