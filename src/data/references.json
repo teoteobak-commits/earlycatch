@@ -1,7 +1,6 @@
 {
   "purpose": "오디언스 추정을 뒷받침할 외부 공신력 자료. vidiq는 내가 소유하지 않은 채널의 인구통계를 주지 않으므로, 플랫폼 단위 기준선을 여기서 가져와 추정의 방향을 잡는다.",
   "caution": "여기 수치는 '한국 전체에서 그 플랫폼을 쓰는 사람'의 분포다. 특정 콘텐츠를 본 사람의 분포가 아니다. 개별 키워드의 audience 를 이걸로 확정하면 안 되고, 추정이 플랫폼 기준선과 크게 어긋날 때 다시 생각하는 용도로만 쓴다.",
-
   "platformBaseline": {
     "source": "DataReportal — Digital 2026: South Korea (Simon Kemp, 2025-11-08)",
     "url": "https://datareportal.com/reports/digital-2026-south-korea",
@@ -31,9 +30,8 @@
         "ageBreakdown": null
       }
     },
-    "gap": "연령대별 분포는 이 보고서에 없다. 현재 keywords.json 의 audience.age 는 전부 추론값이며 이를 뒷받침할 측정 자료를 아직 확보하지 못했다."
+    "gap": "연령대별 분포는 이 보고서에 없다. 현재 keywords.json 의 audience.age 는 전부 추론값이다. 네이버 데이터랩(연령·성별 분리 가능)을 붙이려 했으나 2026-08-06 확인 결과 신규 등록이 막혀 있다. 당분간 연령은 추정으로 남는다. 블로그와 화면에서 '추정'임을 계속 명시할 것."
   },
-
   "liveFeeds": [
     {
       "id": "google-trends-kr",
@@ -56,14 +54,15 @@
       "limit": "위와 같음"
     }
   ],
-
   "candidatesNotYetUsable": [
     {
-      "name": "네이버 데이터랩 검색어트렌드 API",
-      "url": "https://developers.naver.com/docs/serviceapi/datalab/search/search.md",
-      "whyWanted": "국내 검색 관심도를 연령대·성별로 쪼개준다. 지금 비어 있는 audience.age 를 측정값으로 채울 수 있는 유일한 후보다.",
-      "blocker": "네이버 개발자센터에서 앱 등록 후 Client ID/Secret 발급 필요(무료). 사용자 조치 필요.",
-      "note": "상대지수(0~100)만 주고 절대 검색량은 안 준다. 연령·성별 '비율'을 보는 용도로는 충분하다."
+      "name": "네이버 오픈API (데이터랩 검색어트렌드 / 검색)",
+      "url": "https://developers.naver.com",
+      "status": "막힘 — 재시도하지 말 것",
+      "checkedAt": "2026-08-06",
+      "whatHappened": "2026-08-06 직접 시도함. 애플리케이션 등록까지는 되지만(캡차 등 무해한 API로 통과), API 설정에서 '데이터랩 (검색어트렌드)' 를 추가하려 하면 '신규로 등록할 수 없는 API가 선택되었습니다' 로 거부된다. '검색' 도 동일하게 거부. 목록에 보이는 건 기존 앱 때문이고 신규 발급은 닫혔다. 키 없이 호출하면 errorCode 024 'Scope Status Invalid' 가 난다.",
+      "whyWanted": "국내 검색 관심도를 연령대·성별로 쪼개주는 유일한 후보였다. audience.age 를 측정값으로 채울 수 있었다.",
+      "paidAlternative": "같은 API가 네이버 클라우드 플랫폼에 유료로 있다. https://api.ncloud-docs.com/docs/ai-naver-searchtrend 다만 클라우드 계정과 결제수단 등록이 필요하고 인증 방식도 다르다(X-NCP-APIGW-API-KEY). 수익이 나기 전에 audience.age 한 필드 때문에 붙일 만한 비용은 아니라고 판단해 보류함."
     },
     {
       "name": "TikTok Creative Center",
