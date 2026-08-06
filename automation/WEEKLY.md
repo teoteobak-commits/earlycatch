@@ -97,9 +97,19 @@ keywords.json 의 각 키워드에 `trackQuery` 가 있다. **매주 이 질의�
 
 ## 2. 국내 유입 확인
 
-> **Google Trends 는 이 환경에서 안 된다.** 2026-08-06 실행에서 `trends.google.com` 이 아웃바운드 정책으로 **403 차단**됐다. 로컬에서는 되지만 클라우드에서는 막힌다. 시도하지 말고 크레딧과 시간을 아껴라. (기록: `src/data/references.json`)
+먼저 Google Trends 를 본다. 공식 데이터라 임의 웹검색보다 근거가 된다. 인증 불필요.
 
-키워드마다 한국어로 WebSearch 를 한 번씩 돌려 두 가지를 본다.
+```bash
+curl -s "https://trends.google.com/trending/rss?geo=KR"
+curl -s "https://trends.google.com/trending/rss?geo=US"
+```
+
+- **국내 피드**에 키워드의 소재(인물·게임·밈 이름)가 잡히면 → 재료가 깔렸다는 뜻. 진입장벽이 낮다.
+- **미국 피드**에 잡히면 → vidiq 신호가 교차검증된 것.
+
+둘 다 보고에 적는다. (한때 403 이었으나 2026-08-06 환경 허용 도메인에 추가해 복구됨)
+
+그다음 키워드마다 한국어로 WebSearch 를 한 번씩 돌려 두 가지를 본다.
 
 1. **그 포맷이 국내에 들어왔나** — 들어왔으면 갭이 닫힌 것이므로 목록에서 빼거나 `부분 존재` 로 낮춘다.
 2. **재료가 이미 깔려 있나** — 포맷은 없어도 소재가 국내에 알려져 있으면 진입장벽이 낮다.
@@ -185,20 +195,19 @@ python3 earlycatch-blog/overlap_check.py /tmp/draft-$TODAY.md --gaps earlycatch-
 
 ## 7. 커밋 (이미지와 데이터만)
 
-이 환경에는 git 쓰기 자격증명이 기본으로 없다. **반드시 `$GH_TOKEN` 을 붙여 push 한다.**
-
 ```bash
 git config user.email "noreply@anthropic.com"
 git config user.name "TEO weekly routine"
 git add src/data/keywords.json src/data/businessIdea.json earlycatch-blog/images earlycatch-blog/snapshots
 git commit -m "주간 갱신 ($TODAY)"
-
-git push "https://x-access-token:${GH_TOKEN}@github.com/teoteobak-commits/earlycatch.git" HEAD:master
+git push
 ```
 
-**초안은 절대 커밋하지 않는다.** push 가 거부되면 `git pull --rebase` 후 위 명령을 한 번만 재시도한다.
+**초안은 절대 커밋하지 않는다.** push 가 거부되면 `git pull --rebase` 후 한 번만 재시도한다.
 
-`$GH_TOKEN` 이 비어 있거나 push 가 또 실패하면 **거기서 멈추지 말고** 아래를 반드시 한다.
+> **개인 토큰을 쓰지 마라.** 이 환경의 GitHub 쓰기 권한은 **Claude GitHub App** 이 담당한다. 2026-08-06 점검에서 확인된 사실이다 — fine-grained PAT 를 만들어 `x-access-token:토큰`, `토큰만`, `사용자명:토큰` 세 형식으로 다 밀어봤지만 전부 403 이었고, REST Contents API 와 GitHub MCP 도 같은 403 이었다. 프록시가 이렇게 답한다: *"Write access to this GitHub API path is not permitted through this proxy."* 읽기(`ls-remote`)만 통과한다. 토큰으로 우회할 수 있는 문제가 아니니 시도해서 시간을 버리지 마라.
+
+push 가 실패하면 **거기서 멈추지 말고** 아래를 반드시 한다.
 
 1. 산출물을 **텔레그램으로 직접 보낸다.** 이미지 4장은 `sendPhoto`, `keywords.json` 과 초안은 `sendDocument` 로. 세션이 끝나면 컨테이너가 사라져서 그러지 않으면 그냥 유실된다.
 2. 보고에 `[치명적 실패] 저장소 반영 실패` 를 적고 에러 원문을 붙인다.
