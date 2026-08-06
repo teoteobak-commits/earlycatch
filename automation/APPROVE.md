@@ -88,8 +88,17 @@ tistory_url:
 
 pending.json 의 `status` 를 `approved` 로 바꾸고 `approved_at` 을 넣는다.
 
-둘 다 커밋하고 push 한다. 커밋 메시지는 `초안 발행 확정 (날짜)`.
+둘 다 커밋하고 push 한다. 이 환경에는 git 쓰기 자격증명이 기본으로 없으니 **반드시 `$GH_TOKEN` 을 붙인다.**
+
+```bash
+git config user.email "noreply@anthropic.com"
+git config user.name "TEO approve routine"
+git commit -m "초안 발행 확정 ($TODAY)"
+git push "https://x-access-token:${GH_TOKEN}@github.com/teoteobak-commits/earlycatch.git" HEAD:master
+```
+
 push 가 거부되면 `git pull --rebase` 후 한 번만 재시도한다.
+그래도 실패하면 회수한 초안을 텔레그램으로 다시 보내고(`sendDocument`), `status` 는 `pending` 그대로 두고, 실패 사실을 알린다. **성공한 척하지 않는다.**
 
 ---
 

@@ -34,6 +34,16 @@ fc-list :lang=ko | head -3
 
 ---
 
+### 크레딧 예산 — 이번 실행 상한 40
+
+2026-08-06 첫 실행에서 **85 크레딧**을 썼다. 잔액이 130이라 이 속도면 두 번도 못 돈다. 그래서 상한을 건다.
+
+시작할 때 `vidiq_balance` 로 잔액을 확인하고 기록해둔다. 그리고 **추적 패스를 먼저, 탐색 패스를 나중에** 한다. 추적 도중 40을 넘길 것 같으면 **탐색 패스를 건너뛰고** 보고에 "크레딧 상한으로 탐색 생략"이라고 적는다.
+
+우선순위는 명확하다. **새 걸 못 찾는 건 한 주 손해지만, 추적이 끊기면 지금까지 쌓은 게 무의미해진다.**
+
+---
+
 ## 1-A. 추적 패스 — 이걸 먼저 한다
 
 **이게 이 루틴의 핵심이다.** 새 걸 찾는 것보다 기존 걸 계속 다시 재는 게 중요하다. 3주치가 쌓여야 뜨는 건지 식는 건지 갈린다.
@@ -87,19 +97,9 @@ keywords.json 의 각 키워드에 `trackQuery` 가 있다. **매주 이 질의�
 
 ## 2. 국내 유입 확인
 
-먼저 Google Trends 를 본다. 공식 데이터라 임의 웹검색보다 근거가 된다. 인증 불필요.
+> **Google Trends 는 이 환경에서 안 된다.** 2026-08-06 실행에서 `trends.google.com` 이 아웃바운드 정책으로 **403 차단**됐다. 로컬에서는 되지만 클라우드에서는 막힌다. 시도하지 말고 크레딧과 시간을 아껴라. (기록: `src/data/references.json`)
 
-```bash
-curl -s "https://trends.google.com/trending/rss?geo=KR"
-curl -s "https://trends.google.com/trending/rss?geo=US"
-```
-
-- **국내 피드**에 키워드의 소재(인물·게임·밈 이름)가 잡히면 → 재료가 깔렸다는 뜻. 진입장벽이 낮다.
-- **미국 피드**에 잡히면 → vidiq 신호가 교차검증된 것.
-
-둘 다 보고에 적는다.
-
-그다음 키워드마다 한국어로 WebSearch 를 한 번씩 돌려 두 가지를 본다.
+키워드마다 한국어로 WebSearch 를 한 번씩 돌려 두 가지를 본다.
 
 1. **그 포맷이 국내에 들어왔나** — 들어왔으면 갭이 닫힌 것이므로 목록에서 빼거나 `부분 존재` 로 낮춘다.
 2. **재료가 이미 깔려 있나** — 포맷은 없어도 소재가 국내에 알려져 있으면 진입장벽이 낮다.
@@ -185,13 +185,26 @@ python3 earlycatch-blog/overlap_check.py /tmp/draft-$TODAY.md --gaps earlycatch-
 
 ## 7. 커밋 (이미지와 데이터만)
 
+이 환경에는 git 쓰기 자격증명이 기본으로 없다. **반드시 `$GH_TOKEN` 을 붙여 push 한다.**
+
 ```bash
+git config user.email "noreply@anthropic.com"
+git config user.name "TEO weekly routine"
 git add src/data/keywords.json src/data/businessIdea.json earlycatch-blog/images earlycatch-blog/snapshots
 git commit -m "주간 갱신 ($TODAY)"
-git push
+
+git push "https://x-access-token:${GH_TOKEN}@github.com/teoteobak-commits/earlycatch.git" HEAD:master
 ```
 
-**초안은 절대 커밋하지 않는다.** push 가 거부되면 `git pull --rebase` 후 한 번만 재시도한다.
+**초안은 절대 커밋하지 않는다.** push 가 거부되면 `git pull --rebase` 후 위 명령을 한 번만 재시도한다.
+
+`$GH_TOKEN` 이 비어 있거나 push 가 또 실패하면 **거기서 멈추지 말고** 아래를 반드시 한다.
+
+1. 산출물을 **텔레그램으로 직접 보낸다.** 이미지 4장은 `sendPhoto`, `keywords.json` 과 초안은 `sendDocument` 로. 세션이 끝나면 컨테이너가 사라져서 그러지 않으면 그냥 유실된다.
+2. 보고에 `[치명적 실패] 저장소 반영 실패` 를 적고 에러 원문을 붙인다.
+3. 승인 요청(`TEO발행` 안내)은 하지 않는다. 이미지가 배포되지 않아 발행해도 깨진다.
+
+**절대 조용히 넘어가지 않는다.** 2026-08-06 실행에서 이 단계가 실패해 한 주치 작업이 통째로 날아갔다.
 
 push 후 1~2분이면 Vercel이 자동 배포해서 `https://earlycatch.vercel.app/img/<파일명>` 으로 공개 접근된다.
 
