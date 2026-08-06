@@ -129,6 +129,8 @@ def from_lemmy(community, limit=10):
 
 
 # 공지·안내 글은 화제가 아니다
+DEAL = re.compile(r"^\[(네이버|쿠팡|11번가|G마켓|지마켓|옥션|위메프|티몬|SSG|인터파크|알리|아마존|하이마트|롯데|신세계|CJ|GS|홈플러스|이마트)")
+
 NOTICE = re.compile(r"이용\s*안내|공지|이벤트 안내|운영원칙|자료안내|패치 자동설치")
 
 
@@ -143,7 +145,7 @@ def from_html_titles(url, pattern, source, encoding="utf-8", limit=15):
         title = html.unescape(re.sub(r"<[^>]+>", " ", m))
         title = re.sub(r"\[\d+\]\s*$", "", title).strip()   # 꼬리 댓글수
         title = re.sub(r"\s+", " ", title)
-        if not (4 < len(title) < 80) or NOTICE.search(title):
+        if not (4 < len(title) < 80) or NOTICE.search(title) or DEAL.match(title):
             continue
         out.append({"source": source, "kind": "커뮤니티", "title": title,
                     "url": "", "when": ""})
@@ -153,8 +155,19 @@ def from_html_titles(url, pattern, source, encoding="utf-8", limit=15):
 
 
 def from_reddit(path, source, limit=15):
-    """레딧은 Atom 이고 JSON API 는 403 이라 RSS 만 쓴다."""
-    root = ET.fromstring(fetch("https://www.reddit.com/" + path))
+    """레딧은 Atom 이고 JSON API 는 403 이라 RSS 만 쓴다.
+
+    클라우드는 공용 IP 라 남과 한도를 나눠 쓴다. 429 가 나면 한 번 더 기다렸다 재시도한다.
+    """
+    url = "https://www.reddit.com/" + path
+    try:
+        raw = fetch(url)
+    except urllib.error.HTTPError as e:
+        if e.code != 429:
+            raise
+        time.sleep(90)
+        raw = fetch(url)
+    root = ET.fromstring(raw)
     out = []
     for e in root.findall("a:entry", ATOM):
         title = (e.findtext("a:title", "", ATOM) or "").strip()
@@ -258,6 +271,9 @@ SOURCES = [
         r'class="gall_tit[^"]*"[^>]*>\s*<a[^>]*>(.*?)</a>', "디시 실베")),
     ("에펨코리아", lambda: from_html_titles(
         "https://www.fmkorea.com/best", r"<h3[^>]*>(.*?)</h3>", "에펨코리아")),
+    ("뽐뿌 인기", lambda: from_html_titles(
+        "https://www.ppomppu.co.kr/hot.php",
+        r'<a href="[^"]*view\.php[^"]*"[^>]*>(.*?)</a>', "뽐뿌 인기", encoding="euc-kr")),
 ]
 
 REDDIT_FEEDS = [
@@ -283,6 +299,7 @@ FAMILY = {
     "4chan /g/": "커뮤니티(서구)", "4chan /biz/": "커뮤니티(서구)",
     "4chan /v/": "커뮤니티(서구)", "Lemmy technology": "커뮤니티(서구)",
     "디시 실베": "커뮤니티(한국)", "에펨코리아": "커뮤니티(한국)",
+    "뽐뿌 인기": "커뮤니티(한국)",
 }
 
 # 매체 이름은 제목 꼬리표로 붙을 뿐이라 화제가 아니다
