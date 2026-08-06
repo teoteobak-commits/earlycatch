@@ -1,51 +1,52 @@
 {
-  "generatedAt": "2026-08-05T16:40:00.000Z",
+  "generatedAt": "2026-08-06T05:48:15.000Z",
   "basedOn": {
-    "periodLabel": "8월 1주차",
+    "periodLabel": "8월 2주차",
     "platforms": [
       "youtube",
       "instagram",
       "tiktok"
     ],
     "sources": [
-      "vidiq_trending_videos (영어권 숏폼)",
-      "vidiq_outliers (채널 평균 대비 breakout)",
-      "vidiq_instagram_tiktok_outlier_search",
+      "vidiq_youtube_search / vidiq_trending_videos (trackQuery 재측정)",
+      "vidiq_instagram_tiktok_outlier_search (trackQuery 재측정 + 신규 탐색)",
+      "Google Trends RSS (KR/US, 실시간 인기 검색어)",
       "웹검색 (국내 유입 여부 확인)"
     ],
-    "koreaSampleSize": 89
+    "koreaSampleSize": null
   },
   "disclaimer": "오디언스(연령·성별·맥락)는 측정된 인구통계가 아니라 콘텐츠 성격에서 추론한 값입니다. 판단 보조용으로만 쓰세요. 직업군은 어떤 플랫폼도 제공하지 않아 다루지 않습니다.",
   "notes": {
     "excluded": "남의 영상을 모아 재편집하는 '클립 컴필레이션' 계열은 조회수가 높아도 저작권 침해 소지가 있어 목록에서 제외합니다.",
-    "community": "Reddit은 인증 없는 접근이 차단되어(403) 이번 회차에는 반영하지 못했습니다.",
-    "tracking": "history 는 매주 한 칸씩 늘어납니다. 그 주에 재측정을 못 하면 숫자를 지어내지 않고 null 을 넣습니다. null 이 2주 연속이면 추적을 중단합니다."
+    "community": "Reddit은 인증 없는 접근이 차단되어(403) 이번 회차에도 반영하지 못했습니다.",
+    "tracking": "history 는 매주 한 칸씩 늘어납니다. 그 주에 재측정을 못 하면 숫자를 지어내지 않고 null 을 넣습니다. null 이 2주 연속이면 추적을 중단합니다. [8월 2주차 발견] youtube 트래킹에 vidiq_youtube_search 를 trackQuery 그대로 쓰면 관련도순 정렬이라 오래된 평시 영상이 섞여 vph 가 실제보다 크게 낮게 잡힐 수 있음(예: haaland-meme 이번 주 첫 측정 18,651 vs 같은 시각 vidiq_trending_videos 일반 피드에서 발견한 동일 밈 영상 728,184). haaland-meme 은 후자 값으로 대체했으나 animal-hospital, mario-family-shorts 는 예산 소진으로 교차검증하지 못해 트래킹값이 저평가됐을 가능성이 있음 — 다음 주 vidiq_trending_videos + titleQuery 로 교차검증 권장. instagram/tiktok 트래킹(vidiq_instagram_tiktok_outlier_search)은 매주 동일 도구라 비교적 일관됨."
   },
   "keywords": [
     {
       "id": "haaland-meme",
       "keyword": "Haaland (Ha Ha Ha) 밈챌린지",
-      "summary": "선수 이름에 반복 사운드를 얹는 밈. 서로 상관없는 채널 4곳에서 3주 연속 등장",
+      "summary": "선수 이름에 반복 사운드를 얹는 밈. 서로 상관없는 채널 4곳에서 4주 연속 등장, 8/6 기준에도 영어권 숏폼 vph 상위권에 재진입",
       "platforms": [
         "youtube"
       ],
       "hype": {
         "level": "제일 확실",
         "metric": "시간당 조회수",
-        "value": 704168,
-        "weeksTracked": 3,
+        "value": 728184,
+        "weeksTracked": 4,
         "history": [
           609000,
           713000,
-          704168
+          704168,
+          728184
         ],
         "trend": "유지"
       },
       "korea": {
-        "status": "없음",
-        "detail": "국내 상위권 89건 중 0건",
-        "webCheck": "해당 포맷은 국내 언급 없음. 다만 홀란드 본인은 '미남 홀란드' 짤로 이미 인지도가 있어 소재 자체는 낯설지 않음",
-        "checkedAt": "2026-08-05"
+        "status": "부분 존재",
+        "detail": "동일 챌린지(이름 챈트)는 국내 상위권에서 확인 안 됐으나, 홀란드 표정·제스처를 따라 하는 '홀란드 밈' 자체는 국내 유튜브 숏폼·틱톡에서 이미 다수 제작되고 있음",
+        "webCheck": "웹검색 결과 '온세상이 홀란드다', '광기의 홀란드 밈 모음' 등 국내 채널의 홀란드 밈 콘텐츠 다수 확인. 다만 이 트랙쿼리가 겨냥한 특정 챈트(Ha Ha Ha 노래) 포맷 자체는 아직 안 보임 — 소재는 완전히 깔렸고 포맷만 갭. Google Trends KR/US 실시간 검색어에는 이번 주 홀란드 미포착(뉴스성 검색어 위주라 원래 안 잡히는 편)",
+        "checkedAt": "2026-08-06"
       },
       "audience": {
         "estimated": true,
@@ -56,8 +57,8 @@
       "revenue": [
         {
           "model": "직접 제작 (콘텐츠)",
-          "why": "구조가 단순하고 3주째 살아있어 재현 위험이 낮음",
-          "barrier": "낮음. 단 축구 밈판이 국내는 약해 소재 치환 필요"
+          "why": "구조가 단순하고 4주째 살아있어 재현 위험이 낮음. 국내에 홀란드 밈 자체는 이미 있어 진입 저항이 낮아짐",
+          "barrier": "낮음. 다만 이 특정 챈트 포맷으로 먼저 들어가는 선점 효과를 노려야 함"
         },
         {
           "model": "밈 사운드팩 판매",
@@ -75,27 +76,28 @@
     {
       "id": "animal-hospital",
       "keyword": "Roblox Animal Hospital",
-      "summary": "게임 세계관을 짧은 이야기로 푸는 콘텐츠. 신규 진입 채널은 줄어드는 중",
+      "summary": "게임 세계관을 짧은 이야기로 푸는 콘텐츠. 신규 진입 채널은 줄어드는 중. 이번 주 트래킹값은 저평가 가능성 있음(비고 참조)",
       "platforms": [
         "youtube"
       ],
       "hype": {
         "level": "좀 애매",
         "metric": "시간당 조회수",
-        "value": 400167,
-        "weeksTracked": 3,
+        "value": 1539,
+        "weeksTracked": 4,
         "history": [
           527000,
           405000,
-          400167
+          400167,
+          1539
         ],
-        "trend": "하락 후 정체"
+        "trend": "측정치 급락 — 방법론 재검증 필요(notes.tracking 참조), 등급은 유지"
       },
       "korea": {
         "status": "없음",
-        "detail": "국내 상위권 89건 중 0건",
-        "webCheck": "미확인",
-        "checkedAt": null
+        "detail": "이번 주는 예산 제약으로 국내 트렌딩 숏폼 대조를 생략함. 웹검색으로만 확인",
+        "webCheck": "로블록스 자체를 다루는 국내 유튜버는 다수 확인되나, Animal Hospital 이라는 특정 게임을 다루는 국내 채널은 검색에서 확인 안 됨",
+        "checkedAt": "2026-08-06"
       },
       "audience": {
         "estimated": true,
@@ -107,7 +109,7 @@
         {
           "model": "직접 제작 (콘텐츠)",
           "why": "로블록스는 국내 인지도가 높아 설명 비용이 낮음",
-          "barrier": "중간. 신규 채널 유입이 4곳→1곳으로 줄어 식는 중일 수 있음"
+          "barrier": "중간. 신규 채널 유입이 줄어 식는 중일 수 있음. 이번 주 측정치는 방법론 의심으로 신뢰도 낮음"
         },
         {
           "model": "게임 세계관 대본 템플릿",
@@ -120,25 +122,26 @@
     {
       "id": "mario-family-shorts",
       "keyword": "게임 캐릭터 패밀리 시트콤",
-      "summary": "마리오·루이지·피치를 가족처럼 굴리는 숏폼. 홍콩·미국 채널에서 각각 독립적으로 등장",
+      "summary": "마리오·루이지·피치를 가족처럼 굴리는 숏폼. 2주차 측정치는 저평가 가능성 있음(비고 참조), 판단 보류",
       "platforms": [
         "youtube"
       ],
       "hype": {
         "level": "아직 모름",
         "metric": "시간당 조회수",
-        "value": 300028,
-        "weeksTracked": 1,
+        "value": 10336,
+        "weeksTracked": 2,
         "history": [
-          300028
+          300028,
+          10336
         ],
-        "trend": "첫 관측"
+        "trend": "측정치 하락 — 방법론 재검증 필요(notes.tracking 참조)"
       },
       "korea": {
         "status": "없음",
-        "detail": "국내 상위권 89건 중 0건",
-        "webCheck": "미확인",
-        "checkedAt": null
+        "detail": "이번 주는 예산 제약으로 국내 트렌딩 숏폼 대조를 생략함. 웹검색으로만 확인",
+        "webCheck": "마리오 캐릭터 자체(공식 더빙, 팬 콘텐츠)는 국내에 많으나, '가족 시트콤'으로 재구성한 포맷의 국내 사례는 검색에서 확인 안 됨",
+        "checkedAt": "2026-08-06"
       },
       "audience": {
         "estimated": true,
@@ -150,7 +153,7 @@
         {
           "model": "직접 제작 (콘텐츠)",
           "why": "마리오는 국내 인지도가 매우 높아 되면 크게 될 여지",
-          "barrier": "높음. 근거가 1주치뿐이고 닌텐도 IP는 저작권 관리가 엄격함"
+          "barrier": "높음. 근거가 2주치뿐이고 이번 주 측정치도 신뢰도가 낮음. 닌텐도 IP는 저작권 관리가 엄격함"
         }
       ],
       "trackQuery": "Mario Luigi Peach game characters as a family sitcom skit"
@@ -158,37 +161,38 @@
     {
       "id": "pov-emotional-shorts",
       "keyword": "POV 감성 서사 릴스",
-      "summary": "한 장면 + 한 줄 자막으로 감정을 찌르는 포맷. 팔로워 1만대 계정이 평소 대비 1188배",
+      "summary": "한 장면 + 한 줄 자막으로 감정을 찌르는 포맷. 2주차엔 배율이 1188배→339배로 낮아졌으나 여전히 강한 신호",
       "platforms": [
         "instagram"
       ],
       "hype": {
         "level": "좀 애매",
         "metric": "평소 대비 배율",
-        "value": 1188,
-        "weeksTracked": 1,
+        "value": 339,
+        "weeksTracked": 2,
         "history": [
-          1188
+          1188,
+          339
         ],
-        "trend": "첫 관측"
+        "trend": "하락"
       },
       "korea": {
         "status": "부분 존재",
-        "detail": "유사한 감성 자막 릴스는 국내에도 있으나, 이 특정 구조(POV 한 문장 + 무대사)는 상위권에서 확인 안 됨",
-        "webCheck": "미확인",
-        "checkedAt": null
+        "detail": "국내에도 유사한 감성 자막 릴스 문화 자체는 자리잡음. 다만 '한 장면 + 무대사 + 한 줄 자막'이라는 이 특정 구조가 상위권을 차지하는 사례는 확인 안 됨",
+        "webCheck": "고구마팜 등 국내 마케팅 블로그에서 'POV, 테무깡, 벌레 시점, 흑백요리사까지 인기 숏폼의 공통점은 상황극' 이라며 POV+한줄자막 릴스가 Z세대 사이에서 이미 큰 인기라고 명시. 포맷 자체의 국내 인지도는 예상보다 높음 — 갭이 좁아지고 있을 수 있음",
+        "checkedAt": "2026-08-06"
       },
       "audience": {
         "estimated": true,
         "age": "20대",
-        "gender": "남성 우세",
+        "gender": "혼재",
         "context": "밤·혼자 있을 때"
       },
       "revenue": [
         {
           "model": "직접 제작 (콘텐츠)",
           "why": "장비·편집 요구가 가장 낮음. 스마트폰 한 대로 가능",
-          "barrier": "낮음. 대신 경쟁자도 같은 이유로 많음"
+          "barrier": "낮음. 대신 경쟁자도 같은 이유로 많고, 국내에도 유사 포맷이 이미 있어 차별화 필요"
         },
         {
           "model": "자막 문구 템플릿",
@@ -201,25 +205,26 @@
     {
       "id": "pet-secret-carry",
       "keyword": "반려동물 몰래 데리고 다니기",
-      "summary": "주머니·가방에 숨긴 반려동물을 들키는 순간을 찍는 포맷. 평소 대비 126배",
+      "summary": "주머니·가방에 숨긴 반려동물을 들키는 순간을 찍는 포맷. 2주 연속 상승(126배→224배)",
       "platforms": [
         "tiktok"
       ],
       "hype": {
-        "level": "아직 모름",
+        "level": "좀 애매",
         "metric": "평소 대비 배율",
-        "value": 126,
-        "weeksTracked": 1,
+        "value": 224,
+        "weeksTracked": 2,
         "history": [
-          126
+          126,
+          224
         ],
-        "trend": "첫 관측"
+        "trend": "상승"
       },
       "korea": {
-        "status": "없음",
-        "detail": "국내 상위권에서 동일 구조 미확인",
-        "webCheck": "미확인",
-        "checkedAt": null
+        "status": "부분 존재",
+        "detail": "이 정확한 구조(가방·주머니에 숨겨 데리고 다니다 들키는 리액션)는 국내 상위권에서 미확인. 다만 인접 소재(부모 몰래 반려동물 기르기·데려오기)는 이미 국내 틱톡에서 활발함",
+        "webCheck": "'엄마 몰래 강아지 데려오기', '부모님 몰래 키울 수 있는 동물' 등 국내 틱톡 해시태그가 다수 확인됨 — 정확히 같은 포맷은 아니지만 '몰래 반려동물'이라는 소재 자체는 이미 국내에 친숙함. 진입장벽이 낮아지는 신호",
+        "checkedAt": "2026-08-06"
       },
       "audience": {
         "estimated": true,
@@ -230,7 +235,7 @@
       "revenue": [
         {
           "model": "직접 제작 (콘텐츠)",
-          "why": "반려동물이 있으면 추가 비용이 0에 가까움",
+          "why": "반려동물이 있으면 추가 비용이 0에 가까움. 2주 연속 상승으로 재현 위험도 낮아지는 중",
           "barrier": "낮음. 단 반려동물 스트레스를 유발하지 않는 선을 지켜야 함"
         }
       ],
@@ -239,7 +244,7 @@
     {
       "id": "be-kind-shorts",
       "keyword": "Be Kind 초단문 힐링 숏폼",
-      "summary": "비교용으로만 남겨둠. 한때 이 목록 1위였다가 3분의 1로 주저앉음",
+      "summary": "비교용으로만 남겨둠. 한때 이 목록 1위였다가 3분의 1로 주저앉음. 식었음 판정이라 이번 주도 추적 안 함",
       "platforms": [
         "youtube"
       ],
@@ -257,7 +262,7 @@
       },
       "korea": {
         "status": "없음",
-        "detail": "국내 상위권 89건 중 0건",
+        "detail": "국내 상위권 89건 중 0건 (8/5 측정)",
         "webCheck": "미확인",
         "checkedAt": null
       },

@@ -1,0 +1,274 @@
+{
+  "generatedAt": "2026-08-05T16:40:00.000Z",
+  "basedOn": {
+    "periodLabel": "8월 1주차",
+    "platforms": [
+      "youtube",
+      "instagram",
+      "tiktok"
+    ],
+    "sources": [
+      "vidiq_trending_videos (영어권 숏폼)",
+      "vidiq_outliers (채널 평균 대비 breakout)",
+      "vidiq_instagram_tiktok_outlier_search",
+      "웹검색 (국내 유입 여부 확인)"
+    ],
+    "koreaSampleSize": 89
+  },
+  "disclaimer": "오디언스(연령·성별·맥락)는 측정된 인구통계가 아니라 콘텐츠 성격에서 추론한 값입니다. 판단 보조용으로만 쓰세요. 직업군은 어떤 플랫폼도 제공하지 않아 다루지 않습니다.",
+  "notes": {
+    "excluded": "남의 영상을 모아 재편집하는 '클립 컴필레이션' 계열은 조회수가 높아도 저작권 침해 소지가 있어 목록에서 제외합니다.",
+    "community": "Reddit은 인증 없는 접근이 차단되어(403) 이번 회차에는 반영하지 못했습니다.",
+    "tracking": "history 는 매주 한 칸씩 늘어납니다. 그 주에 재측정을 못 하면 숫자를 지어내지 않고 null 을 넣습니다. null 이 2주 연속이면 추적을 중단합니다."
+  },
+  "keywords": [
+    {
+      "id": "haaland-meme",
+      "keyword": "Haaland (Ha Ha Ha) 밈챌린지",
+      "summary": "선수 이름에 반복 사운드를 얹는 밈. 서로 상관없는 채널 4곳에서 3주 연속 등장",
+      "platforms": [
+        "youtube"
+      ],
+      "hype": {
+        "level": "제일 확실",
+        "metric": "시간당 조회수",
+        "value": 704168,
+        "weeksTracked": 3,
+        "history": [
+          609000,
+          713000,
+          704168
+        ],
+        "trend": "유지"
+      },
+      "korea": {
+        "status": "없음",
+        "detail": "국내 상위권 89건 중 0건",
+        "webCheck": "해당 포맷은 국내 언급 없음. 다만 홀란드 본인은 '미남 홀란드' 짤로 이미 인지도가 있어 소재 자체는 낯설지 않음",
+        "checkedAt": "2026-08-05"
+      },
+      "audience": {
+        "estimated": true,
+        "age": "10대~20대",
+        "gender": "남성 우세",
+        "context": "이동 중·짧은 여가"
+      },
+      "revenue": [
+        {
+          "model": "직접 제작 (콘텐츠)",
+          "why": "구조가 단순하고 3주째 살아있어 재현 위험이 낮음",
+          "barrier": "낮음. 단 축구 밈판이 국내는 약해 소재 치환 필요"
+        },
+        {
+          "model": "밈 사운드팩 판매",
+          "why": "이 포맷은 사운드가 핵심이라 소재만 따로 팔릴 여지",
+          "barrier": "중간. 직접 녹음·제작해야 저작권 안전"
+        },
+        {
+          "model": "포맷 적용 가이드",
+          "why": "이미 크몽에 유사 상품 판매 경험 있음",
+          "barrier": "낮음. 다만 단가가 낮고 수요 검증 안 됨"
+        }
+      ],
+      "trackQuery": "Haaland Ha Ha Ha name chant meme challenge football"
+    },
+    {
+      "id": "animal-hospital",
+      "keyword": "Roblox Animal Hospital",
+      "summary": "게임 세계관을 짧은 이야기로 푸는 콘텐츠. 신규 진입 채널은 줄어드는 중",
+      "platforms": [
+        "youtube"
+      ],
+      "hype": {
+        "level": "좀 애매",
+        "metric": "시간당 조회수",
+        "value": 400167,
+        "weeksTracked": 3,
+        "history": [
+          527000,
+          405000,
+          400167
+        ],
+        "trend": "하락 후 정체"
+      },
+      "korea": {
+        "status": "없음",
+        "detail": "국내 상위권 89건 중 0건",
+        "webCheck": "미확인",
+        "checkedAt": null
+      },
+      "audience": {
+        "estimated": true,
+        "age": "10대",
+        "gender": "혼재",
+        "context": "방과 후·주말"
+      },
+      "revenue": [
+        {
+          "model": "직접 제작 (콘텐츠)",
+          "why": "로블록스는 국내 인지도가 높아 설명 비용이 낮음",
+          "barrier": "중간. 신규 채널 유입이 4곳→1곳으로 줄어 식는 중일 수 있음"
+        },
+        {
+          "model": "게임 세계관 대본 템플릿",
+          "why": "이 포맷은 이야기 구조가 반복되므로 템플릿화 가능",
+          "barrier": "중간. 게임사 IP 이용 범위 확인 필요"
+        }
+      ],
+      "trackQuery": "Roblox Animal Hospital roleplay vet gameplay"
+    },
+    {
+      "id": "mario-family-shorts",
+      "keyword": "게임 캐릭터 패밀리 시트콤",
+      "summary": "마리오·루이지·피치를 가족처럼 굴리는 숏폼. 홍콩·미국 채널에서 각각 독립적으로 등장",
+      "platforms": [
+        "youtube"
+      ],
+      "hype": {
+        "level": "아직 모름",
+        "metric": "시간당 조회수",
+        "value": 300028,
+        "weeksTracked": 1,
+        "history": [
+          300028
+        ],
+        "trend": "첫 관측"
+      },
+      "korea": {
+        "status": "없음",
+        "detail": "국내 상위권 89건 중 0건",
+        "webCheck": "미확인",
+        "checkedAt": null
+      },
+      "audience": {
+        "estimated": true,
+        "age": "10대~20대",
+        "gender": "혼재",
+        "context": "짧은 여가"
+      },
+      "revenue": [
+        {
+          "model": "직접 제작 (콘텐츠)",
+          "why": "마리오는 국내 인지도가 매우 높아 되면 크게 될 여지",
+          "barrier": "높음. 근거가 1주치뿐이고 닌텐도 IP는 저작권 관리가 엄격함"
+        }
+      ],
+      "trackQuery": "Mario Luigi Peach game characters as a family sitcom skit"
+    },
+    {
+      "id": "pov-emotional-shorts",
+      "keyword": "POV 감성 서사 릴스",
+      "summary": "한 장면 + 한 줄 자막으로 감정을 찌르는 포맷. 팔로워 1만대 계정이 평소 대비 1188배",
+      "platforms": [
+        "instagram"
+      ],
+      "hype": {
+        "level": "좀 애매",
+        "metric": "평소 대비 배율",
+        "value": 1188,
+        "weeksTracked": 1,
+        "history": [
+          1188
+        ],
+        "trend": "첫 관측"
+      },
+      "korea": {
+        "status": "부분 존재",
+        "detail": "유사한 감성 자막 릴스는 국내에도 있으나, 이 특정 구조(POV 한 문장 + 무대사)는 상위권에서 확인 안 됨",
+        "webCheck": "미확인",
+        "checkedAt": null
+      },
+      "audience": {
+        "estimated": true,
+        "age": "20대",
+        "gender": "남성 우세",
+        "context": "밤·혼자 있을 때"
+      },
+      "revenue": [
+        {
+          "model": "직접 제작 (콘텐츠)",
+          "why": "장비·편집 요구가 가장 낮음. 스마트폰 한 대로 가능",
+          "barrier": "낮음. 대신 경쟁자도 같은 이유로 많음"
+        },
+        {
+          "model": "자막 문구 템플릿",
+          "why": "이 포맷은 문장 한 줄이 성패를 가름",
+          "barrier": "낮음. 단 차별화가 어렵고 복제되기 쉬움"
+        }
+      ],
+      "trackQuery": "POV one-line caption emotional story single scene no dialogue reel"
+    },
+    {
+      "id": "pet-secret-carry",
+      "keyword": "반려동물 몰래 데리고 다니기",
+      "summary": "주머니·가방에 숨긴 반려동물을 들키는 순간을 찍는 포맷. 평소 대비 126배",
+      "platforms": [
+        "tiktok"
+      ],
+      "hype": {
+        "level": "아직 모름",
+        "metric": "평소 대비 배율",
+        "value": 126,
+        "weeksTracked": 1,
+        "history": [
+          126
+        ],
+        "trend": "첫 관측"
+      },
+      "korea": {
+        "status": "없음",
+        "detail": "국내 상위권에서 동일 구조 미확인",
+        "webCheck": "미확인",
+        "checkedAt": null
+      },
+      "audience": {
+        "estimated": true,
+        "age": "20대~30대",
+        "gender": "혼재",
+        "context": "출퇴근·이동 중"
+      },
+      "revenue": [
+        {
+          "model": "직접 제작 (콘텐츠)",
+          "why": "반려동물이 있으면 추가 비용이 0에 가까움",
+          "barrier": "낮음. 단 반려동물 스트레스를 유발하지 않는 선을 지켜야 함"
+        }
+      ],
+      "trackQuery": "sneaking a pet in a bag or pocket getting caught reaction"
+    },
+    {
+      "id": "be-kind-shorts",
+      "keyword": "Be Kind 초단문 힐링 숏폼",
+      "summary": "비교용으로만 남겨둠. 한때 이 목록 1위였다가 3분의 1로 주저앉음",
+      "platforms": [
+        "youtube"
+      ],
+      "hype": {
+        "level": "식었음",
+        "metric": "시간당 조회수",
+        "value": 270784,
+        "weeksTracked": 3,
+        "history": [
+          672000,
+          271000,
+          270784
+        ],
+        "trend": "하락 후 정체"
+      },
+      "korea": {
+        "status": "없음",
+        "detail": "국내 상위권 89건 중 0건",
+        "webCheck": "미확인",
+        "checkedAt": null
+      },
+      "audience": {
+        "estimated": true,
+        "age": "전 연령",
+        "gender": "혼재",
+        "context": "자기 전"
+      },
+      "revenue": [],
+      "trackQuery": "Be Kind wholesome text-only calming short"
+    }
+  ]
+}
