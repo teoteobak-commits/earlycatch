@@ -1,55 +1,54 @@
-# Early Catch / TEO 리서치
+# 세계 화제 레이더
 
-해외(유튜브·인스타·틱톡)에서 뜨는데 **국내엔 아직 없는** 키워드를 매주 찾아, 오디언스와 수익모델 후보까지 붙여주는 개인용 도구.
+전 세계에서 지금 뭐가 화제인지 매일 모아 텔레그램으로 보내는 개인용 정찰 도구. **무료 소스만 쓴다.**
 
-찾은 것은 두 갈래로 나간다.
-- **대시보드** — `src/` (React + Vite)
-- **블로그** — [Early Catch](https://weusedtodo.tistory.com) 주간 발행
+여기서 나온 걸로 뭘 만들지는 사람이 판단한다. 이 저장소는 재료만 캔다.
+
+```bash
+python radar/collect.py          # 전체 (레딧 포함, 2~3분)
+python radar/collect.py --fast   # 레딧 빼고 (30초)
+```
 
 ## 구조
 
 ```
-src/data/keywords.json     단일 데이터 소스. 키워드 / 하입 강도 / 오디언스(추정) / 수익모델
-src/                       대시보드 화면
-earlycatch-blog/           블로그 자산 (아래 참고)
-product-*/                 크몽 판매 상품 (가이드, 스카우팅 리포트)
-_archive/                  폐기된 v1 코드와 폐기 사유
+radar/                 레이더 본체 — 수집기, 원자료, 다이제스트
+  collect.py           소스 정의와 파싱이 전부 여기 있다
+  data/YYYY-MM-DD.json 원자료. 누적이 핵심이라 지우지 않는다
+  digest/YYYY-MM-DD.md 읽을 것
+automation/RADAR.md    매일 도는 클라우드 루틴 지시서
+earlycatch-blog/       블로그 자산 — 톤 규칙과 검사기 (아래)
+_archive/              폐기한 것들과 폐기 사유
 ```
 
-### earlycatch-blog/
+자세한 소스 목록과 설계 근거는 [radar/README.md](radar/README.md).
 
-| 파일 | 용도 |
-| --- | --- |
-| `TONE.md` | **글쓰기 단일 기준.** 새 글을 쓰기 전 반드시 읽는다 |
-| `tone_check.py` | 문체 규칙 검사 (볼드·이모지·금지어·문단·리듬) |
-| `overlap_check.py` | 지난 글과 겹치는지 검사. 주간 발행의 최대 위험이 중복이다 |
-| `cover/gaps/chart/thumb.html` | 이미지 템플릿. 숫자·문구만 바꿔 렌더 |
-| `published/` `snapshots/` `drafts/` | 발행 이력 / 주간 스냅샷 / 초안 |
-| `imgserve.py` | 이미지 삽입용 임시 CORS 서버 (로컬 전용) |
+## 왜 한 소스만 보면 안 되나
 
-이미지 렌더:
-```bash
-msedge --headless --disable-gpu --force-device-scale-factor=1 --hide-scrollbars \
-  --screenshot="<절대경로>/images/01-cover.png" --window-size=1200,630 "file://<절대경로>/cover.html"
-```
-크기 — cover 1200×630 / gaps 1200×820 / chart 1200×760 / **thumb 800×800(정사각)**
+한 곳에만 걸리면 그 바닥 얘기다. **성격이 다른 계열에 동시에 걸릴 때만** 신호로 친다.
 
-## 원칙
+구글뉴스는 BBC 기사를 실어 나르므로 그 둘이 겹치는 건 확인이 아니라 같은 기사를 두 번 센 것이다. 그래서 소스가 아니라 계열(뉴스·검색·기술·신제품·커뮤니티서구·커뮤니티한국)을 센다. 이 규칙 하나로 첫날 신호가 12개에서 4개로 줄었고, 남은 4개가 진짜였다.
 
-**오디언스는 추정치다.** 어떤 플랫폼도 임의 콘텐츠의 연령·성별을 알려주지 않는다. `keywords.json`의 `audience`는 콘텐츠 성격에서 추론한 값이며 `estimated: true`로 표시된다. v1은 이 구분을 안 해서 폐기했다(`_archive/README.md` 참고).
+하루치로는 "오늘 뭐가 시끄럽나"까지다. 며칠 쌓여야 **반짝과 진짜**가 갈린다.
 
-**직업군은 다루지 않는다.** 제공하는 플랫폼이 없다. 대신 "소비 맥락"(출퇴근·퇴근 후·주말)으로 대체했다.
+## 블로그 자산
 
-**클립 컴필레이션은 제외한다.** 남의 영상을 모아 재편집하는 포맷은 조회수가 높아도 저작권 침해 소지가 있어 후보에서 뺀다.
+`earlycatch-blog/` 의 이것들은 데이터 소스와 무관하게 계속 유효하다.
 
-**수익 금액을 약속하지 않는다.** 확신도는 네 단계로만 표시한다 — 제일 확실 / 좀 애매 / 아직 모름 / 식었음.
+- **TONE.md** — 문체·금지어·구조의 단일 기준. 글을 쓰기 전에 읽는다
+- **tone_check.py** — 기계로 판정 가능한 규칙 검사기. 제목까지 본다
+- **overlap_check.py** — 지난 글과 얼마나 겹치는지
 
-## 비밀 정보
+발행은 티스토리 [Early Catch](https://weusedtodo.tistory.com). 티스토리는 2024년 2월에 글쓰기 API를 닫아서 **브라우저로 직접 올려야 한다.**
 
-`.secrets/`는 커밋되지 않는다. 텔레그램 봇 토큰은 `set_token.py`로 넣는다(입력이 화면에 표시되지 않음).
+## 폐기한 것
 
-```bash
-python set_token.py
-python notify_telegram.py --setup   # 봇에게 말 한 번 건 뒤 실행
-python notify_telegram.py --test
-```
+- **vidiq 기반 주간 리서치** — 크레딧을 K-한류(kpop_kit_factory)에 몰아주며 중단. 중단 사유와 거기서 배운 것은 [_archive/vidiq-weekly/](_archive/vidiq-weekly/README.md)
+- **v1 영상 대시보드** — 성별·연령 필터를 측정값처럼 보여줬는데 실은 추론이었다. [_archive/v1-video-dashboard/](_archive/v1-video-dashboard/)
+
+## 규칙
+
+- **vidiq 를 쓰지 않는다.** 크레딧은 K-한류 몫이다
+- 커뮤니티 **제목만** 센다. 원문을 퍼오지 않는다. 무엇이 화제인지 세는 용도지 재배포가 아니다
+- 레딧 데이터 이용약관은 상업적 이용을 제한한다. 지금은 개인 정찰용이다
+- 추정을 측정처럼 쓰지 않는다. v1 을 폐기한 이유가 그거다
