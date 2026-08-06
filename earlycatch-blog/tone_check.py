@@ -37,7 +37,29 @@ BANNED = [
     "명심하세요", "기본을 지키",
     "모르시는 분들이 많은데",
     "흙수저", "월급쟁이",
+    # (D) 내부 지표 용어 — 도구가 쓰는 말이지 독자가 쓰는 말이 아니다
+    "배율", "vph", "VPH",
+    "breakout", "브레이크아웃", "아웃라이어", "이상치",
+    "트래킹", "트랙쿼리", "추적 쿼리",
+    "브레이크아웃 스코어", "돌파 점수",
 ]
+
+# 우리말로 세는 법 — 주 단위는 숫자로 쓴다 ("두 주 연속" 아니고 "2주 연속")
+COUNTER_FIX = {
+    "한 주 연속": "1주 연속", "두 주": "2주", "세 주": "3주",
+    "네 주": "4주", "다섯 주": "5주", "여섯 주": "6주",
+    "두주": "2주", "세주": "3주", "네주": "4주",
+}
+
+# 내부 용어를 독자 말로 바꾸는 법 (위반 시 함께 보여준다)
+PLAIN = {
+    "배율": "'평소보다 N배' 또는 '평소 올리던 영상보다 N배 퍼졌습니다'",
+    "vph": "'시간당 조회수'",
+    "아웃라이어": "'유독 튄 영상'",
+    "이상치": "'유독 튄 영상'",
+    "트래킹": "'따라가 봤습니다', '계속 재고 있습니다'",
+    "브레이크아웃": "'평소보다 크게 터진'",
+}
 
 EMOJI = re.compile(
     "[\U0001F300-\U0001FAFF\U00002600-\U000027BF\U0001F1E6-\U0001F1FF⭐✅❌]"
@@ -53,9 +75,18 @@ def strip_frontmatter(text: str) -> str:
     return text
 
 
+def extract_title(text: str) -> str:
+    """H1 제목. 가장 많이 읽히는 문장이라 낱말 검사에 반드시 포함한다."""
+    m = re.search(r"^#\s+(.*)$", text, flags=re.M)
+    return m.group(1).strip() if m else ""
+
+
 def main(path: str) -> int:
     raw = Path(path).read_text(encoding="utf-8")
     body = strip_frontmatter(raw)
+    title = extract_title(raw)
+    # 구조 검사(문단 길이·볼드 수)는 body 만, 낱말 검사는 제목까지 포함
+    words = title + "\n" + body
     problems, notes = [], []
 
     # 볼드 (글 전체 최대 3회)
@@ -101,11 +132,22 @@ def main(path: str) -> int:
         notes.append(f"긴 목록 블록 {len(runs)}/2")
 
     # 금지어
-    hits = sorted({w for w in BANNED if w in body})
+    hits = sorted({w for w in BANNED if w in words})
     if hits:
         problems.append("금지어: " + ", ".join(hits))
+        for w in hits:
+            if w.lower() in PLAIN:
+                problems.append(f"    '{w}' 대신 {PLAIN[w.lower()]}")
     else:
         notes.append("금지어 없음")
+
+    # 세는 법: 주 단위는 숫자로
+    counter_hits = [(k, v) for k, v in COUNTER_FIX.items() if k in words]
+    if counter_hits:
+        for k, v in counter_hits:
+            problems.append(f"'{k}' -> '{v}' (주 단위는 숫자로 씁니다)")
+    else:
+        notes.append("세는 법 정상")
 
     # 문단당 문장 수: 대부분 4문장 이하, 5문장까지 허용, 6문장 이상은 위반
     total_paras, over4, over5 = 0, 0, 0
