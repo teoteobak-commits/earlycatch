@@ -288,19 +288,38 @@ REDDIT_FEEDS = [
 # 구글뉴스는 BBC 기사를 실어 나른다. 같은 계열끼리 겹친 건 같은 기사를 두 번 센 것뿐이라
 # 독립 확인이 아니다. 계열이 다를 때만 신호로 친다.
 FAMILY = {
-    "BBC 월드": "뉴스", "구글뉴스 세계": "뉴스", "구글뉴스 한국": "뉴스",
+    # 뉴스는 신호가 아니라 "이미 퍼졌다"는 표시다. 한국/해외를 나눠야
+    # 국내에 아직 안 들어온 걸 골라낼 수 있다.
+    "BBC 월드": "뉴스(해외)", "구글뉴스 세계": "뉴스(해외)",
+    "구글뉴스 한국": "뉴스(한국)",
+    "구글트렌드 미국": "검색(해외)", "구글트렌드 영국": "검색(해외)",
+    "구글트렌드 일본": "검색(해외)",
+    "구글트렌드 한국": "검색(한국)",
     "해커뉴스": "기술", "Techmeme": "기술",
-    "구글트렌드 미국": "검색", "구글트렌드 한국": "검색",
-    "구글트렌드 영국": "검색", "구글트렌드 일본": "검색",
-    "위키백과 조회수": "관심",
     "ProductHunt": "신제품",
-    "레딧 전체": "커뮤니티(서구)", "레딧 무슨일이야": "커뮤니티(서구)",
-    "레딧 세계뉴스": "커뮤니티(서구)",
-    "4chan /g/": "커뮤니티(서구)", "4chan /biz/": "커뮤니티(서구)",
-    "4chan /v/": "커뮤니티(서구)", "Lemmy technology": "커뮤니티(서구)",
+    "위키백과 조회수": "관심",
+    "레딧 전체": "커뮤니티(해외)", "레딧 무슨일이야": "커뮤니티(해외)",
+    "레딧 세계뉴스": "커뮤니티(해외)",
+    "4chan /g/": "커뮤니티(해외)", "4chan /biz/": "커뮤니티(해외)",
+    "4chan /v/": "커뮤니티(해외)", "Lemmy technology": "커뮤니티(해외)",
     "디시 실베": "커뮤니티(한국)", "에펨코리아": "커뮤니티(한국)",
     "뽐뿌 인기": "커뮤니티(한국)",
 }
+
+NEWS_FAMS = {"뉴스(해외)", "뉴스(한국)"}
+KOREA_FAMS = {"뉴스(한국)", "검색(한국)", "커뮤니티(한국)"}
+
+
+def classify(fams):
+    """이 화제가 어디쯤 와 있나.
+
+    뉴스에 나왔으면 이미 다 아는 것이다. 찌라시의 값어치는 그 전에 있다.
+    """
+    if not (fams & NEWS_FAMS):
+        return "선행"          # 커뮤니티·기술·신제품엔 떴는데 언론은 아직
+    if not (fams & KOREA_FAMS):
+        return "국내미상륙"      # 해외는 시끄러운데 한국은 조용하다
+    return "확산"              # 이미 퍼졌다
 
 # 매체 이름은 제목 꼬리표로 붙을 뿐이라 화제가 아니다
 PUBLISHERS = set("""BBC CNN Reuters Bloomberg Guardian Times Post News Al Jazeera NPR
@@ -314,6 +333,19 @@ what which who whom when where why how all any both each few more most other som
 same too very just now new news says say said after before over under about into up down out
 off again once during while because until against among between through above below
 그리고 그러나 하지만 그런데 이제 지금 오늘 내일 어제 우리 저희 관련 대한 위해 통해 대해
+""".split())
+
+# 뜻이 너무 넓어 아무 데나 걸리는 말. 이게 섞이면 상관없는 글 두 개가 같은 화제로 묶인다.
+# 실제로 "Replit CEO 인터뷰" 와 "직원들이 왜 일하는지 알아낸 CEO" 가 CEO 하나로 묶였다.
+GENERIC = set("""
+CEO CTO CFO COO GPT AI API App Apps New Top Best First Last Next Big Small Good Bad
+Why How What When Where Who Man Men Woman Women People World Year Day Time Way Thing
+Update Release Launch Report Study Court Judge Police Government President Company
+Market Stock Money Data Video Game Games Phone Free Open Source Show Make Take Get
+Got Now Just Like Live Real Full More Less Over Under Team Group家
+이유 좋은 사람 생각 문제 상황 결과 발표 공개 시작 최근 이번 지난 올해 정도 경우
+가능 필요 확인 진짜 그냥 완전 갑자기 근황 후기 정리 모음 실화 근데 나만 요즘 이거
+그거 저거 이게 그게 방금 오늘 내년 작년 하는 되는 있는 없는 같은 다른 새로 처음
 """.split())
 
 
@@ -353,16 +385,32 @@ def cross_signals(items, min_families=2):
     for it in items:
         fam = FAMILY.get(it["source"], it["source"])
         for term in key_terms(it["title"]):
-            if term in PUBLISHERS:
+            if term in PUBLISHERS or term in GENERIC:
                 continue
             h = hits[term]
             h["fams"].add(fam)
             h["srcs"].add(it["source"])
             if len(h["titles"]) < 4:
                 h["titles"].append(f"[{it['source']}] {it['title'][:70]}")
-    rows = [(t, v) for t, v in hits.items() if len(v["fams"]) >= min_families]
-    rows.sort(key=lambda x: (-len(x[1]["fams"]), -len(x[1]["srcs"]), x[0]))
-    return rows
+    def keep(term, v):
+        if len(v["fams"]) < min_families:
+            return False
+        # 두 글자 한글, 세 글자 이하 영문은 우연히 겹치기 쉽다. 소스가 셋은 돼야 믿는다
+        short = len(term) <= 3 or (all("가" <= c <= "힣" for c in term) and len(term) <= 2)
+        return len(v["srcs"]) >= 3 if short else True
+
+    rows = [(t, v) for t, v in hits.items() if keep(t, v)]
+    rows.sort(key=lambda x: (-len(x[1]["fams"]), -len(x[1]["srcs"]), -len(x[0]), x[0]))
+
+    # Meta 와 New Mexico 는 같은 판결 기사다. 제목이 겹치면 한 사건으로 본다.
+    merged, seen = [], []
+    for term, v in rows:
+        ts = set(v["titles"])
+        if any(len(ts & prev) >= 2 for prev in seen):
+            continue
+        seen.append(ts)
+        merged.append((term, v))
+    return merged
 
 
 # ─────────────────────────────────────────────── 실행
@@ -402,37 +450,54 @@ def write_digest(items, failed, today):
     L.append(f"소스 {len(by_src)}곳에서 {len(items)}건 수집.")
     if failed:
         L.append(f"실패 {len(failed)}곳: " + ", ".join(f.split(':')[0] for f in failed))
-    L += ["", "---", "", "## 여러 곳에 동시에 걸린 것", ""]
-    L.append("뉴스·검색·커뮤니티·기술처럼 **성격이 다른 계열**에 동시에 걸린 것만 남긴다.")
-    L.append("구글뉴스는 BBC 기사를 실어 나르므로 그 둘이 겹치는 건 확인이 아니다.")
-    L.append("")
-    if rows:
-        for term, v in rows[:20]:
-            days = history_streak(term)
-            if len(days) <= 1:
-                mark = "새로 등장"
-            elif len(days) >= 3:
-                mark = f"**{len(days)}일 연속**"
-            else:
-                mark = f"{len(days)}일째"
-            L.append(f"**{term}** — {mark} · {len(v['fams'])}계열 "
-                     f"({' / '.join(sorted(v['fams']))}) · {len(v['srcs'])}개 소스")
-            for t in v["titles"][:3]:
-                L.append(f"  - {t}")
-            L.append("")
-    else:
-        L += ["교차로 걸린 낱말이 없다. 오늘은 소스마다 딴 얘기를 하고 있다는 뜻이다.", ""]
+    L += ["", "---", ""]
 
-    fresh = [(term, v) for term, v in rows if len(history_streak(term)) <= 1]
-    lasting = [(term, v) for term, v in rows if len(history_streak(term)) >= 3]
-    if fresh or lasting:
-        L += ["---", "", "## 한눈에", ""]
-        if fresh:
-            L.append("**오늘 새로 뜬 것**: " + ", ".join(t for t, _ in fresh[:10]))
-        if lasting:
-            L.append("**사흘 넘게 버티는 것**: " + ", ".join(t for t, _ in lasting[:10]))
+    buckets = {"선행": [], "국내미상륙": [], "확산": []}
+    for term, v in rows:
+        buckets[classify(v["fams"])].append((term, v))
+
+    TITLES = [
+        ("선행", "## 아직 언론에 안 나온 것",
+         "커뮤니티·개발자·신제품 쪽에는 떴는데 뉴스는 아직 안 다뤘다. **여기가 제일 값어치 있다.**"),
+        ("국내미상륙", "## 해외만 시끄럽고 한국은 조용한 것",
+         "해외에서 도는데 국내 검색·커뮤니티에는 안 잡힌다."),
+        ("확산", "## 이미 퍼진 것",
+         "뉴스에 나왔다. 참고만 한다 — 여기 있으면 이미 늦었다."),
+    ]
+    for key, head, note in TITLES:
+        rowsk = buckets[key]
+        if not rowsk:
+            continue
+        L += [head, "", note, ""]
+        for term, v in rowsk[:8]:
+            days = history_streak(term)
+            mark = ("새로" if len(days) <= 1
+                    else f"**{len(days)}일 연속**" if len(days) >= 3
+                    else f"{len(days)}일째")
+            L.append(f"**{term}** — {mark} · {' / '.join(sorted(v['fams']))}")
+            for tt in v["titles"][:3]:
+                L.append(f"  - {tt}")
+            L.append("")
+        L.append("---")
         L.append("")
 
+    EDGE = {"4chan /biz/": "돈 얘기", "4chan /g/": "개발자 잡담",
+            "해커뉴스": "만드는 사람들", "ProductHunt": "오늘 나온 것",
+            "위키백과 조회수": "많이 찾아본 것"}
+    used = {tt for _, v in rows for tt in v["titles"]}
+    L += ["## 교차엔 안 걸렸지만 눈여겨볼 것", "",
+          "한 곳에만 있어도 아이템 냄새가 나는 건 여기 담는다. 뉴스는 넣지 않는다.", ""]
+    for src, label in EDGE.items():
+        picks = [it for it in by_src.get(src, [])
+                 if f"[{src}] {it['title'][:70]}" not in used][:4]
+        if not picks:
+            continue
+        L.append(f"**{label}** ({src})")
+        for it in picks:
+            extra = (f" ({it['views']:,}회)" if it.get("views")
+                     else f" ({it['score']}점)" if it.get("score") else "")
+            L.append(f"  - {it['title'][:88]}{extra}")
+        L.append("")
     L += ["---", "", "## 소스별", ""]
     for src in sorted(by_src):
         L.append(f"### {src}")
