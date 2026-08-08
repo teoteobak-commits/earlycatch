@@ -391,7 +391,8 @@ def cross_signals(items, min_families=2):
             h["fams"].add(fam)
             h["srcs"].add(it["source"])
             if len(h["titles"]) < 4:
-                h["titles"].append(f"[{it['source']}] {it['title'][:70]}")
+                link = f"  {it['url']}" if it.get("url") else ""
+                h["titles"].append(f"[{it['source']}] {it['title'][:70]}{link}")
     def keep(term, v):
         if len(v["fams"]) < min_families:
             return False
@@ -497,6 +498,8 @@ def write_digest(items, failed, today):
             extra = (f" ({it['views']:,}회)" if it.get("views")
                      else f" ({it['score']}점)" if it.get("score") else "")
             L.append(f"  - {it['title'][:88]}{extra}")
+            if it.get("url"):
+                L.append(f"    {it['url']}")
         L.append("")
     L += ["---", "", "## 소스별", ""]
     for src in sorted(by_src):
