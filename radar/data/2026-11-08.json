@@ -1,0 +1,1848 @@
+{
+ "collectedAt": "2026-11-08T23:14:53.054071+00:00",
+ "items": [
+  {
+   "source": "위키백과 조회수",
+   "kind": "관심",
+   "url": "",
+   "title": "Ramayana: Part 1",
+   "when": "2026-11-06",
+   "views": 785245
+  },
+  {
+   "source": "위키백과 조회수",
+   "kind": "관심",
+   "url": "",
+   "title": "Russell Brand",
+   "when": "2026-11-06",
+   "views": 507816
+  },
+  {
+   "source": "위키백과 조회수",
+   "kind": "관심",
+   "url": "",
+   "title": "Abdul El-Sayed",
+   "when": "2026-11-06",
+   "views": 437069
+  },
+  {
+   "source": "위키백과 조회수",
+   "kind": "관심",
+   "url": "",
+   "title": "Stephen Miller",
+   "when": "2026-11-06",
+   "views": 220230
+  },
+  {
+   "source": "위키백과 조회수",
+   "kind": "관심",
+   "url": "",
+   "title": "2026 United States elections",
+   "when": "2026-11-06",
+   "views": 219097
+  },
+  {
+   "source": "위키백과 조회수",
+   "kind": "관심",
+   "url": "",
+   "title": "Jon Ossoff",
+   "when": "2026-11-06",
+   "views": 211594
+  },
+  {
+   "source": "위키백과 조회수",
+   "kind": "관심",
+   "url": "",
+   "title": ".xyz",
+   "when": "2026-11-06",
+   "views": 209858
+  },
+  {
+   "source": "위키백과 조회수",
+   "kind": "관심",
+   "url": "",
+   "title": ".xxx",
+   "when": "2026-11-06",
+   "views": 199678
+  },
+  {
+   "source": "위키백과 조회수",
+   "kind": "관심",
+   "url": "",
+   "title": "Nithya Raman",
+   "when": "2026-11-06",
+   "views": 184633
+  },
+  {
+   "source": "위키백과 조회수",
+   "kind": "관심",
+   "url": "",
+   "title": "James Talarico",
+   "when": "2026-11-06",
+   "views": 171286
+  },
+  {
+   "source": "위키백과 조회수",
+   "kind": "관심",
+   "url": "",
+   "title": "Scene (2026 film)",
+   "when": "2026-11-06",
+   "views": 159862
+  },
+  {
+   "source": "위키백과 조회수",
+   "kind": "관심",
+   "url": "",
+   "title": "Joe Fagnano",
+   "when": "2026-11-06",
+   "views": 149695
+  },
+  {
+   "source": "위키백과 조회수",
+   "kind": "관심",
+   "url": "",
+   "title": "Gina Hinojosa",
+   "when": "2026-11-06",
+   "views": 138504
+  },
+  {
+   "source": "위키백과 조회수",
+   "kind": "관심",
+   "url": "",
+   "title": "Deaths in 2026",
+   "when": "2026-11-06",
+   "views": 136047
+  },
+  {
+   "source": "위키백과 조회수",
+   "kind": "관심",
+   "url": "",
+   "title": "Godzilla Minus Zero",
+   "when": "2026-11-06",
+   "views": 122560
+  },
+  {
+   "source": "위키백과 조회수",
+   "kind": "관심",
+   "url": "",
+   "title": "Joran van der Sloot",
+   "when": "2026-11-06",
+   "views": 114800
+  },
+  {
+   "source": "위키백과 조회수",
+   "kind": "관심",
+   "url": "",
+   "title": "2026 United States Senate elections",
+   "when": "2026-11-06",
+   "views": 101863
+  },
+  {
+   "source": "위키백과 조회수",
+   "kind": "관심",
+   "url": "",
+   "title": "2026 United States House of Representatives elections",
+   "when": "2026-11-06",
+   "views": 97301
+  },
+  {
+   "source": "위키백과 조회수",
+   "kind": "관심",
+   "url": "",
+   "title": "Ansel Adams",
+   "when": "2026-11-06",
+   "views": 95161
+  },
+  {
+   "source": "위키백과 조회수",
+   "kind": "관심",
+   "url": "",
+   "title": "Susie Wiles",
+   "when": "2026-11-06",
+   "views": 94701
+  },
+  {
+   "source": "해커뉴스",
+   "kind": "기술",
+   "title": "Goodbye Claude, hello Pi",
+   "url": "https://caleb.software/posts/claude-to-pi.html",
+   "when": "2026-11-08",
+   "score": 664
+  },
+  {
+   "source": "해커뉴스",
+   "kind": "기술",
+   "title": "Claude Code's \"Don't Ask Again\" exposes passwords in 1,122 public GitHub files",
+   "url": "https://apiiro.com/blog/coding-agents-leaking-secrets-github-dont-ask-again",
+   "when": "2026-11-07",
+   "score": 571
+  },
+  {
+   "source": "해커뉴스",
+   "kind": "기술",
+   "title": "Goldman Sachs is pulling Claude Code from its bankers and traders",
+   "url": "https://www.thestateofai.com/news/goldman-sachs-claude-code-traders-bankers",
+   "when": "2026-11-08",
+   "score": 517
+  },
+  {
+   "source": "해커뉴스",
+   "kind": "기술",
+   "title": "Llama-modchip: 284B DeepSeek on 64GB RAM, no GPU",
+   "url": "https://github.com/synchopate/llama-modchip",
+   "when": "2026-11-08",
+   "score": 331
+  },
+  {
+   "source": "해커뉴스",
+   "kind": "기술",
+   "title": "Nvidia Board of Directors Is Investigating Jensen Huang",
+   "url": "https://nvidianews.nvidia.com/news/statement-from-nvidia-board-of-directors",
+   "when": "2026-11-08",
+   "score": 304
+  },
+  {
+   "source": "해커뉴스",
+   "kind": "기술",
+   "title": "Writing as a thinking tool",
+   "url": "http://muratbuffalo.blogspot.com/2026/11/writing-as-thinking-tool.html",
+   "when": "2026-11-08",
+   "score": 250
+  },
+  {
+   "source": "해커뉴스",
+   "kind": "기술",
+   "title": "Declarative Dragging",
+   "url": "https://declarative-dragging.github.io/",
+   "when": "2026-11-04",
+   "score": 236
+  },
+  {
+   "source": "해커뉴스",
+   "kind": "기술",
+   "title": "Outlook.com Is Quietly Rejecting Email from Domains Without DMARC",
+   "url": "https://mailroute.net/blog/outlook-rejecting-email-without-dmarc",
+   "when": "2026-11-08",
+   "score": 175
+  },
+  {
+   "source": "해커뉴스",
+   "kind": "기술",
+   "title": "Agent memory needs its OpenTelemetry moment",
+   "url": "https://www.lorekit.io/blog/open-agent-memory-format",
+   "when": "2026-11-08",
+   "score": 163
+  },
+  {
+   "source": "해커뉴스",
+   "kind": "기술",
+   "title": "Clj.rs – a Clojure dialect implemented in Rust",
+   "url": "https://clj.rs/",
+   "when": "2026-11-04",
+   "score": 160
+  },
+  {
+   "source": "해커뉴스",
+   "kind": "기술",
+   "title": "Dux: Free, open-source Wayland desktop shell with file manager and theming",
+   "url": "https://duxlabs.dev/",
+   "when": "2026-11-08",
+   "score": 146
+  },
+  {
+   "source": "해커뉴스",
+   "kind": "기술",
+   "title": "Porting Android 16 to my blind mother's keypad phone",
+   "url": "https://z1x.us/blog/four-hundred-bucks-of-e-waste",
+   "when": "2026-11-04",
+   "score": 141
+  },
+  {
+   "source": "해커뉴스",
+   "kind": "기술",
+   "title": "Show HN: Vegetable Gardening for Engineers",
+   "url": "https://jrcpl.us/contrib/2020/gardening-for-engineers/",
+   "when": "2026-11-04",
+   "score": 140
+  },
+  {
+   "source": "해커뉴스",
+   "kind": "기술",
+   "title": "How I Fight AI Brain Fry",
+   "url": "https://sergeykuhne.com/blog/fighting-ai-brain-fry",
+   "when": "2026-11-08",
+   "score": 116
+  },
+  {
+   "source": "해커뉴스",
+   "kind": "기술",
+   "title": "Nvidia CEO Jensen Huang's letter to staff about affair",
+   "url": "https://www.axios.com/2026/11/08/nvidia-ceo-jensen-huang-affair-email-to-company",
+   "when": "2026-11-08",
+   "score": 108
+  },
+  {
+   "source": "구글트렌드 미국",
+   "kind": "검색",
+   "title": "fred warner",
+   "url": "",
+   "when": "",
+   "traffic": "200+"
+  },
+  {
+   "source": "구글트렌드 미국",
+   "kind": "검색",
+   "title": "iihf world junior championship russia reintegration",
+   "url": "",
+   "when": "",
+   "traffic": "200+"
+  },
+  {
+   "source": "구글트렌드 미국",
+   "kind": "검색",
+   "title": "pbr",
+   "url": "",
+   "when": "",
+   "traffic": "200+"
+  },
+  {
+   "source": "구글트렌드 미국",
+   "kind": "검색",
+   "title": "aj barner",
+   "url": "",
+   "when": "",
+   "traffic": "20000+"
+  },
+  {
+   "source": "구글트렌드 미국",
+   "kind": "검색",
+   "title": "bulls",
+   "url": "",
+   "when": "",
+   "traffic": "2000+"
+  },
+  {
+   "source": "구글트렌드 미국",
+   "kind": "검색",
+   "title": "kayshon boutte",
+   "url": "",
+   "when": "",
+   "traffic": "1000+"
+  },
+  {
+   "source": "구글트렌드 미국",
+   "kind": "검색",
+   "title": "you can see everything box office",
+   "url": "",
+   "when": "",
+   "traffic": "200+"
+  },
+  {
+   "source": "구글트렌드 미국",
+   "kind": "검색",
+   "title": "south carolina vs unc",
+   "url": "",
+   "when": "",
+   "traffic": "2000+"
+  },
+  {
+   "source": "구글트렌드 미국",
+   "kind": "검색",
+   "title": "tolima - millonarios",
+   "url": "",
+   "when": "",
+   "traffic": "1000+"
+  },
+  {
+   "source": "구글트렌드 미국",
+   "kind": "검색",
+   "title": "mike mcdaniel",
+   "url": "",
+   "when": "",
+   "traffic": "1000+"
+  },
+  {
+   "source": "구글트렌드 한국",
+   "kind": "검색",
+   "title": "송중기",
+   "url": "",
+   "when": "",
+   "traffic": "2000+"
+  },
+  {
+   "source": "구글트렌드 한국",
+   "kind": "검색",
+   "title": "blg",
+   "url": "",
+   "when": "",
+   "traffic": "200+"
+  },
+  {
+   "source": "구글트렌드 한국",
+   "kind": "검색",
+   "title": "숲",
+   "url": "",
+   "when": "",
+   "traffic": "500+"
+  },
+  {
+   "source": "구글트렌드 한국",
+   "kind": "검색",
+   "title": "weather",
+   "url": "",
+   "when": "",
+   "traffic": "2000+"
+  },
+  {
+   "source": "구글트렌드 한국",
+   "kind": "검색",
+   "title": "농업",
+   "url": "",
+   "when": "",
+   "traffic": "500+"
+  },
+  {
+   "source": "구글트렌드 한국",
+   "kind": "검색",
+   "title": "한푸",
+   "url": "",
+   "when": "",
+   "traffic": "200+"
+  },
+  {
+   "source": "구글트렌드 한국",
+   "kind": "검색",
+   "title": "klasemen manchester united f.c. vs aston villa",
+   "url": "",
+   "when": "",
+   "traffic": "200+"
+  },
+  {
+   "source": "구글트렌드 한국",
+   "kind": "검색",
+   "title": "สภาพอากาศ",
+   "url": "",
+   "when": "",
+   "traffic": "1000+"
+  },
+  {
+   "source": "구글트렌드 한국",
+   "kind": "검색",
+   "title": "thời tiết",
+   "url": "",
+   "when": "",
+   "traffic": "1000+"
+  },
+  {
+   "source": "구글트렌드 한국",
+   "kind": "검색",
+   "title": "톱스타뉴스",
+   "url": "",
+   "when": "",
+   "traffic": "2000+"
+  },
+  {
+   "source": "구글트렌드 영국",
+   "kind": "검색",
+   "title": "jessica pegula",
+   "url": "",
+   "when": "",
+   "traffic": "200+"
+  },
+  {
+   "source": "구글트렌드 영국",
+   "kind": "검색",
+   "title": "josh jacobs",
+   "url": "",
+   "when": "",
+   "traffic": "200+"
+  },
+  {
+   "source": "구글트렌드 영국",
+   "kind": "검색",
+   "title": "why 41 poppies on the king's wreath",
+   "url": "",
+   "when": "",
+   "traffic": "50000+"
+  },
+  {
+   "source": "구글트렌드 영국",
+   "kind": "검색",
+   "title": "new harry potter books 2027",
+   "url": "",
+   "when": "",
+   "traffic": "1000+"
+  },
+  {
+   "source": "구글트렌드 영국",
+   "kind": "검색",
+   "title": "pistons vs lakers",
+   "url": "",
+   "when": "",
+   "traffic": "500+"
+  },
+  {
+   "source": "구글트렌드 영국",
+   "kind": "검색",
+   "title": "coco gauff",
+   "url": "",
+   "when": "",
+   "traffic": "200+"
+  },
+  {
+   "source": "구글트렌드 영국",
+   "kind": "검색",
+   "title": "49ers",
+   "url": "",
+   "when": "",
+   "traffic": "200+"
+  },
+  {
+   "source": "구글트렌드 영국",
+   "kind": "검색",
+   "title": "william saliba",
+   "url": "",
+   "when": "",
+   "traffic": "1000+"
+  },
+  {
+   "source": "구글트렌드 영국",
+   "kind": "검색",
+   "title": "celine dion",
+   "url": "",
+   "when": "",
+   "traffic": "200+"
+  },
+  {
+   "source": "구글트렌드 영국",
+   "kind": "검색",
+   "title": "benfica",
+   "url": "",
+   "when": "",
+   "traffic": "500+"
+  },
+  {
+   "source": "구글트렌드 일본",
+   "kind": "검색",
+   "title": "かわいいだけじゃだめですか?",
+   "url": "",
+   "when": "",
+   "traffic": "100+"
+  },
+  {
+   "source": "구글트렌드 일본",
+   "kind": "검색",
+   "title": "山梨 天気",
+   "url": "",
+   "when": "",
+   "traffic": "100+"
+  },
+  {
+   "source": "구글트렌드 일본",
+   "kind": "검색",
+   "title": "ななにー 地下abema",
+   "url": "",
+   "when": "",
+   "traffic": "100+"
+  },
+  {
+   "source": "구글트렌드 일본",
+   "kind": "검색",
+   "title": "週刊現代",
+   "url": "",
+   "when": "",
+   "traffic": "100+"
+  },
+  {
+   "source": "구글트렌드 일본",
+   "kind": "검색",
+   "title": "イ・ボミ",
+   "url": "",
+   "when": "",
+   "traffic": "200+"
+  },
+  {
+   "source": "구글트렌드 일본",
+   "kind": "검색",
+   "title": "黃仁勳",
+   "url": "",
+   "when": "",
+   "traffic": "200+"
+  },
+  {
+   "source": "구글트렌드 일본",
+   "kind": "검색",
+   "title": "大阪天気",
+   "url": "",
+   "when": "",
+   "traffic": "2000+"
+  },
+  {
+   "source": "구글트렌드 일본",
+   "kind": "검색",
+   "title": "天気予報",
+   "url": "",
+   "when": "",
+   "traffic": "10000+"
+  },
+  {
+   "source": "구글트렌드 일본",
+   "kind": "검색",
+   "title": "吉田輝星",
+   "url": "",
+   "when": "",
+   "traffic": "100+"
+  },
+  {
+   "source": "구글트렌드 일본",
+   "kind": "검색",
+   "title": "長崎天気",
+   "url": "",
+   "when": "",
+   "traffic": "1000+"
+  },
+  {
+   "source": "구글뉴스 세계",
+   "kind": "뉴스",
+   "title": "Top House Democrat Hakeem Jeffries 'a hard yes' on impeaching Pete Hegseth - BBC",
+   "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBRQmRlVU1CeEg3c09yaDNzWC1JbVJ6bTFzUnhNcE5nTjd4bmQ2V09VNWJUT3hoZ3lsWG5teVBpeDRndk03VGFSZjFXaDl5VFkwRk5PdEp2Z3AtY00?oc=5",
+   "when": "Sun, 08 Nov 2026"
+  },
+  {
+   "source": "구글뉴스 세계",
+   "kind": "뉴스",
+   "title": "How a Mississippi election came down to the clerk’s office - The Washington Post",
+   "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOS2VSeEJuZUZtTThnRjdWREI1VXZFV3AtenhQR2taM2FrMXFaN2xRbDhaVVdCdTlsSnZfYTdPMWZUMFZYejRnX3ZEZTN2TUJKRU4yMTdhblZlVDdLbFBvbWJaQ2lEUzFRTllDcWNMOXJJVUhsXzl4RnpUYkg2T18yV0xCOFA3b0xrLUpqT040R0tMMU5EQUY2cEpxNVE3UQ?oc=5",
+   "when": "Sun, 08 Nov 2026"
+  },
+  {
+   "source": "구글뉴스 세계",
+   "kind": "뉴스",
+   "title": "Potential Vance challengers smell blood in the water after brutal GOP losses - The Washington Post",
+   "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNNUZIQUxDUjgyWTJFcnptb2FZY3phcHBBaVlxQkcyMTVxd25vcDZDNGhGbjE3bEkzbXNxbjZLRk9nX29qRmR2SUpXdGc2UFZMWHVFVWx5aEV2R09KTHppUXYzdDlOdTVZbFN3ekNoZmVLMXowR3QyUFJrNVNKYTh2T2xxSVQ4NjBYbUh6dWVpUDRRM25HSlY1NmFiUTU4dWVyUF8wRWpLaTU3UjEyRVA2UlZ6LWtjU1BQa3I3bGVR?oc=5",
+   "when": "Sun, 08 Nov 2026"
+  },
+  {
+   "source": "구글뉴스 세계",
+   "kind": "뉴스",
+   "title": "Trump's AG won't rule out prosecuting Democrats who threaten to investigate - Axios",
+   "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNNVZiN25FOFNGUDl4UjFlY2VIZ0QzLUg4TzhMWk51UXpkT0RKMnVJME1XR1l3ejNHVHNvWHdTbXJlNDF6V1VuM0pSbi1KM3lRZFByZEQwQWVPSGZZdENFR1lxMG5ZWGh1dVNEa3lPTDN0cGJVdmhKWUZtX1NSbDJHb3p6OC1yUktN?oc=5",
+   "when": "Sun, 08 Nov 2026"
+  },
+  {
+   "source": "구글뉴스 세계",
+   "kind": "뉴스",
+   "title": "Sen.-elect Adam Hamilton says he’d be disappointed if Democrats focus on investigating Trump - NBC News",
+   "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOeWliUUVQLUIwblJESW9meTA3OGMyTnB1U1NXSmRVTHdhUkY1WndiZ2EybFFEYXNpSFp6cVdZcGxBSTFreFhUc2l4MUxCU3ZlZGxwaXhtU093d0hJWW5BRUwzSTY5dXdHWHVqQ1pORE5UQ2FwaGt4SWs5cjhydHZ2TDJLZFhuS1RzSVhNVFB0UXQ5SDZ4d0c2TzVYY3RET2RQMXAyV0hWLUxVVVZFYVRfVkhGeGp5bmthOFBOZFFNOA?oc=5",
+   "when": "Sun, 08 Nov 2026"
+  },
+  {
+   "source": "구글뉴스 세계",
+   "kind": "뉴스",
+   "title": "Collision between 2 trains in Egypt kills 7 and injures at least 125 - AP News",
+   "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOR1pDemVhQ0RJdmhpWXA2akRYZHFLSkpCaXlHdUIwRmZab2JCcHdDMEU0VU5QajU2ODBvc21yUm5TLW9oUlRhWVI0Z2FUX2cta21RZFhYSEJIa3R4TjhDQkpnTWlBS0VvZDRhSnowTGlwdThyODM2UlEwTHlHQnM3N0E5LTR5dWlXZEZDZS02T3NlbnBmQ1ZaSXdhV21nbVJWRmZuTWF6Q3g5MDQ?oc=5",
+   "when": "Sun, 08 Nov 2026"
+  },
+  {
+   "source": "구글뉴스 세계",
+   "kind": "뉴스",
+   "title": "School aide who briefly served as NYPD officer arrested in fatal stabbing of Brooklyn jogger - NBC News",
+   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOWUowd0U2QVJXSzZtbGx4N2NOel80YV9ibkpzWXVZTGc1cERkZjNBalZwOFlWUTY0M3FsRDFZQ2F2dWNVSVl4MWh1RzJBcFNUdWNEYlRNZjIzR1hyRVJwUXBoZF9oWDhaYXFzaV9EZDFaTm8xU3EwRkJIQlJOZ082TWJEc1NKVG11SzZlZU1tSlRvcHdvckF6bXdpN0FIVDhhbXJQTjJB?oc=5",
+   "when": "Sun, 08 Nov 2026"
+  },
+  {
+   "source": "구글뉴스 세계",
+   "kind": "뉴스",
+   "title": "1 dead, 3 others injured following two separate shootings at Winston-Salem State University - WXII",
+   "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOeVowZ1g3UUpIakstZDlGU3Y0dTdWQXZJeldUTU9PMVA3NVlYTkczY3lnY3Z6TkpsT0RoS01tVkhmbnhXekkxbVpjQUNWdzk4bEpOQlh2b0xUc2hnc0NPU1NldDhlbUhheHJFeU91SHlaWDR1OUxrUHdaYm1TMF9maWVCd0xNZU9pc3RBeUtsb00?oc=5",
+   "when": "Sun, 08 Nov 2026"
+  },
+  {
+   "source": "구글뉴스 세계",
+   "kind": "뉴스",
+   "title": "Capital Cycling Club: Patrick Turner killed, 7 cyclists injured after vehicle strikes group of bicyclists in Wake County - ABC11 News",
+   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQQkFTQ1VUbWp5Rk9sZmJJaVpOODNydGRxS0J1cUNCRmtGaFZpbGkzY2d3Qjk1UmtZQTBsaTVpb3kwY1BzdDgtcHUyR2VSbnk2amJuOWw3RUtxOUppVzVreWI1V1p4TzdlMzBmdGVCeFFPNlkyT2Uzb0lMdmFUOHBnLWNmSVJKOUdSR3VvWDBXenAzTWdfUzI3Z3p0MGTSAaIBQVVfeXFMUFV5YWRwZjBOWmF3Y2ljekgxejl4Q3JrSXU4aHBGd1dYbjI5WUQ3bGx1MTBjaENZMmdORGtQWTU3MFJDQ3FjcUZYdnA4R091MHBMRnpHTThGc2ZLc1RwUVF6RmFhaUo5TjRqUGRrVzR4Vlc4SzhmSlV1MkFlRS1Mc1o0Z3BvWkcxRktLU0ZpcTRKd05OcmctWDNSMmc2R19oQ3N3?oc=5",
+   "when": "Sun, 08 Nov 2026"
+  },
+  {
+   "source": "구글뉴스 세계",
+   "kind": "뉴스",
+   "title": "Deputy White House Chief of Staff Richard Walters exits job ahead of Stephen Miller takeover - Fox News",
+   "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPelB1UE9iOEY3T3lJMUxacURjYWptSmNrX196eThwcDdLaFBGX0ctMG1oUXhiaC05QXd2Wl9qeS05djBFRUttNGtkakRiRDlic1I5MDRuSGM0QzgwcDQ3TmFJck5tRXRnTmhmSlpxM2VlLWtlTEJGRmgzZUVvMGlVZ24zdkFDNkVUUEZTdVo1VFI1b1gtNVNYd0dpWjhGLUJPX1l0Wk51eFJqTjlwRXYxd21MVUwxLVlrSVRJ0gHAAUFVX3lxTE1jRFdIVHNfenBrTnltQWM2R1NyMThRa0EycEUxWHFfQ2pFdlZiWE4tV3NUY0s2ZnV2bFpndEN4THhuM19uZ1ZCOXVlblZkWkdTa2MwLTZpQWZPVlBXMkNLX1h6amlRcktRaHo2V1NGQkZ2SEpxQVFTU0puRzJtcF8wbURIQXhPYXhrcEFuVTVqRmcwb0VHY1EyXzNvZ3RmcmJ5QUJDUmxhNGViOXA0SWQ2cTgyOUxhQVRrRDVSTVVUWQ?oc=5",
+   "when": "Sun, 08 Nov 2026"
+  },
+  {
+   "source": "구글뉴스 세계",
+   "kind": "뉴스",
+   "title": "A Missionary Pope Faces a Chain Saw-Wielding Populist in Argentina - WSJ",
+   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPMF9zWG9Bd3dIY3FRUl90dE5TNFI0bE9fZjl4VERCazM1TkhHTFNJN0tSRGx0c1ptdUV4RG0zN2NSSjk2RGJZN1d6R1dJV2VkZHJQdXpRTnltZzVfM091Q3ppUEJtVGhjQ0ItZFZWeXdycXo3eExqYXpaV3hjVVMtVXJ4U1ozdS1KS09Ra2VSM1dFYjU2Z1F2eE5aUkY4UVdLcnBoLXdQUFJzWWJZVUVR?oc=5",
+   "when": "Sun, 08 Nov 2026"
+  },
+  {
+   "source": "구글뉴스 세계",
+   "kind": "뉴스",
+   "title": "Poland mourns victims of Krakow mass shooting as terrorism probe launched - CBS News",
+   "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQRFlEVHJNZ2F1WUk1dlB6MGxoWm1kRjBmaWdDV2VzaUY2TWg3bFhtcVhGNGswQllzd0lXdkh1aW14ZFBJS3lVWldKTl9HTXBiM3FOY1h1U3NKZ0JEdFJGTDB0ZFhVcDhiSzRMd0NJajFUUzFBMWJ3YmRyYjdZOTAtV25RWjlJS3h5LU9jMHlzSVRzQQ?oc=5",
+   "when": "Sun, 08 Nov 2026"
+  },
+  {
+   "source": "구글뉴스 세계",
+   "kind": "뉴스",
+   "title": "No clear winner in New Zealand election, as leaders prepare for weeks of talks - NPR",
+   "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOY3o2eFZkekpBRXNYdktqb2JoT2N5MklUYS1KakpENWdUWUxqaWpSMVRXM3NodXA1aG1JY3JTbDBfTHhleUd4aV9Rd1NiMTJFNmtnRjBYWkpJLUthMGN5aGk3Sk1lanNHY2Fwc2Q2THlvZ0hlbTBxdTVxTEVNa0NaLUEtTVR3cHNZQmhBS0hSTTNnaU1pUkE2QXU5dFUzbHB5bjZhZ1Jha0dXX0JPY3VQbTdTZEJVY3RwcExyczJ5NA?oc=5",
+   "when": "Sun, 08 Nov 2026"
+  },
+  {
+   "source": "구글뉴스 세계",
+   "kind": "뉴스",
+   "title": "Netanyahu rival Eisenkot tapped to form Israeli government - Axios",
+   "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNNmlUTjlyRlZYWGxKSWtiSE42dVl5N1QtdFlhS3ZKWFQ1cGVwU3dFZDFmUHRFZGYxak9jOVFteVVPcy1SUGVURGFVVnQ2QlIxYUJRbkg5bFZVN3l5NEZDSEs3RFllcFF0aXF4LVRGWTA2NE9LZ3ZraWtzdkl4dm1MRWJn?oc=5",
+   "when": "Sun, 08 Nov 2026"
+  },
+  {
+   "source": "구글뉴스 세계",
+   "kind": "뉴스",
+   "title": "Nvidia Opens Investigation Into Jensen Huang’s Relationship With Chinese Spy - The New York Times",
+   "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQaHdZZkpucG9aOVF5R2JPeHljWV85XzlhbUxnbUREYWlKQzBiR1UzeWxwaF9EMnpDajI1aXlmMlo0aENzeGdyRzJDSEtJR0xVanhFSkN3bXE0R1FYV2VWZHdIV1A1MmFlczN4VnRZcVZ5QV9xdUlxZXVlZVl3eHRqVWxsVmE1dktHZzdnelB0ZjUwejJj?oc=5",
+   "when": "Sun, 08 Nov 2026"
+  },
+  {
+   "source": "구글뉴스 한국",
+   "kind": "뉴스",
+   "title": "‘대장동 숨은 설계자’ 공세에…이용철 법무장관 후보자 “아는 것 없다” - 한겨레",
+   "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBVUlNzTnN4Y3VHTDBGb2dTLThWYnBBeHJhVlptVEJEX2NVOEs4OVZxdE5tS0xnZjV2ZElqd1dFX0RYUC1pU2k5NmpnSmExOEh2WGR1T3RWUXRLeWZnRnVjN0JJSG55YmZVVUE?oc=5",
+   "when": "Sun, 08 Nov 2026"
+  },
+  {
+   "source": "구글뉴스 한국",
+   "kind": "뉴스",
+   "title": "당정, 소방 재정 최소 2조 지원···여당 ‘종부세 공제 14억 통일’ 요청 - 경향신문",
+   "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5VeWlnRXFPUF9TMmw4X0lPb0E3ejY0TmZ1THdXNUFkMHhDWTVWc1FHaG0yN2FJY3Y3UVJqNnVkR2ZzTXRUSURnWnJCVmRkUTVNQTZmYXNGWWJ1d9IBX0FVX3lxTE5DRzRXR08taWU1U3NUdVVwM2FwdC1TR0VDRmNqZDBVV0JWWTI1WTlWVVJET2ctdTh3SFNpV3lYaXRfWkRPbXIxc21jQ2xMMjZ6UUhmWnBUTy1QRW5NdHFJ?oc=5",
+   "when": "Sun, 08 Nov 2026"
+  },
+  {
+   "source": "구글뉴스 한국",
+   "kind": "뉴스",
+   "title": "조작기소 특검과 이용철 법무장관… ‘공소취소’ 빌드업 시작인가 - 조선일보",
+   "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQTktZaFMwY3Yza1hGNlZtVTZWNzl6V2NUdkZYdTlOM0Z5cEJKazNTOC1wUVNqWDBXeE4xN0ZuSm1IY2V2TDMyX1RvN2dXSThlcmh5WlFkU2lTQmlhZnF6UlhycFhkSV8wN281dmJmYUwzdm9YVTNIN25xbU8ya2FqSE95SU9zTEhDWDEwNWlXd18?oc=5",
+   "when": "Sun, 08 Nov 2026"
+  },
+  {
+   "source": "구글뉴스 한국",
+   "kind": "뉴스",
+   "title": "美하원의장 유력 제프리스 \"백악관 새 비서실장과 협력 않겠다\" - MBC 뉴스",
+   "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE16WDhSVTZvN3JXOTdtMDNvdGxSbFR5MDZCaUhMYmE4NUtHRGtoZ3lvTktzaDdtY3pCWGNkYVEtQkxjNjZDdWR3RHpobE83VmJpa0lYMHlzNXNTUDBIQ3F5bUNSWFdvdGZxRHJLNElOYW5mNTdQ0gF0QVVfeXFMTTI2T2xNSmc4UGpZVFRqOWJYN1ZmY2tpeEMwc1V3SFcyZi0yM1dmSTZyck5BZE5kcHd2TVJZc2dSZ3AxRlpkVHBpNW16OEpSS21SWTlXSUx4SXNiMnY1bFZwem5jRlNzLUdhYjh0Q3FmcGZSb3c?oc=5",
+   "when": "Sun, 08 Nov 2026"
+  },
+  {
+   "source": "구글뉴스 한국",
+   "kind": "뉴스",
+   "title": "與 “총선 직결” 비거주 1주택도 종부세 공제 14억 요구…靑 “불가” - 동아일보",
+   "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9kNXMwZVFVbm9xbGFxRVYxSU1WeUVncnk1alRDLTY4R19WWVlCVVdtMTRIMWhkRnFvclRrSW1WLV9PZmMtb080UkQwYkJzV3IxY0tJUm9oWkRrNkVVYVBUT0JUWjIyWk95UGVyTG5rYXFEWjA0Nmtr0gFmQVVfeXFMUGZqY1FSaGZuaWxUZXNNbjJWbFYtb1VkWEhMNko5WjMxc2xEY2RGS1BOYXRaMmxzUy1UQzZ4b0U4c3pQYlpCRDNTM3NQRnBxS3RYeTkyeGFmMFlDOWFGYURzcDY5WHJR?oc=5",
+   "when": "Sun, 08 Nov 2026"
+  },
+  {
+   "source": "구글뉴스 한국",
+   "kind": "뉴스",
+   "title": "유튜브 ‘대통령의 Y’ 4회 제작으로 계획… 회당 1700만원 투입 - 조선일보",
+   "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQQUdxZVgxVS15RFRXVXhVd1gtckNrN2dfUFBoRzVJbkZXeVQtRUV1Yk1fNUdUZElhX21WdmZBd3V3NVF5Znh6MmtvXy1wd2xtMGpwTHo5WTRINXVleGdwcGoyVGo5RGdjX0g0bjRQZFpWal9XSTFJNjhwM0xtN3RPc1BsaG5PZw?oc=5",
+   "when": "Sun, 08 Nov 2026"
+  },
+  {
+   "source": "구글뉴스 한국",
+   "kind": "뉴스",
+   "title": "대구·경북 9일 오후부터 또 늦가을비...최고 10mm내외 - 뉴스핌",
+   "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1TUDdOWEh0aFUxS0QybzdvU0hNbDkxTWtDZ05DRHltX3RUMXR6Z1B2QjR2YWJiZFRTNzFJQWhpOGpSVHFqcmZzQmNQRURJNi1yY1E4TU1TTnRDWnc4?oc=5",
+   "when": "Sun, 08 Nov 2026"
+  },
+  {
+   "source": "구글뉴스 한국",
+   "kind": "뉴스",
+   "title": "'잊지 말 것' 폴더 속 14년 전 기자 녹음이 윤석열 당선 무효 만들었다 - 한국일보",
+   "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBBaHJNR2ZDWHhxR0pLVVJzQkdMZWJhR0tlOHYtVGNiTjE0VzVrTFhBQUx0NC1OZjJLNHBmb1ljMTEtLUlrOHpoUTVjQS1Gbl9Vdk5yVmcza2FOS2wzWHQ2TFktV1V3QmU1TzhIT2N30gFzQVVfeXFMUHhrZzctc0k2c1Z5YVpEYlNrMV9DdVBtWXdibDZZZ0VqZVBmcG5yWTgyWU1Yem03MkhhbkROSzlVa1NGZndOWkxNZHBoVVRlSHJfenNjcWs3YTRwY2dvRzZld1daMGxyaFA1dnN6WU5FeGFDdw?oc=5",
+   "when": "Sun, 08 Nov 2026"
+  },
+  {
+   "source": "구글뉴스 한국",
+   "kind": "뉴스",
+   "title": "'아내가 더 간절했네' 강민호, 비로소 세운 가장의 자존심 \"여보, 최고의 생일 선물이지? 아이들 직관 너무 행복\" - 노컷뉴스",
+   "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1mWjN3S0xIMDBZU3RhenhFaGNqRllmUGlzT1Z4VXRtTjZFdEdEODlTbENObXQ4dmN4STI5WDZwUUlqVlBDaEtnOHVsYkJmVGlaLXc?oc=5",
+   "when": "Sun, 08 Nov 2026"
+  },
+  {
+   "source": "구글뉴스 한국",
+   "kind": "뉴스",
+   "title": "광안리 밤하늘 수놓은 불꽃 8만발… 120만명 환호 - 조선일보",
+   "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPRzlTcEdCNWZPeWh4Y3VWSDA1U245SlBkVTZOWEQxcWNNUVJ6TXYxS1E3Qk05YWpRZ09qWXBGbUNBQmhmdWpsbktpcVdmTm5kN0VfeXNMdDRDb3ptVjJBei15TmFTbkl1LWFab2lNSEt2UlR1LUpvQ0NZZjdPVjRIM2hZRlE2eGJVVlp1NHNwd04?oc=5",
+   "when": "Sun, 08 Nov 2026"
+  },
+  {
+   "source": "구글뉴스 한국",
+   "kind": "뉴스",
+   "title": "트럼프, 이란 재공격 가능성에 합의 전제로 \"매우 작아\" - 연합뉴스",
+   "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE95Z2Eyc0NMd1BwNThoUjRYTFlFZHVmMVlONHpVb3ZHSDJiMzE5eUNSVFk3N281S2ZNUnVyNS1EZVZ4cnJyREt4cWV6U3pIMlF5enFweXl1cnlQMFnSAWBBVV95cUxQbERDdjFRTEE5NWtEQU01VWxwZUFOT0tHS2tRM2JYYjZCeDNKaUpQNWlieF9GNlB1OXZtbnJHaV9pVTAxbkpVSjVrLXNLZTJtRXU3WnRlN2Y5OGZvbnQ1bFM?oc=5",
+   "when": "Sun, 08 Nov 2026"
+  },
+  {
+   "source": "구글뉴스 한국",
+   "kind": "뉴스",
+   "title": "이스라엘 야당 대표에 연정 구성권… 네타냐후 실각 위기 - 동아일보",
+   "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE96MGdWYXdJRW93R3ZEelNTUmFwV1UzQ1JyVHpzTDZzeHd5b2NWaWUxUkFjMEQ1SGtiUGhKVkRyQW5uMk9KOUdKRVctMXl0c2pSajU0WmJPNWpUZHk5bkNMRmdfc3FNODJLemF1OTFFMERLbGfSAWZBVV95cUxQYV9ucDJocHZYMGd0WEFGQVhPTjZEcFEtOTlWZDRHcmVvNWJCNjNJRDdvU3VmRExtY0pVeVlTeHBNdWxzaDdlRnVqVGRNb2w5SWtzVVZBWC00VDUwVVYtdnJlSUh4b3c?oc=5",
+   "when": "Sun, 08 Nov 2026"
+  },
+  {
+   "source": "구글뉴스 한국",
+   "kind": "뉴스",
+   "title": "폴란드 크라쿠프서 총기난사로 사상자 수십명 발생...'용의자는 극단적 민족주의자' - BBC",
+   "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBMSUZqN3pHZy1zbXhVbWl5ejNzYjBoREx4WmtyOS1mYnFPWFppZ0N3S3BBUDdINlBjVHhQZHRzbUZpVEFGRnVoWEVrRTVoTWVZN01HTlVha1ZKTVl5c0HSAWNBVV95cUxNd0VoaGpNQ2tBZ0FRcEkyajZtbGpsVHJ4LVBSbVBib2ZZRmpXX1plY09hYmRwMk5JTlNJT1lhVWJ0elFnZHlJUXN2endvYjlMMEtFeHl2MUdtQmdLY21ad2xOSVU?oc=5",
+   "when": "Sun, 08 Nov 2026"
+  },
+  {
+   "source": "구글뉴스 한국",
+   "kind": "뉴스",
+   "title": "젤렌스키 “러시아, 북한 KN-23 미사일로 우크라 에너지 시설 공격” - VOA 한국어 홈페이지",
+   "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5Pc20wcDlKOVcwMHBfU1lpOHBhbkJSeXp2VXVFRFRINzEycjZ1aHJUYmNjQVVadnNlc1A1b21TX0FWazhnalRsMm5VY292SjBl0gFTQVVfeXFMTTF4TkYtMGJlU3JzNDBRanpKbDV6cktTXzRzVFBRN1UxT182ZjdQM2RmYzllNlVRckw3UXdkSHBQUHJka0hoakV2S0I2MUtPMFBkMDg?oc=5",
+   "when": "Sun, 08 Nov 2026"
+  },
+  {
+   "source": "구글뉴스 한국",
+   "kind": "뉴스",
+   "title": "트럼프, 중간선거 결과에 \"거대한 후퇴\" 주장 - 연합뉴스TV",
+   "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5rVFpkR0M5a0k4SU1DVllBWU9JX3BEZm1sLWFHTHc1VXNndmRUQWMwX1lOZ3lTSFk4X1B0SnhKZHBPY3IySVF0ME1sUXhzLTNhMTNsVmM3dVpadFlvWlpEWTM4THFURU0?oc=5",
+   "when": "Sun, 08 Nov 2026"
+  },
+  {
+   "source": "BBC 월드",
+   "kind": "뉴스",
+   "title": "Surgeon having lunch near Krakow shooting undoubtedly saved officer's life, colleague says",
+   "url": "https://www.bbc.co.uk/news/articles/c5x2vw4e1gx1o?at_medium=RSS&at_campaign=rss",
+   "when": "Sun, 08 Nov 2026"
+  },
+  {
+   "source": "BBC 월드",
+   "kind": "뉴스",
+   "title": "Seven dead and more than 100 injured after trains collide in Egypt",
+   "url": "https://www.bbc.co.uk/news/articles/cwvgr20mmmevo?at_medium=RSS&at_campaign=rss",
+   "when": "Sun, 08 Nov 2026"
+  },
+  {
+   "source": "BBC 월드",
+   "kind": "뉴스",
+   "title": "Homes and temples glow across India to mark Diwali",
+   "url": "https://www.bbc.co.uk/news/articles/cm70pdwz122ro?at_medium=RSS&at_campaign=rss",
+   "when": "Sun, 08 Nov 2026"
+  },
+  {
+   "source": "BBC 월드",
+   "kind": "뉴스",
+   "title": "Iran executes three men for 'armed unrest' after January protests",
+   "url": "https://www.bbc.co.uk/news/articles/ckly0ex633ydo?at_medium=RSS&at_campaign=rss",
+   "when": "Sun, 08 Nov 2026"
+  },
+  {
+   "source": "BBC 월드",
+   "kind": "뉴스",
+   "title": "Houthis say at least 33 killed in Saudi air strike",
+   "url": "https://www.bbc.co.uk/news/articles/c65yn1v99ypmo?at_medium=RSS&at_campaign=rss",
+   "when": "Sun, 08 Nov 2026"
+  },
+  {
+   "source": "BBC 월드",
+   "kind": "뉴스",
+   "title": "'Flat', 'tired', 'cynical': Unusually gloomy Kiwis deliver New Zealand's tightest election in years",
+   "url": "https://www.bbc.co.uk/news/articles/cxr5yyg2nj9eo?at_medium=RSS&at_campaign=rss",
+   "when": "Sat, 07 Nov 2026"
+  },
+  {
+   "source": "BBC 월드",
+   "kind": "뉴스",
+   "title": "Paraguay's former president charged after bank collapse",
+   "url": "https://www.bbc.co.uk/news/articles/c68jzzvjgdy9o?at_medium=RSS&at_campaign=rss",
+   "when": "Sat, 07 Nov 2026"
+  },
+  {
+   "source": "BBC 월드",
+   "kind": "뉴스",
+   "title": "Pope in 'pretty good health' as he starts Latin America tour",
+   "url": "https://www.bbc.co.uk/news/articles/c60e0001ve9wo?at_medium=RSS&at_campaign=rss",
+   "when": "Sat, 07 Nov 2026"
+  },
+  {
+   "source": "BBC 월드",
+   "kind": "뉴스",
+   "title": "Italian foreign minister says hackers leaked his personal data",
+   "url": "https://www.bbc.co.uk/news/articles/cr20wvge32j3o?at_medium=RSS&at_campaign=rss",
+   "when": "Sat, 07 Nov 2026"
+  },
+  {
+   "source": "BBC 월드",
+   "kind": "뉴스",
+   "title": "Russian strikes wound nine and damage Ukraine's power network ahead of talks",
+   "url": "https://www.bbc.co.uk/news/articles/cm4g1nq8158po?at_medium=RSS&at_campaign=rss",
+   "when": "Sat, 07 Nov 2026"
+  },
+  {
+   "source": "BBC 월드",
+   "kind": "뉴스",
+   "title": "US offers $20m reward for information about Iran's nuclear programme",
+   "url": "https://www.bbc.co.uk/news/articles/c6d091ev3p0jo?at_medium=RSS&at_campaign=rss",
+   "when": "Sat, 07 Nov 2026"
+  },
+  {
+   "source": "BBC 월드",
+   "kind": "뉴스",
+   "title": "Meghan's father Thomas Markle under house arrest after child sex abuse material charge",
+   "url": "https://www.bbc.co.uk/news/articles/cqgkvv8m8pgyo?at_medium=RSS&at_campaign=rss",
+   "when": "Sat, 07 Nov 2026"
+  },
+  {
+   "source": "BBC 월드",
+   "kind": "뉴스",
+   "title": "UK cannot 'cherry pick' EU single market deal, Barnier tells BBC",
+   "url": "https://www.bbc.co.uk/news/articles/c9kgjj206nzpo?at_medium=RSS&at_campaign=rss",
+   "when": "Sat, 07 Nov 2026"
+  },
+  {
+   "source": "BBC 월드",
+   "kind": "뉴스",
+   "title": "Texas mayor instructs police to limit co-operation with ICE",
+   "url": "https://www.bbc.co.uk/news/articles/c8dx33d22zkro?at_medium=RSS&at_campaign=rss",
+   "when": "Sat, 07 Nov 2026"
+  },
+  {
+   "source": "BBC 월드",
+   "kind": "뉴스",
+   "title": "AI stocks climb after trillions wiped from market values",
+   "url": "https://www.bbc.co.uk/news/articles/c35ynnpzdq51o?at_medium=RSS&at_campaign=rss",
+   "when": "Fri, 06 Nov 2026"
+  },
+  {
+   "source": "Techmeme",
+   "kind": "기술",
+   "title": "Sources: officials at the Commerce Department's AI safety center CAISSI were asked to informally report to a White House office, raising independence concerns (Garance Burke/Associated Press)",
+   "url": "https://www.techmeme.com/261108/p16#a261108p16",
+   "when": "Sun, 08 Nov 2026"
+  },
+  {
+   "source": "Techmeme",
+   "kind": "기술",
+   "title": "US professional services added 70K jobs in October, the most since July 2022, as AI-exposed consulting, legal, and accounting all grew despite AI job-loss fears (Ian Hodgson/Wall Street Journal)",
+   "url": "https://www.techmeme.com/261108/p15#a261108p15",
+   "when": "Sun, 08 Nov 2026"
+  },
+  {
+   "source": "Techmeme",
+   "kind": "기술",
+   "title": "Email to staff: Jensen Huang admits an affair, takes \"full responsibility\", and says he fell short of his duties to Nvidia's board, shareholders, and employees (Madison Mills/Axios)",
+   "url": "https://www.techmeme.com/261108/p14#a261108p14",
+   "when": "Sun, 08 Nov 2026"
+  },
+  {
+   "source": "Techmeme",
+   "kind": "기술",
+   "title": "Nvidia's board launches a probe into whether Jensen Huang was targeted by a foreign spy plot, saying it has no reason to believe Nvidia secrets were compromised (Ian King/Bloomberg)",
+   "url": "https://www.techmeme.com/261108/p13#a261108p13",
+   "when": "Sun, 08 Nov 2026"
+  },
+  {
+   "source": "Techmeme",
+   "kind": "기술",
+   "title": "DeepSeek says its open-source agent app Harness hit 1.54M DAUs on November 4, less than three months after launch, and uses ~92T tokens a day, or ~60M per user (Saritha Rai/Bloomberg)",
+   "url": "https://www.techmeme.com/261108/p12#a261108p12",
+   "when": "Sun, 08 Nov 2026"
+  },
+  {
+   "source": "Techmeme",
+   "kind": "기술",
+   "title": "THORChain, which handled ~$1B of stolen Bybit funds in 2025 for $12M+ in fees, began moving the Binance loot despite FBI pleas, saying it can't stop transfers (Wall Street Journal)",
+   "url": "https://www.techmeme.com/261108/p11#a261108p11",
+   "when": "Sun, 08 Nov 2026"
+  },
+  {
+   "source": "Techmeme",
+   "kind": "기술",
+   "title": "Excluding Anthropic's IPO, AI companies sold or priced $300B+ of stock in 2026, with ~$100B more on tap, raising questions about how much the market can absorb (Alex Eichenstein/The Information)",
+   "url": "https://www.techmeme.com/261108/p10#a261108p10",
+   "when": "Sun, 08 Nov 2026"
+  },
+  {
+   "source": "Techmeme",
+   "kind": "기술",
+   "title": "Sources: John Ternus wants more urgency in Apple's AI efforts, pushing Craig Federighi to move beyond Siri AI tweaks to agentic and other advanced capabilities (Mark Gurman/Bloomberg)",
+   "url": "https://www.techmeme.com/261108/p9#a261108p9",
+   "when": "Sun, 08 Nov 2026"
+  },
+  {
+   "source": "Techmeme",
+   "kind": "기술",
+   "title": "Sources: Anthropic bought commitments for 1.7GW of gas-fired generators from equipment supplier OnePWR for $3.4B, the largest known such purchase by an AI lab (Martha Muir/Financial Times)",
+   "url": "https://www.techmeme.com/261108/p8#a261108p8",
+   "when": "Sun, 08 Nov 2026"
+  },
+  {
+   "source": "Techmeme",
+   "kind": "기술",
+   "title": "Inside Inner Mongolia, China's fastest-growing AI data center region, where construction is accelerating with low building cost and no public backlash (SemiAnalysis)",
+   "url": "https://www.techmeme.com/261108/p7#a261108p7",
+   "when": "Sun, 08 Nov 2026"
+  },
+  {
+   "source": "Techmeme",
+   "kind": "기술",
+   "title": "Major environmental groups are embracing AI to analyze climate data, track forest fires, and more, even as they warn of the environmental impact of data centers (Valerie Volcovici/Reuters)",
+   "url": "https://www.techmeme.com/261108/p6#a261108p6",
+   "when": "Sun, 08 Nov 2026"
+  },
+  {
+   "source": "Techmeme",
+   "kind": "기술",
+   "title": "Internal documents leaked by Cisco workers angry over the company's ties to Israel's military show how it expanded its business as the war in Gaza dragged on (Alice Speri/The Guardian)",
+   "url": "https://www.techmeme.com/261108/p5#a261108p5",
+   "when": "Sun, 08 Nov 2026"
+  },
+  {
+   "source": "Techmeme",
+   "kind": "기술",
+   "title": "The crypto industry is bracing for a reckoning after Democrats won the US midterms and vowed to investigate the Trump family and its ties to the industry (Financial Times)",
+   "url": "https://www.techmeme.com/261108/p4#a261108p4",
+   "when": "Sun, 08 Nov 2026"
+  },
+  {
+   "source": "Techmeme",
+   "kind": "기술",
+   "title": "Nous Research unveils Arete-27B, a post-trained Qwen3.8-27B model that reinforces Western values, saying the underlying Chinese model's bias layer is shallow (Nous Research)",
+   "url": "https://www.techmeme.com/261108/p3#a261108p3",
+   "when": "Sun, 08 Nov 2026"
+  },
+  {
+   "source": "Techmeme",
+   "kind": "기술",
+   "title": "Beijing-based GenRobot AI, which develops equipment and software for collecting human demonstrations that can be used to train robots, raised a $100M Series A+ (TechNode)",
+   "url": "https://www.techmeme.com/261108/p2#a261108p2",
+   "when": "Sun, 08 Nov 2026"
+  },
+  {
+   "source": "ProductHunt",
+   "kind": "신제품",
+   "title": "NoMac",
+   "url": "https://www.producthunt.com/products/nomac",
+   "when": "2026-10-26"
+  },
+  {
+   "source": "ProductHunt",
+   "kind": "신제품",
+   "title": "AXL",
+   "url": "https://www.producthunt.com/products/axl-2",
+   "when": "2026-10-30"
+  },
+  {
+   "source": "ProductHunt",
+   "kind": "신제품",
+   "title": "DocsAlot for customer support",
+   "url": "https://www.producthunt.com/products/docsalot-2",
+   "when": "2026-11-04"
+  },
+  {
+   "source": "ProductHunt",
+   "kind": "신제품",
+   "title": "NotchX",
+   "url": "https://www.producthunt.com/products/notch-11",
+   "when": "2026-11-07"
+  },
+  {
+   "source": "ProductHunt",
+   "kind": "신제품",
+   "title": "Memorias",
+   "url": "https://www.producthunt.com/products/memorias-3",
+   "when": "2026-10-13"
+  },
+  {
+   "source": "ProductHunt",
+   "kind": "신제품",
+   "title": "Tilde ",
+   "url": "https://www.producthunt.com/products/tilde-for-mac",
+   "when": "2026-11-03"
+  },
+  {
+   "source": "ProductHunt",
+   "kind": "신제품",
+   "title": "Agent Clan",
+   "url": "https://www.producthunt.com/products/agent-clan",
+   "when": "2026-11-07"
+  },
+  {
+   "source": "ProductHunt",
+   "kind": "신제품",
+   "title": "NotchIsland",
+   "url": "https://www.producthunt.com/products/notchisland-2",
+   "when": "2026-11-02"
+  },
+  {
+   "source": "ProductHunt",
+   "kind": "신제품",
+   "title": "outages.live",
+   "url": "https://www.producthunt.com/products/polylane",
+   "when": "2026-11-04"
+  },
+  {
+   "source": "ProductHunt",
+   "kind": "신제품",
+   "title": "Zigzag Browser",
+   "url": "https://www.producthunt.com/products/zigzag-browser",
+   "when": "2026-11-07"
+  },
+  {
+   "source": "ProductHunt",
+   "kind": "신제품",
+   "title": "Textly",
+   "url": "https://www.producthunt.com/products/textly-capture-copy-paste",
+   "when": "2026-11-02"
+  },
+  {
+   "source": "ProductHunt",
+   "kind": "신제품",
+   "title": "Archie",
+   "url": "https://www.producthunt.com/products/archie-3",
+   "when": "2026-11-01"
+  },
+  {
+   "source": "ProductHunt",
+   "kind": "신제품",
+   "title": "Sage2 by Levanto Labs",
+   "url": "https://www.producthunt.com/products/sagecraft",
+   "when": "2026-11-02"
+  },
+  {
+   "source": "ProductHunt",
+   "kind": "신제품",
+   "title": "Inkling 2 Small",
+   "url": "https://www.producthunt.com/products/tinker-2",
+   "when": "2026-11-06"
+  },
+  {
+   "source": "ProductHunt",
+   "kind": "신제품",
+   "title": "Frameboy by World Labs",
+   "url": "https://www.producthunt.com/products/marble-by-world-labs",
+   "when": "2026-11-05"
+  },
+  {
+   "source": "4chan /g/",
+   "kind": "커뮤니티",
+   "title": "Musk chimps out at man pointing out the vacuum of space is an insulator (bad for data centers)",
+   "url": "https://boards.4chan.org/g/thread/110239688",
+   "when": "",
+   "score": 290
+  },
+  {
+   "source": "4chan /g/",
+   "kind": "커뮤니티",
+   "title": "https://github.com/JiaFeiMiao-K-Cat /DiscImageStudio/blob/main/README.e n.md",
+   "url": "https://boards.4chan.org/g/thread/110227209",
+   "when": "",
+   "score": 245
+  },
+  {
+   "source": "4chan /g/",
+   "kind": "커뮤니티",
+   "title": "RAM and GPUs will not become cheap again.",
+   "url": "https://boards.4chan.org/g/thread/110250306",
+   "when": "",
+   "score": 201
+  },
+  {
+   "source": "4chan /g/",
+   "kind": "커뮤니티",
+   "title": "objectively the best distro",
+   "url": "https://boards.4chan.org/g/thread/110261613",
+   "when": "",
+   "score": 184
+  },
+  {
+   "source": "4chan /g/",
+   "kind": "커뮤니티",
+   "title": "(λ) - Lisp General",
+   "url": "https://boards.4chan.org/g/thread/110217194",
+   "when": "",
+   "score": 157
+  },
+  {
+   "source": "4chan /g/",
+   "kind": "커뮤니티",
+   "title": "Realistically, how much longer do we have until the internet becomes wholly unusable due to sheer overregulation?",
+   "url": "https://boards.4chan.org/g/thread/110222586",
+   "when": "",
+   "score": 144
+  },
+  {
+   "source": "4chan /g/",
+   "kind": "커뮤니티",
+   "title": "mpv 0.42.0 just dropped!",
+   "url": "https://boards.4chan.org/g/thread/110248161",
+   "when": "",
+   "score": 143
+  },
+  {
+   "source": "4chan /g/",
+   "kind": "커뮤니티",
+   "title": "You will literally never be allowed to own local computer hardware again. And you will be happy.",
+   "url": "https://boards.4chan.org/g/thread/110263506",
+   "when": "",
+   "score": 122
+  },
+  {
+   "source": "4chan /g/",
+   "kind": "커뮤니티",
+   "title": "gedg/ - Game and Engine Development General #375",
+   "url": "https://boards.4chan.org/g/thread/110232778",
+   "when": "",
+   "score": 122
+  },
+  {
+   "source": "4chan /g/",
+   "kind": "커뮤니티",
+   "title": "desktop thread",
+   "url": "https://boards.4chan.org/g/thread/110259468",
+   "when": "",
+   "score": 117
+  },
+  {
+   "source": "4chan /g/",
+   "kind": "커뮤니티",
+   "title": "Everybody Codes 2026 - Thread #1",
+   "url": "https://boards.4chan.org/g/thread/110244644",
+   "when": "",
+   "score": 101
+  },
+  {
+   "source": "4chan /g/",
+   "kind": "커뮤니티",
+   "title": "What has valve actually done for linux?",
+   "url": "https://boards.4chan.org/g/thread/110273593",
+   "when": "",
+   "score": 99
+  },
+  {
+   "source": "4chan /biz/",
+   "kind": "커뮤니티",
+   "title": "Where's your head at",
+   "url": "https://boards.4chan.org/biz/thread/62855079",
+   "when": "",
+   "score": 208
+  },
+  {
+   "source": "4chan /biz/",
+   "kind": "커뮤니티",
+   "title": "HAHAHAHAHAHA YES YEEEEES",
+   "url": "https://boards.4chan.org/biz/thread/62835491",
+   "when": "",
+   "score": 180
+  },
+  {
+   "source": "4chan /biz/",
+   "kind": "커뮤니티",
+   "title": "FX Fighter Kurumi-chan",
+   "url": "https://boards.4chan.org/biz/thread/62831283",
+   "when": "",
+   "score": 160
+  },
+  {
+   "source": "4chan /biz/",
+   "kind": "커뮤니티",
+   "title": "*inhales* HAHAHAHAHAHAHAHA",
+   "url": "https://boards.4chan.org/biz/thread/62866246",
+   "when": "",
+   "score": 154
+  },
+  {
+   "source": "4chan /biz/",
+   "kind": "커뮤니티",
+   "title": "People should have the option of commodity housing, or at least young people. Cheap, abundant housing small manufactured",
+   "url": "https://boards.4chan.org/biz/thread/62865045",
+   "when": "",
+   "score": 100
+  },
+  {
+   "source": "4chan /biz/",
+   "kind": "커뮤니티",
+   "title": "IPO CANCELED",
+   "url": "https://boards.4chan.org/biz/thread/62860556",
+   "when": "",
+   "score": 98
+  },
+  {
+   "source": "4chan /biz/",
+   "kind": "커뮤니티",
+   "title": "I had an idea for a business, but I don't have the resources to actually do it So I'm going to give my idea away for fre",
+   "url": "https://boards.4chan.org/biz/thread/62870578",
+   "when": "",
+   "score": 92
+  },
+  {
+   "source": "4chan /biz/",
+   "kind": "커뮤니티",
+   "title": ">open the door for cute girl at work >she goes \"hi anon\" >in the stairwell alone >I try to make a joke, she says nothing",
+   "url": "https://boards.4chan.org/biz/thread/62871417",
+   "when": "",
+   "score": 86
+  },
+  {
+   "source": "4chan /biz/",
+   "kind": "커뮤니티",
+   "title": "Trying to figure out what I should do with my money when I'm dead",
+   "url": "https://boards.4chan.org/biz/thread/62873352",
+   "when": "",
+   "score": 73
+  },
+  {
+   "source": "4chan /biz/",
+   "kind": "커뮤니티",
+   "title": "The Cybertruck is dead",
+   "url": "https://boards.4chan.org/biz/thread/62868459",
+   "when": "",
+   "score": 72
+  },
+  {
+   "source": "4chan /biz/",
+   "kind": "커뮤니티",
+   "title": "FREE GIFT FOR BIZ.",
+   "url": "https://boards.4chan.org/biz/thread/62868072",
+   "when": "",
+   "score": 66
+  },
+  {
+   "source": "4chan /biz/",
+   "kind": "커뮤니티",
+   "title": "I swear to god if this clown just suddenly died people would celebrate.",
+   "url": "https://boards.4chan.org/biz/thread/62871659",
+   "when": "",
+   "score": 63
+  },
+  {
+   "source": "4chan /v/",
+   "kind": "커뮤니티",
+   "title": "In this thread, you will post OoT Remake screenshots. Enjoying the game so far?",
+   "url": "https://boards.4chan.org/v/thread/751170069",
+   "when": "",
+   "score": 488
+  },
+  {
+   "source": "4chan /v/",
+   "kind": "커뮤니티",
+   "title": "Talk to Wuk Lamat",
+   "url": "https://boards.4chan.org/v/thread/751164516",
+   "when": "",
+   "score": 472
+  },
+  {
+   "source": "4chan /v/",
+   "kind": "커뮤니티",
+   "title": "It's literally just classic with 3 new weather effects and a new race for girls",
+   "url": "https://boards.4chan.org/v/thread/751190727",
+   "when": "",
+   "score": 451
+  },
+  {
+   "source": "4chan /v/",
+   "kind": "커뮤니티",
+   "title": ">laughed at and nearly tanked all the good faith CDPR built when the game first launched literally EVERYWHERE on the int",
+   "url": "https://boards.4chan.org/v/thread/751158372",
+   "when": "",
+   "score": 440
+  },
+  {
+   "source": "4chan /v/",
+   "kind": "커뮤니티",
+   "title": "Village In The Shade",
+   "url": "https://boards.4chan.org/v/thread/751143389",
+   "when": "",
+   "score": 435
+  },
+  {
+   "source": "4chan /v/",
+   "kind": "커뮤니티",
+   "title": "Casualties: Unknown",
+   "url": "https://boards.4chan.org/v/thread/751129440",
+   "when": "",
+   "score": 402
+  },
+  {
+   "source": "4chan /v/",
+   "kind": "커뮤니티",
+   "title": "The absolute state of Shitendo",
+   "url": "https://boards.4chan.org/v/thread/751176291",
+   "when": "",
+   "score": 400
+  },
+  {
+   "source": "4chan /v/",
+   "kind": "커뮤니티",
+   "title": "Is it really THAT good??",
+   "url": "https://boards.4chan.org/v/thread/751186668",
+   "when": "",
+   "score": 400
+  },
+  {
+   "source": "4chan /v/",
+   "kind": "커뮤니티",
+   "title": "DEAD RED HOOD",
+   "url": "https://boards.4chan.org/v/thread/751168460",
+   "when": "",
+   "score": 394
+  },
+  {
+   "source": "4chan /v/",
+   "kind": "커뮤니티",
+   "title": "why do people get so defensive when it comes to english dub VAs?",
+   "url": "https://boards.4chan.org/v/thread/751189645",
+   "when": "",
+   "score": 382
+  },
+  {
+   "source": "4chan /v/",
+   "kind": "커뮤니티",
+   "title": "Explain to me why forever will last when SoD didn't",
+   "url": "https://boards.4chan.org/v/thread/751169208",
+   "when": "",
+   "score": 369
+  },
+  {
+   "source": "4chan /v/",
+   "kind": "커뮤니티",
+   "title": "What Pokemon would be the most useful for doing normal things in real life?",
+   "url": "https://boards.4chan.org/v/thread/751155224",
+   "when": "",
+   "score": 362
+  },
+  {
+   "source": "Lemmy technology",
+   "kind": "커뮤니티",
+   "title": "“Ram Altman” Is Now a Linux Script That Emails Sam Altman Daily to Report How Much Unused RAM Is in Your PC",
+   "url": "https://respawnfirst.com/linux-script-emails-sam-altman-unused-ram-ram-altman/",
+   "when": "2026-11-08",
+   "score": 557
+  },
+  {
+   "source": "Lemmy technology",
+   "kind": "커뮤니티",
+   "title": "Developer ends lucrative screensaver deal with Roku because Fox bought it",
+   "url": "https://arstechnica.com/gadgets/2026/11/artist-pulls-popular-screensaver-from-roku-os-because-of-fox-acquisition/",
+   "when": "2026-11-08",
+   "score": 415
+  },
+  {
+   "source": "Lemmy technology",
+   "kind": "커뮤니티",
+   "title": "Remember When Bosses Were Forcing Their Workers to Use AI? They’re Now Realizing They Made a Huge Mistake: \"AI is changing not only how we work, but also how we judge the people we work with.\"",
+   "url": "https://futurism.com/artificial-intelligence/bosses-workers-ai-huge-mistake",
+   "when": "2026-11-08",
+   "score": 326
+  },
+  {
+   "source": "Lemmy technology",
+   "kind": "커뮤니티",
+   "title": "Claude Code's “Don't Ask Again” File Exposes Passwords and Keys in 1,122 Public Copies on GitHub",
+   "url": "https://thehackernews.com/2026/11/claude-codes-dont-ask-again-file.html?m=1",
+   "when": "2026-11-08",
+   "score": 247
+  },
+  {
+   "source": "Lemmy technology",
+   "kind": "커뮤니티",
+   "title": "\"AI\" Companies Are Preying on Under-Resourced Schools, Students Say",
+   "url": "https://truthout.org/articles/ai-companies-are-preying-on-under-resourced-schools-students-say/",
+   "when": "2026-11-08",
+   "score": 180
+  },
+  {
+   "source": "Lemmy technology",
+   "kind": "커뮤니티",
+   "title": "A ‘customer success story’: leaked documents show Cisco doubled down on Israeli military deals during Gaza war",
+   "url": "https://www.theguardian.com/world/2026/nov/07/israel-intelligence-cisco-gaza-palestine",
+   "when": "2026-11-08",
+   "score": 128
+  },
+  {
+   "source": "Lemmy technology",
+   "kind": "커뮤니티",
+   "title": "Hot fridges, a fake nuclear alert and a $6bn heist: are we in the foothills of a hacking epidemic?",
+   "url": "https://www.theguardian.com/news/ng-interactive/2026/nov/08/hot-fridges-a-fake-nuclear-alert-and-a-6bn-heist-are-we-in-the-foothills-of-a-hacking-epidemic",
+   "when": "2026-11-08",
+   "score": 91
+  },
+  {
+   "source": "Lemmy technology",
+   "kind": "커뮤니티",
+   "title": "Every Mac since 2022 ships a pair of daemons to build a graph about you",
+   "url": "https://8rank.ai/game/apple-intelligence-personal-knowledge-graph",
+   "when": "2026-11-08",
+   "score": 90
+  },
+  {
+   "source": "Lemmy technology",
+   "kind": "커뮤니티",
+   "title": "Big tech promised to lead on climate. Now it's driving a fossil fuel boom.",
+   "url": "https://www.msn.com/en-us/news/other/big-tech-promised-to-lead-on-climate-now-its-driving-a-fossil-fuel-boom/ar-AA2gAjgO",
+   "when": "2026-11-08",
+   "score": 87
+  },
+  {
+   "source": "Lemmy technology",
+   "kind": "커뮤니티",
+   "title": "SpaceX Default Risk Hits Record High in Tech-Driven Credit Slump",
+   "url": "https://archive.is/icLYz",
+   "when": "2026-11-08",
+   "score": 83
+  },
+  {
+   "source": "디시 실베",
+   "kind": "커뮤니티",
+   "title": "호흡은 인정하지만, 이제는 식상하게 느껴지는 예능 콤비는?",
+   "url": "",
+   "when": ""
+  },
+  {
+   "source": "디시 실베",
+   "kind": "커뮤니티",
+   "title": "[메갤] 오늘자 준표햄 유튜브",
+   "url": "",
+   "when": ""
+  },
+  {
+   "source": "디시 실베",
+   "kind": "커뮤니티",
+   "title": "[코갤] 사회주의를 깨달아 버린 MAGA 할재 ;ㅅ;",
+   "url": "",
+   "when": ""
+  },
+  {
+   "source": "디시 실베",
+   "kind": "커뮤니티",
+   "title": "[미갤] 램혁수 취조가 시작되자",
+   "url": "",
+   "when": ""
+  },
+  {
+   "source": "디시 실베",
+   "kind": "커뮤니티",
+   "title": "[백갤] 망했다는 백종원.. 연돈 최근 상황 ..jpg",
+   "url": "",
+   "when": ""
+  },
+  {
+   "source": "디시 실베",
+   "kind": "커뮤니티",
+   "title": "[싱갤] 싱글벙글 코스프레가 취미였던 중국 황제",
+   "url": "",
+   "when": ""
+  },
+  {
+   "source": "디시 실베",
+   "kind": "커뮤니티",
+   "title": "[주갤] ㅇㅎ) 홀란드 따라하는 서양누나 ㄷㄷ.",
+   "url": "",
+   "when": ""
+  },
+  {
+   "source": "디시 실베",
+   "kind": "커뮤니티",
+   "title": "[코갤] 10명 중 7명이 집주인한테 돈 빌려\"…강남 부동산서 벌어진 이상 현상",
+   "url": "",
+   "when": ""
+  },
+  {
+   "source": "디시 실베",
+   "kind": "커뮤니티",
+   "title": "[오갤] 본인 근황의 충격적인 근황...jpg",
+   "url": "",
+   "when": ""
+  },
+  {
+   "source": "디시 실베",
+   "kind": "커뮤니티",
+   "title": "[써갤] 리센느 With 근황 근황 근황 근황",
+   "url": "",
+   "when": ""
+  },
+  {
+   "source": "디시 실베",
+   "kind": "커뮤니티",
+   "title": "[싱갤] 근황 글 싸는 이유에 대해.. 근황",
+   "url": "",
+   "when": ""
+  },
+  {
+   "source": "디시 실베",
+   "kind": "커뮤니티",
+   "title": "[싱갤] 실시간 일본 어린이 모델 근황.jpg",
+   "url": "",
+   "when": ""
+  },
+  {
+   "source": "디시 실베",
+   "kind": "커뮤니티",
+   "title": "[보갤] 실시간 이대남 근황..jpg",
+   "url": "",
+   "when": ""
+  },
+  {
+   "source": "디시 실베",
+   "kind": "커뮤니티",
+   "title": "[싱갤] 싱글벙글 ai 활용 근황.jpg",
+   "url": "",
+   "when": ""
+  },
+  {
+   "source": "디시 실베",
+   "kind": "커뮤니티",
+   "title": "[만갤] 실시간 아리사 근황",
+   "url": "",
+   "when": ""
+  },
+  {
+   "source": "레딧 무슨일이야",
+   "kind": "커뮤니티",
+   "title": "What’s going on with Nvidia and its founder being accused of sharing state secrets?",
+   "url": "https://www.reddit.com/r/OutOfTheLoop/comments/1xqm4d0/whats_going_on_with_nvidia_and_its_founder_being/",
+   "when": "2026-11-08",
+   "sub": "r/OutOfTheLoop"
+  },
+  {
+   "source": "레딧 무슨일이야",
+   "kind": "커뮤니티",
+   "title": "What’s going on with those “I understand guys who leak national secrets” memes?",
+   "url": "https://www.reddit.com/r/OutOfTheLoop/comments/1xqg63y/whats_going_on_with_those_i_understand_guys_who/",
+   "when": "2026-11-07",
+   "sub": "r/OutOfTheLoop"
+  },
+  {
+   "source": "레딧 무슨일이야",
+   "kind": "커뮤니티",
+   "title": "What's the deal with \"air fryer\" memes?",
+   "url": "https://www.reddit.com/r/OutOfTheLoop/comments/1xqglt8/whats_the_deal_with_air_fryer_memes/",
+   "when": "2026-11-07",
+   "sub": "r/OutOfTheLoop"
+  },
+  {
+   "source": "레딧 무슨일이야",
+   "kind": "커뮤니티",
+   "title": "What's going on with Net Neutrality?",
+   "url": "https://www.reddit.com/r/OutOfTheLoop/comments/1xpt4wp/whats_going_on_with_net_neutrality/",
+   "when": "2026-11-07",
+   "sub": "r/OutOfTheLoop"
+  },
+  {
+   "source": "레딧 무슨일이야",
+   "kind": "커뮤니티",
+   "title": "What is going on with the AI Stock Crash, and is it good thing ?",
+   "url": "https://www.reddit.com/r/OutOfTheLoop/comments/1xp5482/what_is_going_on_with_the_ai_stock_crash_and_is/",
+   "when": "2026-11-06",
+   "sub": "r/OutOfTheLoop"
+  },
+  {
+   "source": "레딧 무슨일이야",
+   "kind": "커뮤니티",
+   "title": "What's going on with UENO bank in Paraguay?",
+   "url": "https://www.reddit.com/r/OutOfTheLoop/comments/1xpel71/whats_going_on_with_ueno_bank_in_paraguay/",
+   "when": "2026-11-06",
+   "sub": "r/OutOfTheLoop"
+  },
+  {
+   "source": "레딧 무슨일이야",
+   "kind": "커뮤니티",
+   "title": "What's the deal with the connection between Uma Musume and the election in Texas?",
+   "url": "https://www.reddit.com/r/OutOfTheLoop/comments/1xp0xsd/whats_the_deal_with_the_connection_between_uma/",
+   "when": "2026-11-06",
+   "sub": "r/OutOfTheLoop"
+  },
+  {
+   "source": "레딧 무슨일이야",
+   "kind": "커뮤니티",
+   "title": "what’s going on with the members of katseye?",
+   "url": "https://www.reddit.com/r/OutOfTheLoop/comments/1xp229k/whats_going_on_with_the_members_of_katseye/",
+   "when": "2026-11-06",
+   "sub": "r/OutOfTheLoop"
+  },
+  {
+   "source": "레딧 무슨일이야",
+   "kind": "커뮤니티",
+   "title": "What is going on with Paraguay?",
+   "url": "https://www.reddit.com/r/OutOfTheLoop/comments/1xovdtc/what_is_going_on_with_paraguay/",
+   "when": "2026-11-05",
+   "sub": "r/OutOfTheLoop"
+  },
+  {
+   "source": "레딧 무슨일이야",
+   "kind": "커뮤니티",
+   "title": "What's the deal with @kinyohq on tiktok??",
+   "url": "https://www.reddit.com/r/OutOfTheLoop/comments/1xq7jfl/whats_the_deal_with_kinyohq_on_tiktok/",
+   "when": "2026-11-07",
+   "sub": "r/OutOfTheLoop"
+  },
+  {
+   "source": "레딧 무슨일이야",
+   "kind": "커뮤니티",
+   "title": "Why are people talking about United Democracy Project?",
+   "url": "https://www.reddit.com/r/OutOfTheLoop/comments/1xow01j/why_are_people_talking_about_united_democracy/",
+   "when": "2026-11-05",
+   "sub": "r/OutOfTheLoop"
+  },
+  {
+   "source": "레딧 무슨일이야",
+   "kind": "커뮤니티",
+   "title": "What’s going on with El Savadore sending in armed forces to Haiti?",
+   "url": "https://www.reddit.com/r/OutOfTheLoop/comments/1xot1e2/whats_going_on_with_el_savadore_sending_in_armed/",
+   "when": "2026-11-05",
+   "sub": "r/OutOfTheLoop"
+  },
+  {
+   "source": "레딧 무슨일이야",
+   "kind": "커뮤니티",
+   "title": "What's up with AO3 ?",
+   "url": "https://www.reddit.com/r/OutOfTheLoop/comments/1xoczr9/whats_up_with_ao3/",
+   "when": "2026-11-05",
+   "sub": "r/OutOfTheLoop"
+  },
+  {
+   "source": "레딧 무슨일이야",
+   "kind": "커뮤니티",
+   "title": "What’s up with the process to appoint heads of senate and house in the US?",
+   "url": "https://www.reddit.com/r/OutOfTheLoop/comments/1xo7og6/whats_up_with_the_process_to_appoint_heads_of/",
+   "when": "2026-11-05",
+   "sub": "r/OutOfTheLoop"
+  },
+  {
+   "source": "레딧 무슨일이야",
+   "kind": "커뮤니티",
+   "title": "What's up with all the memes regarding people's hatred for tomatoes on a burger?",
+   "url": "https://www.reddit.com/r/OutOfTheLoop/comments/1xo6gy2/whats_up_with_all_the_memes_regarding_peoples/",
+   "when": "2026-11-05",
+   "sub": "r/OutOfTheLoop"
+  },
+  {
+   "source": "레딧 세계뉴스",
+   "kind": "커뮤니티",
+   "title": "Putin Seizes Three More Japan Tobacco Businesses, Bringing Takeover to $3.7 Billion",
+   "url": "https://www.reddit.com/r/worldnews/comments/1xqvpmi/putin_seizes_three_more_japan_tobacco_businesses/",
+   "when": "2026-11-08",
+   "sub": "r/worldnews"
+  },
+  {
+   "source": "레딧 세계뉴스",
+   "kind": "커뮤니티",
+   "title": "Egypt announces new Mediterranean gas field discovery estimated at 200 billion cubic feet",
+   "url": "https://www.reddit.com/r/worldnews/comments/1xqxgs5/egypt_announces_new_mediterranean_gas_field/",
+   "when": "2026-11-08",
+   "sub": "r/worldnews"
+  },
+  {
+   "source": "레딧 세계뉴스",
+   "kind": "커뮤니티",
+   "title": "Zelensky says Oleshky ceasefire shows Russia can halt fighting but Putin is unwilling",
+   "url": "https://www.reddit.com/r/worldnews/comments/1xr0dgt/zelensky_says_oleshky_ceasefire_shows_russia_can/",
+   "when": "2026-11-08",
+   "sub": "r/worldnews"
+  },
+  {
+   "source": "레딧 세계뉴스",
+   "kind": "커뮤니티",
+   "title": "Macron has secret escape plan if protesters storm Élysée Palace, media reports",
+   "url": "https://www.reddit.com/r/worldnews/comments/1xr12yp/macron_has_secret_escape_plan_if_protesters_storm/",
+   "when": "2026-11-08",
+   "sub": "r/worldnews"
+  },
+  {
+   "source": "레딧 세계뉴스",
+   "kind": "커뮤니티",
+   "title": "Saudi capital's financial district targeted in attack, Aramco skyscraper damaged",
+   "url": "https://www.reddit.com/r/worldnews/comments/1xqx6g9/saudi_capitals_financial_district_targeted_in/",
+   "when": "2026-11-08",
+   "sub": "r/worldnews"
+  },
+  {
+   "source": "레딧 세계뉴스",
+   "kind": "커뮤니티",
+   "title": "Uyghurs facing deportation by Thailand say they will be ‘like slaves’ in China",
+   "url": "https://www.reddit.com/r/worldnews/comments/1xqzdw1/uyghurs_facing_deportation_by_thailand_say_they/",
+   "when": "2026-11-08",
+   "sub": "r/worldnews"
+  },
+  {
+   "source": "레딧 세계뉴스",
+   "kind": "커뮤니티",
+   "title": "Hundreds of thousands join Amsterdam’s ‘Red Line’ protest against Israel",
+   "url": "https://www.reddit.com/r/worldnews/comments/1xr6l78/hundreds_of_thousands_join_amsterdams_red_line/",
+   "when": "2026-11-08",
+   "sub": "r/worldnews"
+  },
+  {
+   "source": "레딧 세계뉴스",
+   "kind": "커뮤니티",
+   "title": "India questions US ‘double standards’ as Pakistan secures F-16 upgrade deal",
+   "url": "https://www.reddit.com/r/worldnews/comments/1xqtu2f/india_questions_us_double_standards_as_pakistan/",
+   "when": "2026-11-08",
+   "sub": "r/worldnews"
+  },
+  {
+   "source": "레딧 세계뉴스",
+   "kind": "커뮤니티",
+   "title": "Russia pounds power facilities around Kyiv, damages major bridge",
+   "url": "https://www.reddit.com/r/worldnews/comments/1xqu74f/russia_pounds_power_facilities_around_kyiv/",
+   "when": "2026-11-08",
+   "sub": "r/worldnews"
+  },
+  {
+   "source": "레딧 세계뉴스",
+   "kind": "커뮤니티",
+   "title": "Protests across Nova Scotia oppose AI data centres",
+   "url": "https://www.reddit.com/r/worldnews/comments/1xqxfug/protests_across_nova_scotia_oppose_ai_data_centres/",
+   "when": "2026-11-08",
+   "sub": "r/worldnews"
+  },
+  {
+   "source": "레딧 세계뉴스",
+   "kind": "커뮤니티",
+   "title": "Can’t cook or shower: Indonesians take aim at data centers",
+   "url": "https://www.reddit.com/r/worldnews/comments/1xqzjcb/cant_cook_or_shower_indonesians_take_aim_at_data/",
+   "when": "2026-11-08",
+   "sub": "r/worldnews"
+  },
+  {
+   "source": "레딧 세계뉴스",
+   "kind": "커뮤니티",
+   "title": "UK Rallies Northern Europe to Hunt Russian Submarines Across Three Strategic Seas",
+   "url": "https://www.reddit.com/r/worldnews/comments/1xr2ksv/uk_rallies_northern_europe_to_hunt_russian/",
+   "when": "2026-11-08",
+   "sub": "r/worldnews"
+  },
+  {
+   "source": "레딧 세계뉴스",
+   "kind": "커뮤니티",
+   "title": "Nvidia launches investigation into CEO's affair with suspected Chinese spy",
+   "url": "https://www.reddit.com/r/worldnews/comments/1xra83k/nvidia_launches_investigation_into_ceos_affair/",
+   "when": "2026-11-08",
+   "sub": "r/worldnews"
+  },
+  {
+   "source": "레딧 세계뉴스",
+   "kind": "커뮤니티",
+   "title": "Haitians rally behind Bukele, urge Salvadoran forces to drive gangs out of their communities",
+   "url": "https://www.reddit.com/r/worldnews/comments/1xqypsl/haitians_rally_behind_bukele_urge_salvadoran/",
+   "when": "2026-11-08",
+   "sub": "r/worldnews"
+  },
+  {
+   "source": "레딧 세계뉴스",
+   "kind": "커뮤니티",
+   "title": "Iran's IRGC claims self-imposed 2,000-km ballistic missile range limit 'has been lifted'",
+   "url": "https://www.reddit.com/r/worldnews/comments/1xqvxw0/irans_irgc_claims_selfimposed_2000km_ballistic/",
+   "when": "2026-11-08",
+   "sub": "r/worldnews"
+  }
+ ],
+ "failed": [
+  "에펨코리아: HTTPError HTTP Error 430: Unknown",
+  "뽐뿌 인기: URLError <urlopen error Tunnel connection failed: 403 Forbidden>",
+  "레딧 전체: HTTPError HTTP Error 403: Blocked"
+ ]
+}
